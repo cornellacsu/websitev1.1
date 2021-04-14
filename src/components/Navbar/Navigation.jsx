@@ -1,5 +1,7 @@
+// import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import logo from "./logo.png";
 
 function Navigation(props) {
     return (
@@ -7,9 +9,15 @@ function Navigation(props) {
             <nav class="navbar navbar-expand navbar-dark bg-dark">
                 <div class="container">
                     <Link class="navbar-brand" to="/">
+                        <img
+                            src={logo}
+                            alt="ACSU logo"
+                            width="30"
+                            height="24"
+                            class="d-inline-block align-text-top"
+                        ></img>
                         ACSU
                     </Link>
-
                     <div>
                         <ul class="navbar-nav ml-auto">
                             <li
