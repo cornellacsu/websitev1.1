@@ -14,8 +14,7 @@ function Navigation(props) {
                             alt="ACSU logo"
                             width="30"
                             height="24"
-                            class="d-inline-block align-text-top"
-                        ></img>
+                            class="d-inline-block align-text-top"></img>
                     </Link>
                     <div>
                         <ul class="navbar-nav ml-auto">
@@ -24,8 +23,7 @@ function Navigation(props) {
                                     props.location.pathname === "/"
                                         ? "active"
                                         : ""
-                                }`}
-                            >
+                                }`}>
                                 <Link class="nav-link" to="/">
                                     Home
                                     <span class="sr-only">(current)</span>
@@ -36,8 +34,7 @@ function Navigation(props) {
                                     props.location.pathname === "/board"
                                         ? "active"
                                         : ""
-                                }`}
-                            >
+                                }`}>
                                 <Link class="nav-link" to="/board">
                                     Board
                                 </Link>
@@ -47,8 +44,7 @@ function Navigation(props) {
                                     props.location.pathname === "/sponsers"
                                         ? "active"
                                         : ""
-                                }`}
-                            >
+                                }`}>
                                 <Link class="nav-link" to="/sponsers">
                                     Sponsers
                                 </Link>
@@ -58,8 +54,7 @@ function Navigation(props) {
                                     props.location.pathname === "/resources"
                                         ? "active"
                                         : ""
-                                }`}
-                            >
+                                }`}>
                                 <Link class="nav-link" to="/resources">
                                     Resources
                                 </Link>
@@ -69,6 +64,20 @@ function Navigation(props) {
                 </div>
             </nav>
         </div>
+    );
+}
+
+function NavItem(props) {
+    return (
+        <li
+            class={`nav-item  ${
+                props.location.pathname === props.pathname ? "active" : ""
+            }`}>
+            <Link class="nav-link" to="/">
+                Home
+                <span class="sr-only">(current)</span>
+            </Link>
+        </li>
     );
 }
 
