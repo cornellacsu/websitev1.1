@@ -16,7 +16,6 @@ function Navigation(props) {
                             height="24"
                             class="d-inline-block align-text-top"
                         ></img>
-                        ACSU
                     </Link>
                     <div>
                         <ul class="navbar-nav ml-auto">
