@@ -18,47 +18,26 @@ function Navigation(props) {
                     </Link>
                     <div>
                         <ul class="navbar-nav ml-auto">
-                            <li
-                                class={`nav-item  ${
-                                    props.location.pathname === "/"
-                                        ? "active"
-                                        : ""
-                                }`}>
-                                <Link class="nav-link" to="/">
-                                    Home
-                                    <span class="sr-only">(current)</span>
-                                </Link>
-                            </li>
-                            <li
-                                class={`nav-item  ${
-                                    props.location.pathname === "/board"
-                                        ? "active"
-                                        : ""
-                                }`}>
-                                <Link class="nav-link" to="/board">
-                                    Board
-                                </Link>
-                            </li>
-                            <li
-                                class={`nav-item  ${
-                                    props.location.pathname === "/sponsers"
-                                        ? "active"
-                                        : ""
-                                }`}>
-                                <Link class="nav-link" to="/sponsers">
-                                    Sponsers
-                                </Link>
-                            </li>
-                            <li
-                                class={`nav-item  ${
-                                    props.location.pathname === "/resources"
-                                        ? "active"
-                                        : ""
-                                }`}>
-                                <Link class="nav-link" to="/resources">
-                                    Resources
-                                </Link>
-                            </li>
+                            <NavItem
+                                currentPath={props.location.pathname}
+                                target="/"
+                                name="Home"
+                            />
+                            <NavItem
+                                currentPath={props.location.pathname}
+                                target="/board"
+                                name="Board"
+                            />
+                            <NavItem
+                                currentPath={props.location.pathname}
+                                target="/sponsers"
+                                name="Sponsers"
+                            />
+                            <NavItem
+                                currentPath={props.location.pathname}
+                                target="/resources"
+                                name="Resources"
+                            />
                         </ul>
                     </div>
                 </div>
@@ -71,11 +50,10 @@ function NavItem(props) {
     return (
         <li
             class={`nav-item  ${
-                props.location.pathname === props.pathname ? "active" : ""
+                props.currentPath === props.target ? "active" : ""
             }`}>
-            <Link class="nav-link" to="/">
-                Home
-                <span class="sr-only">(current)</span>
+            <Link class="nav-link" to={props.target}>
+                {props.name}
             </Link>
         </li>
     );
