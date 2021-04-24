@@ -8,13 +8,12 @@ function Home() {
             <div class="container">
                 <div class="row align-items-center my-5">
                     <div class="col">
-                        <div class="container">
+                        {/* <div class="container">
                             <img
                                 src={typing}
                                 alt=""
-                                class="img-fluid border rounded-3 shadow-lg mb-4"
-                            ></img>
-                        </div>
+                                class="img-fluid border rounded-3 shadow-lg mb-4"></img>
+                        </div> */}
                         <div class="styles.divider"></div>
                         <div class="px-4 styles.pt-5 my-5 text-center border-bottom">
                             <h1 class="display-4 fw-bold">About Us</h1>
@@ -201,8 +200,7 @@ function Home() {
                         data-bs-target="#list-example"
                         data-bs-offset="0"
                         class="col-xs-1"
-                        tabindex="0"
-                    >
+                        tabIndex="0">
                         <h5 id="list-item-1">Blah</h5>
                         <h5 id="list-item-2">Blah</h5>
                         <h5 id="list-item-3">Blah</h5>
