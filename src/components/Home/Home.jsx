@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Home.css";
-import typing from "./type.png";
+import "./Home.css";
+// import typing from "./type.png";
 
 function Home() {
     return (
