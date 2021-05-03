@@ -14,12 +14,15 @@ import { ReactComponent as ChevronIcon } from "./icons/chevron.svg";
 import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
 
-import logo from "./logo.png";
-import home from "./home-white.svg";
-import homeActive from "./home-active.png";
-import board from "./board.png";
-import sponsers from "./sponsers.png";
-import resources from "./resources.png";
+import logo from "./icons/logo.png";
+import home from "./icons/house-white.png";
+import homeActive from "./icons/house-red.png";
+import board from "./icons/officers-white.svg";
+import boardActive from "./icons/officers-red.svg";
+import sponsers from "./icons/donation-white.svg";
+import sponsersActive from "./icons/donation-red.svg";
+import resources from "./icons/resources-white.png";
+import resourcesActive from "./icons/resources-red.png";
 
 function Navigation(props) {
     return (
@@ -47,21 +50,21 @@ function Navigation(props) {
                             target="/board"
                             name="Board"
                             imgSrc={board}
-                            activeImgSrc={homeActive}
+                            activeImgSrc={boardActive}
                         />
                         <NavItem
                             currentPath={props.location.pathname}
                             target="/sponsers"
                             name="Sponsers"
                             imgSrc={sponsers}
-                            activeImgSrc={homeActive}
+                            activeImgSrc={sponsersActive}
                         />
                         <NavItem
                             currentPath={props.location.pathname}
                             target="/resources"
                             name="Resources"
                             imgSrc={resources}
-                            activeImgSrc={homeActive}
+                            activeImgSrc={resourcesActive}
                         />
                         <NavItem>
                             <DropdownMenu />
