@@ -1,33 +1,48 @@
-import React from "react";
+import React, { Component } from "react";
+import "./Resources.css";
+import Section from "./readmecomponents/Section";
+import SideBar from "./readmecomponents/SideBar";
 
-function Resources() {
+class Resources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: 0,
+    };
+    this.changeSection = this.changeSection.bind(this);
+    this.checkSection = this.checkSection.bind(this);
+  }
+
+  changeSection(index) {
+    if (this.state.current != index) {
+      window.scrollTo(0, 0);
+      this.setState({ current: index });
+    } else if (this.state.current == index) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }
+
+  checkSection(index) {
+    if (this.state.current == index) {
+      return "#B01C33";
+    }
+  }
+
+  render() {
     return (
-        <div className="resources">
-            <div class="container">
-                <div class="row align-items-center my-5">
-                    <div class="col-lg-5">
-                        <h1 class="font-weight-light">Resources</h1>
-                        <p>
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources. Resources. Resources.
-                            Resources. Resources.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div>
+        <Section current={this.state.current} />
+        <SideBar
+          current={this.state.current}
+          changeSection={this.changeSection}
+          checkSection={this.checkSection}
+        />
+      </div>
     );
+  }
 }
 
 export default Resources;

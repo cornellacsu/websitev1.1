@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Chevron from "./Chevron";
 
-import "../css/Accordion.css";
+import "../readmecss/Accordion.css";
 
 // Adapted from SkillThrive, https://www.youtube.com/watch?v=MAD2HnUFjgg for ACSU
 
