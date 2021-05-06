@@ -1,174 +1,70 @@
 import React from "react";
 import "./Home.css";
+import Grid from "@material-ui/core/Grid";
+import Divider from "@material-ui/core/Divider";
+import Card from "./Card.jsx";
+import Roles from "./Roles.jsx";
+
+function GridItem(props) {
+    return (
+        // From 0 to 600px wide (smart-phones), I take up 11/12 columns
+        // From 600-690px wide (tablets), I take up 9 out of 12 columns
+        // From 960px wide and above, I take up 8/12 of the device
+        <Grid container item xs={11} sm={9} md={8}>
+            <ol className="section-list">
+                {React.Children.map(props.children, (dom) => (
+                    <li>{dom}</li>
+                ))}
+            </ol>
+        </Grid>
+    );
+}
+
+function GridDivider() {
+    // TODO: Fix this
+    return <Divider />;
+}
 
 function Home() {
     return (
-        <div className="home">
-            <div class="container">
-                <div class="col">
-                    <div class="my-5 text-center border-bottom">
-                        <h1>About Us</h1>
-                        <br></br>
-                        <h2>Our Purpose</h2>
-                        <div class="col-lg-9 mx-auto">
-                            <p class="lead mb-4">
-                                The Association of Computer Science
-                                Undergraduates (ACSU) promotes educational,
-                                professional, and social interaction among every
-                                undergraduate student interested in computer
-                                science. We facilitate student communication
-                                with faculty, alumni, and corporate
-                                representatives to enhance the undergraduate
-                                experience in computer science. ACSU is
-                                Cornell's chapter of the Association for
-                                Computing Machinery (ACM). We receive support
-                                from the Department of Computer Science and
-                                several corporate sponsors.
-                            </p>
-                        </div>
-                        <h2>What We Do</h2>
-                        <div class="col-lg-9 mx-auto">
-                            <p class="lead mb-4">
-                                We host a variety of events, such as social,
-                                faculty, educational, and company events. We
-                                offer special resources, such as access to a
-                                resume book that we give out to our sponsors, as
-                                well as mentorship within the CIS community!
-                            </p>
-                        </div>
-                        <br></br>
-                        <br></br>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="px-4 styles.pt-5 my-5 text-center border-bottom">
-                        <h1>Upcoming Events</h1>
-                        <br></br>
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br></br>
-                        <br></br>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="px-4 styles.pt-5 my-5 text-center border-bottom">
-                        <h1>Featured Articles</h1>
-                        <br></br>
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool! Very cool! Very cool!
-                                            Very cool!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br></br>
-                        <br></br>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <Grid
+                container
+                spacing={1}
+                direction="column"
+                justify="center"
+                alignItems="center">
+                {/* Typing stuff here */}
+                <GridDivider />
+                <GridItem className="section">
+                    <h1>About Us</h1>
+                    <h2>Our Purpose</h2>
+                    <p>
+                        The Association of Computer Science Undergraduates
+                        (ACSU) promotes educational, professional, and social
+                        interaction among every undergraduate student interested
+                        in computer science. We facilitate student communication
+                        with faculty, alumni, and corporate representatives to
+                        enhance the undergraduate experience in computer
+                        science.
+                    </p>
+                    <p>
+                        ACSU is Cornell's chapter of the Association for
+                        Computing Machinery (ACM). We receive support from the
+                        Department of Computer Science and several corporate
+                        sponsors.
+                    </p>
+                    <h2>What We Do</h2>
+                    <Roles />
+                </GridItem>
+                <GridDivider />
+                <GridItem className="section">
+                    <h1>Upcoming Events</h1>
+                    <Card></Card>
+                    <Card></Card>
+                    <Card></Card>
+                </GridItem>
+            </Grid>
         </div>
     );
 }
