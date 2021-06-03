@@ -1,0 +1,28 @@
+h2 {
+    color: white;
+}
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.scrolling-wrapper-flexbox .event-card {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+}
+.event-card {
+    border: 2px solid red;
+    width: 20rem;
+    height: 15rem;
+    background: black;
+}
+.scrolling-wrapper-flexbox {
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar,
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+}

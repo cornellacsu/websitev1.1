@@ -1,30 +1,30 @@
-.Outer-grid {
-    flex-grow: 1;
-}
-.Card {
+.card {
     width: 100%;
     height: 100%;
+    border: none;
+    pointer-events: none;
+    cursor: default;
 }
-.Card-media-container {
+.card-media-container {
     text-align: center;
     justify-content: center;
     margin: 0;
     top: 0;
-    height: 40%;
+    height: 45%;
     width: 100%;
 }
-.Card-divider {
-    height: 10%;
-    width: 100%;
+
+.card-divider {
+    height: 100%;
 }
-.Card-content {
-    height: 50%;
-    width: 100%;
-}
-.Card-media {
+.card-media {
     height: 100%;
     width: auto;
     max-width: 5rem;
     margin-left: auto;
     margin-right: auto;
+}
+.card-description {
+    text-align: center;
+    font-size: 1.1rem;
 }

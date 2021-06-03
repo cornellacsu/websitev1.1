@@ -1,0 +1,16 @@
+.icon {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.sm-handles {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
