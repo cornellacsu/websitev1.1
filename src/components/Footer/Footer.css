@@ -4,9 +4,13 @@
     align-items: center; /* align vertical */
 }
 
+.footer-section {
+    margin: 20px 0px;
+}
+
 .sm-handles {
     width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .copyright {

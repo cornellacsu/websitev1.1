@@ -1,33 +1,43 @@
 h1 {
-    font-family: Lato;
+    font-family: HelveticaNeue;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
     color: #b01c33;
-
     text-align: center;
+    line-height: 5rem;
 }
 h2 {
-    font-family: "Lato";
+    font-family: HelveticaNeue;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
     line-height: 34px;
-    color: #403c3c;
-
+    color: grey;
     text-align: center;
+    line-height: 4rem;
 }
 p {
-    font-family: "Roboto";
+    font-family: HelveticaNeue;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     color: #1c1d1b;
+    line-height: 2rem;
 }
 .main {
-    margin: 0px 20% 0px 20%;
+    margin: 10px 20% 200px 20%;
+}
+.section {
+    margin: 3rem 0px;
+}
+.subsection {
+    margin: 1.5rem 0px;
+}
+.cover-logo {
+    width: 100%;
 }
 .row {
     -ms-flex-wrap: wrap;
@@ -35,7 +45,6 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
-
 .column {
     -ms-flex: 25%;
     flex: 25%;
@@ -44,10 +53,6 @@ p {
 
 body {
     margin: 0;
-    /* font-family: var(--bs-font-sans-serif);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5; */
     color: #212529;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -63,7 +68,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .main {
-        margin: 0px 15% 0px 15%;
+        margin: 10px 15% 200px 15%;
     }
     .sidemenu {
         display: none;
@@ -79,6 +84,6 @@ body {
         padding: 4 4px;
     }
     .main {
-        margin: 0px 24px 0px 24px;
+        margin: 10px 24px 200px 24px;
     }
 }

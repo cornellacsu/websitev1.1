@@ -8,7 +8,7 @@ import { Flex, Box } from "reflexbox";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer-section">
             <div className="sm-handles">
                 <Flex flexWrap="wrap">
                     <Box width={[1 / 3]} p={2}>

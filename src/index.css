@@ -1,7 +1,11 @@
 body {
     margin: 0;
     background: #151616;
-    font-family: roboto;
+    font-family: "HelveticaNeue", "Roboto";
+    src: local("HelveticaNeue"),
+        url(./fonts/HelveticaNeue/HelveticaNeueLTPro-Th.otf) format("truetype");
+    src: local("Roboto") url(./fonts/Roboto/Roboto-Regular.ttf)
+        format("truetype");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
