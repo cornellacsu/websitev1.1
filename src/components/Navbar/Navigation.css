@@ -27,6 +27,10 @@ a:hover {
     text-decoration: none;
 }
 
+.container {
+    width: 100%;
+}
+
 /* Top Navigation Bar */
 
 /* <nav> */
@@ -42,6 +46,7 @@ a:hover {
     max-width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
@@ -52,14 +57,26 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+/* Button Div */
+.button-div {
+    transform: skew(20deg);
+    border-radius: 20%;
+    background-image: linear-gradient(
+        100deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5) 100%,
+        rgba(0, 0, 0, 0)
+    );
+    padding-left: 30%;
+}
 
 /* Icon Button */
 .icon-button {
     --button-size: calc(var(--nav-size) * 0.6);
-    width: var(--button-size);
+    width: calc(var(--button-size) * 5);
     height: var(--button-size);
     background-color: #484a4d;
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 5px;
     margin: 2px;
     display: flex;
@@ -73,6 +90,7 @@ a:hover {
 }
 
 .icon-button img {
+    transform: skew(-20deg);
     fill: var(--text-color);
     width: 20px;
     height: 20px;

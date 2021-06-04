@@ -17,9 +17,9 @@ import resourcesActive from "./icons/resources-red.png";
 
 function Navigation(props) {
     return (
-        <nav className="navbar navbar-expand ">
+        <nav className="navbar">
             <div className="container">
-                <Link className="navbar-brand" to="/">
+                <Link className="" to="/">
                     <img
                         src={logo}
                         alt="ACSU logo"
@@ -27,7 +27,7 @@ function Navigation(props) {
                         height="24"
                         className="d-inline-block align-text-top"></img>
                 </Link>
-                <div>
+                <div className="button-div">
                     <ul className="navbar-nav">
                         <NavItem
                             currentPath={props.location.pathname}
@@ -57,9 +57,6 @@ function Navigation(props) {
                             imgSrc={resources}
                             activeImgSrc={resourcesActive}
                         />
-                        <NavItem>
-                            <DropdownMenu />
-                        </NavItem>
                     </ul>
                 </div>
             </div>
