@@ -48,8 +48,8 @@ const FAQ = () => {
           For students with Computer Science major in College of Arts and Sciences, you can choose to count courses in a second major or minor as electives."
         />
       </section>
-      <section className="Courses">
-        <h2>Courses</h2>
+      <section className="Classes">
+        <h2>Classes</h2>
         <Accordion
           title="Should I take CS 1110 or CS 1112?"
           content="CS 1110 teaches you the basics of Computer Science in using the Python programming language, whereas CS 1112 teaches you the basics using the Matlab language. Because writing code in Python is less complex, more readable, and is easier to transition to learn how to write code in other popular languages such as Java, most prospective CS majors elect to take CS 1110. However, CS 1112 would be a good choice for students who are interested in classes associated with Computational Science & Engineering (CS 4210, CS 4220) or have interest in other science fields outside of Computer Science because it is useful for mathematical computations."

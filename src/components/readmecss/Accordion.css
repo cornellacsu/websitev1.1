@@ -23,7 +23,7 @@
 .accordion__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: left;
   color: black;
   /* color: #b01c33; */
@@ -59,6 +59,7 @@
   font-weight: 400;
   font-size: 1rem;
   padding: 18px;
+  padding-top: 0px;
   position: relative;
   /* left: 1.25rem; */
 }
