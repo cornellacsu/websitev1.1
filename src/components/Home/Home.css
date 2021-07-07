@@ -32,6 +32,8 @@ p {
 }
 .section {
     margin: 3rem 0px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .subsection {
     margin: 1.5rem 0px;

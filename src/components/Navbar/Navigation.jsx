@@ -23,8 +23,8 @@ function Navigation(props) {
                     <img
                         src={logo}
                         alt="ACSU logo"
-                        width="30"
-                        height="24"
+                        width="40"
+                        height="32"
                         className="d-inline-block align-text-top"></img>
                 </Link>
                 <div className="button-div">
