@@ -153,11 +153,41 @@ const FAQ = () => {
         />
         <Accordion
           title="I am a freshman/sophomore interested in applying for internships; are there any programs geared towards underclassmen like us?"
-          content="TO BE COMPLETED"
+          content="If you are an underclassmen considering computer science as a career or if you just want to learn more about working in the tech industry, you should definitely check out the following summer programs specific to freshmen and sophomores:
+          <br></br>
+          <a href=https://buildyourfuture.withgoogle.com/programs/step/>Google Engineering Practicum</a>
+          <br></br>
+          Application Period: October - early December (rolling)
+          <br></br>
+          Eligibility: For current freshmen and sophomores
+          <br></br>
+          Notes: The Engineering Practicum program is a 12-week developmental opportunity for first and second-year undergraduate students with a passion for technology -- especially students from historically underrepresented groups in the field. During the summer you will work alongside other Practicum interns on a software project, attend skills-based and professional development trainings, and receive mentorship from Google engineers.
+          <br></br>
+          <a href=https://careers.microsoft.com/students/us/en/usexploremicrosoftprogram>Microsoft Explore</a>
+          <br></br>
+          Application Period: late August - November (rolling)
+          <br></br>
+          Eligibility: For current freshmen and sophomores
+          <br></br>
+          Notes: Explore Microsoft program is a 12-week summer internship intended for students who are beginning their academic studies and would like to learn more about careers in software development through an experiential learning program. By providing formal training as well as a group project experience working alongside other Explorers, the Explore program offers a rotational experience that enables interns to gain experience in both core software engineering roles (Program Manager and Software Engineer), rather than specializing in just one.
+          <br></br>
+          <a href=https://www.facebook.com/careers/students-and-grads/students>Facebook University</a>
+          <br></br>
+          Application Period: early January - late February
+          <br></br>
+          Eligibility: For current freshmen
+          <br></br>
+          Notes: Facebook University is a paid 8-week training program designed to provide mobile development experience to students who are historically underrepresented in computer science. The eight-weeks is broken down by two weeks of mobile development training in either iOS or Android, followed by six-weeks of hands-on project experience in a small team setting."
         />
         <Accordion
           title="What if I want to get involved in research over the summer instead?"
-          content="TO BE COMPLETED"
+          content="Check out research opportunities at Cornell or at other universities around the US.
+          <br></br>
+          If you want to do research at Cornell, you can send an email directly to the professor you want to work with, or visit him/her in his/her office. Most professors are really open to students seeking research opportunities over the summer, and will be happy to talk to you about their research and how you can get involved.
+          <br></br>
+          Engineering Learning Initiatives (ELI) at Cornell provides student grants for undergraduate engineering research projects. Based on their <a href=http://www.engineering.cornell.edu/research/undergraduate/student_grant/index.cfm>website</a> they have a funding cycle for the summer with applications in Early March.
+          <br></br>
+          The National Science Foundation (NSF) provides paid research opportunities at universities around the US called Research Experiences for Undergraduates (REUs) At their <a href=http://www.nsf.gov/crssprgm/reu/>site</a> you can find out more about the program and search for an REU based on discipline and REU location. You'll most likely work with a professor over the summer on a project with a couple of other students as well."
         />
       </section>
     </section>
