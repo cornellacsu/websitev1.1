@@ -39,11 +39,6 @@ function Home() {
             </div>
             <hr></hr>
             <div className="section">
-                <h1>Upcoming Events</h1>
-                <Events />
-            </div>
-            <hr></hr>
-            <div classname="section">
                 <h1>Featured Articles</h1>
                 <Events />
             </div>

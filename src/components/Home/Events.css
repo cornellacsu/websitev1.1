@@ -3,19 +3,16 @@
     flex-wrap: nowrap;
     overflow-x: auto;
 }
-.scrolling-wrapper-flexbox .event-card {
+.event-card {
     flex: 0 0 auto;
     margin-right: 2rem;
+    min-width: 275px;
 }
-.event-card {
-    border: 2px solid red;
-    width: 20rem;
-    height: 15rem;
-    background: black;
+
+.media {
+    min-height: 400px;
 }
-.event-card h2 {
-    color: white;
-}
+
 .scrolling-wrapper-flexbox {
     height: 100%;
     margin-bottom: 20px;
