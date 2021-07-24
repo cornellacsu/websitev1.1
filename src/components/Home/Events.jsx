@@ -1,33 +1,79 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { useState, useContext } from "react";
 import { CardMedia, CardActions } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
+import { Card as MaterialCard } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import "./Events.css";
 
-// const useStyles = makeStyles({
-//     root: {
-//         minWidth: 275,
-//     },
-//     media: {
-//         minHeight: 400,
-//     },
-// });
+const Arrow = ({ children, disabled, onClick }) => {
+    return (
+        <button
+            className="arrow-button"
+            disabled={disabled}
+            onClick={onClick}
+            style={{
+                cursor: "pointer",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                right: "1%",
+                opacity: disabled ? "0" : "1",
+                userSelect: "none",
 
-const EventCard = (imgName, link) => (
-    <Card className="event-card" variant="outlined">
-        <CardMedia
-            className="media"
-            image={`/static/articles/${imgName}.png`}
-            title="Contemplative Reptile"
-        />
-        <CardActions>
-            <Button size="small" onClick={() => window.open(link, "_blank")}>
-                Learn More
-            </Button>
-        </CardActions>
-    </Card>
-);
+                // Styling
+                backgroundColor: "white",
+                border: "none",
+            }}>
+            {children}
+        </button>
+    );
+};
+
+const LeftArrow = () => {
+    const { isFirstItemVisible, scrollPrev } = useContext(VisibilityContext);
+
+    return (
+        <Arrow disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+            <ArrowBackIosIcon />
+        </Arrow>
+    );
+};
+
+const RightArrow = () => {
+    const { isLastItemVisible, scrollNext } = useContext(VisibilityContext);
+
+    return (
+        <Arrow disabled={isLastItemVisible} onClick={() => scrollNext()}>
+            <ArrowForwardIosIcon />
+        </Arrow>
+    );
+};
+
+function Card({ itemId, link, imgName }) {
+    // const visibility = useContext(VisibilityContext);
+    return (
+        <MaterialCard
+            className="event-card"
+            variant="outlined"
+            onClick={() => window.open(link, "_blank")}>
+            <CardMedia
+                className="media"
+                image={`/static/articles/${imgName}.png`}
+                title="Contemplative Reptile"
+            />
+            <CardActions>
+                <Button
+                    size="small"
+                    onClick={() => window.open(link, "_blank")}>
+                    Learn More
+                </Button>
+            </CardActions>
+        </MaterialCard>
+    );
+}
 
 // Add new articles here -- add image named after the published date
 const articles = [
@@ -81,12 +127,24 @@ const articles = [
     },
 ];
 
+const getItems = () => articles;
+
 export default function EventsScroll() {
+    const [items, setItems] = useState(getItems);
     return (
-        <div className="scrolling-wrapper-flexbox">
-            {articles
-                .reverse()
-                .map((article) => EventCard(article.date, article.link))}
-        </div>
+        <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+            {items.map((article) => {
+                console.log(article);
+                const id = article.date;
+                return (
+                    <Card
+                        itemId={id} // NOTE: itemId is required for track items
+                        key={id}
+                        imgName={article.date}
+                        link={article.link}
+                    />
+                );
+            })}
+        </ScrollMenu>
     );
 }

@@ -1,8 +1,9 @@
 .scrolling-wrapper-flexbox {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
+
 .event-card {
     flex: 0 0 auto;
     margin-right: 2rem;
@@ -17,9 +18,13 @@
     height: 100%;
     margin-bottom: 20px;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
 }
-.scrolling-wrapper::-webkit-scrollbar,
+
+.arrow-button:focus {
+    outline: none;
+}
+/* .scrolling-wrapper::-webkit-scrollbar,
 .scrolling-wrapper-flexbox::-webkit-scrollbar {
     display: none;
-}
+} */
