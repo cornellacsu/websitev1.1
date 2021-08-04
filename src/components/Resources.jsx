@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Resources.css";
-import Section from "./readmecomponents/Section";
-import SideBar from "./readmecomponents/SideBar";
+import "./Resources/CSS/Resources.css";
+import Section from "./Resources/Components/Section";
+import SideBar from "./Resources/Components/SideBar";
 
 class Resources extends Component {
   constructor(props) {

@@ -3,6 +3,9 @@ import React from 'react';
 const Graduate = ()  => {
     return(
         <section className="Graduate">
+            <p>
+                The world of computer science is huge, with countless rich graduate-level paths to pursue after Cornell. Depending on whether you prefer a practical education for working in industry or a theoretical education for engaging in high-level research, both Cornell and other universities across the nation offer a plethora of options.
+            </p>
             <section className="MS">
                 <h2>Master's Degree (MS)</h2>
                 <p>

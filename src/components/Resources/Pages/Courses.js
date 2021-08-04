@@ -1,8 +1,9 @@
 import React from "react";
-import Accordion from "../readmecomponents/Accordion";
+import Accordion from "../Components/Accordion";
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
-import prerequisites from "../readmeimages/CS_chart.jpg"
-
+import prerequisites from "../Images/CS_chart.jpg"
 
 const Courses = () => {
     return(
@@ -13,9 +14,11 @@ const Courses = () => {
                 <img src={prerequisites} />
                 <p>The following links provide more information about the CS major directly from the Cornell CS Department.</p>
                 <div className="ButtonGroup">
-                    <a href="https://www.cs.cornell.edu/undergrad/CSMajor" target="_blank">General Major Requirements</a>
-                    <a href="https://www.cs.cornell.edu/undergrad/rulesandproceduresarts/artschecklist" target="_blank">Arts & Sciences Requirements</a>
-                    <a href="https://www.cs.cornell.edu/undergrad/rulesandproceduresengineering/engineeringchecklist" target="_blank">Engineering Requirements</a>
+                <ButtonGroup orientation="vertical" color="secondary" aria-label="outlined secondary button group" fullWidth="true">
+                    <Button href="https://www.cs.cornell.edu/undergrad/CSMajor" target="_blank">General Major Requirements</Button>
+                    <Button href="https://www.cs.cornell.edu/undergrad/rulesandproceduresarts/artschecklist" target="_blank">Arts & Sciences Requirements</Button>
+                    <Button href="https://www.cs.cornell.edu/undergrad/rulesandproceduresengineering/engineeringchecklist" target="_blank">Engineering Requirements</Button>
+                </ButtonGroup>
                 </div>
                 <h2>The Minor</h2>
                 <p>The CS minor can be completed by any student from any college. More information can be found on <a href="http://www.cs.cornell.edu/undergrad/csminor" target="_blank">the department’s website</a>.</p>

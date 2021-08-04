@@ -1,8 +1,8 @@
 import React from "react";
-import ACSU from "../readmeimages/ACSU.svg";
-import WICC from "../readmeimages/WICC.svg";
-import URMC from "../readmeimages/URMC.svg";
-import ISSA from "../readmeimages/ISSA.svg";
+import ACSU from "../Images/ACSU.svg";
+import WICC from "../Images/WICC.svg";
+import URMC from "../Images/URMC.svg";
+import ISSA from "../Images/ISSA.svg";
 
 const Clubs = () => {
     return(

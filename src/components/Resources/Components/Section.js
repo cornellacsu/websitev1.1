@@ -1,11 +1,11 @@
 import React, {Component, Fragment} from "react";
-import Preface from "../readmepages/Preface"
-import FAQ from "../readmepages/FAQ"
-import Courses from "../readmepages/Courses"
-import Clubs from "../readmepages/Clubs"
-import Research from "../readmepages/Research"
-import Graduate from "../readmepages/Graduate"
-import Anecdotes from "../readmepages/Anecdotes"
+import Preface from "../Pages/Preface"
+import FAQ from "../Pages/FAQ"
+import Courses from "../Pages/Courses"
+import Clubs from "../Pages/Clubs"
+import Research from "../Pages/Research"
+import Graduate from "../Pages/Graduate"
+import Anecdotes from "../Pages/Anecdotes"
 
 class Section extends Component{
     constructor(props){
