@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* SideBar Styling */
+
+.SideBar {
+  height: 19rem;
+  width: 10rem;
+  top: 10rem;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  border-right: 0.1rem solid #000000;
+  position: fixed;
+  cursor: pointer;
+}
+
+.SideBar a {
+  padding-bottom: 45px;
+  height: 2.3rem;
+}
+
+.SideBar a:hover {
+  color: #7d1a29;
+}
+
+/* General Section Styling */
+
+.Section {
+  position: relative;
+}
+
+.Section h1 {
+  font-family: "Lato", sans-serif;
+  font-size: rem;
+  text-align: center;
+  margin: auto;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Body {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  padding-bottom: 10rem;
+  /* padding-bottom is because footer was previously blocking some elements, might remove if footer changes */
+}
+
+/* FAQ Styling */
+.FAQ h2{
+  margin-top: 0rem;
+}
+
+/* Courses Styling */
+.Courses h2 {
+  margin-top: 2.5rem;
+}
+
+.Courses #top {
+  margin-top: 0rem;
+}
+
+.Courses img {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Courses p {
+  margin-block-end: 0rem;
+}
+
+.Courses body{
+  text-align: center;
+}
+
+.Courses .Intro .ButtonGroup {
+  margin-top: 2rem;
+}
+
+/* .Courses .Intro .ButtonGroup a {
+  background-color: #b01c33;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0px;
+  text-align: center;
+  width: 30%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+} */
+
+.Courses .Intro .ButtonGroup a{
+  text-align: center;
+}
+
+.Courses img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clubs Styling */
+.Clubs img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+}
+
+.Clubs h2 {
+  text-align: center;
+  max-width: 100%;
+} 
+
+.Clubs hr {
+  margin-bottom: 2rem;
+}
+
+/* Research Styling */
+
+/* Graduate Styling */
+
+/* Accordion Styling */
+
+.accordion_section p {
+  font-size: 3rem;
+}
+
+/* General h1 and p Styling */
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #b01c33;
+} 
+
+@media only screen and (max-width: 1300px) {
+  .SideBar {
+    border-right: 0rem solid #000000;
+    left: 2.5rem;
+    font-size: 1rem;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Section {
+    position: absolute;
+    /* min-width: 50px; */
+    left: 150px;
+    margin-left: 0;
+  }
+
+  .Courses img {
+    width: 320px;
+    height: auto;
+    margin-left:0;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .Section{
+    width: calc(100% - 150px);
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+}
