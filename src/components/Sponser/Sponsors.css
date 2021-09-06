@@ -1,0 +1,24 @@
+.container {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.tier {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h2.gold {
+    color: #FFD700;
+}
+
+h3.silver {
+    font-weight: bold;
+    color: #C0C0C0;
+}
+
+h4.bronze {
+    font-weight: bold;
+    color: #CD7F32;
+}
