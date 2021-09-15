@@ -6,12 +6,31 @@ body {
   padding: 0;
 }
 
+.Column {
+  float: left;
+}
+
+.SideBarC {
+  min-width: 160px;
+  width: 15%;
+}
+
+.SectionC {
+  width: calc(85% - 140px);
+}
+
+.Body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* SideBar Styling */
 
 .SideBar {
   height: 19rem;
   width: 10rem;
-  top: 10rem;
+  top: 6rem;
   left: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -19,7 +38,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   border-right: 0.1rem solid #000000;
-  position: fixed;
+  position: relative;
   cursor: pointer;
 }
 
@@ -29,13 +48,19 @@ body {
 }
 
 .SideBar a:hover {
-  color: #7d1a29;
+  /* color: #7d1a29; */
+}
+
+div.SideBarWidth {
+  min-width: 140px;
 }
 
 /* General Section Styling */
 
 .Section {
   position: relative;
+  margin: auto;
+  max-width: 800px;
 }
 
 .Section h1 {
@@ -45,21 +70,25 @@ body {
   margin: auto;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  /* margin-top: 1rem; */
+  margin-bottom: 10px;
 }
 
 .Body {
-  position: relative;
+  /* position: relative;
   margin: auto;
   max-width: 800px;
-  padding-bottom: 10rem;
+  padding-bottom: 10rem; */
   /* padding-bottom is because footer was previously blocking some elements, might remove if footer changes */
 }
 
 /* FAQ Styling */
-.FAQ h2{
+.FAQ h2 {
   margin-top: 0rem;
+}
+
+.FAQ .Content {
+  margin-bottom: 2.5rem;
 }
 
 /* Courses Styling */
@@ -83,7 +112,7 @@ body {
   margin-block-end: 0rem;
 }
 
-.Courses body{
+.Courses body {
   text-align: center;
 }
 
@@ -109,7 +138,7 @@ body {
   border-radius: 20px;
 } */
 
-.Courses .Intro .ButtonGroup a{
+.Courses .Intro .ButtonGroup a {
   text-align: center;
 }
 
@@ -129,7 +158,7 @@ body {
 .Clubs h2 {
   text-align: center;
   max-width: 100%;
-} 
+}
 
 .Clubs hr {
   margin-bottom: 2rem;
@@ -158,49 +187,49 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1.15rem;
 }
-
+/* 
 a {
   cursor: pointer;
-}
+} */
 
-a:hover {
+/* a:hover {
   color: #b01c33;
-} 
+} */
 
 @media only screen and (max-width: 1300px) {
   .SideBar {
     border-right: 0rem solid #000000;
-    left: 2.5rem;
+    /* left: 2.5rem;
     font-size: 1rem;
-    width: auto;
+    width: auto; */
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .Section {
-    position: absolute;
+    /* position: absolute; */
     /* min-width: 50px; */
-    left: 150px;
+    /* left: 150px; */
     margin-left: 0;
   }
 
   .Courses img {
     width: 320px;
     height: auto;
-    margin-left:0;
+    margin-left: 0;
   }
 }
 
-@media only screen and (max-width: 800px){
-  .Section{
-    width: calc(100% - 150px);
+@media only screen and (max-width: 800px) {
+  .Section {
+    /* width: calc(100% - 150px); */
   }
 
-  h1{
+  h1 {
     font-size: 2rem;
   }
 
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
 }
