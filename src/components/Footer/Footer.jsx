@@ -13,17 +13,23 @@ function Footer() {
                 <Flex flexWrap="wrap">
                     <Box width={[1 / 3]} p={2}>
                         <div className="icon">
-                            <a href='https://www.facebook.com/CornellACSU'><img src={facebook} alt={"fb"}></img></a>
+                            <a href="https://www.facebook.com/CornellACSU">
+                                <img src={facebook} alt={"fb"}></img>
+                            </a>
                         </div>
                     </Box>
                     <Box width={[1 / 3]} p={2}>
                         <div className="icon">
-                            <a href='https://www.instagram.com/cornellacsu/'><img src={insta} alt={"fb"}></img></a>
+                            <a href="https://www.instagram.com/cornellacsu/">
+                                <img src={insta} alt={"fb"}></img>
+                            </a>
                         </div>
                     </Box>
                     <Box width={[1 / 3]} p={2}>
                         <div className="icon">
-                            <a href='https://www.youtube.com/channel/UCrL2JCxZi14q_nzuF04TlXQ'><img src={youtube} alt={"fb"}></img></a>
+                            <a href="https://www.youtube.com/channel/UCrL2JCxZi14q_nzuF04TlXQ">
+                                <img src={youtube} alt={"fb"}></img>
+                            </a>
                         </div>
                     </Box>
                 </Flex>
