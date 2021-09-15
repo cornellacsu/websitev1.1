@@ -167,7 +167,7 @@ a:hover {
 }
 
 .menu {
-    width: 100%;
+  width: 100%;
 }
 
 .menu-item {
@@ -180,15 +180,15 @@ a:hover {
 }
 
 .menu-item .icon-button {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .menu-item .icon-button:hover {
-    filter: none;
+  filter: none;
 }
 
 .menu-item:hover {
-    background-color: #525357;
+  background-color: #525357;
 }
 
 .icon-right {
@@ -201,23 +201,23 @@ a:hover {
     transform: translateX(-110%);
 }
 .menu-primary-enter-active {
-    transform: translateX(0%);
-    transition: all var(--speed) ease;
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
 }
 .menu-primary-exit {
-    position: absolute;
+  position: absolute;
 }
 .menu-primary-exit-active {
-    transform: translateX(-110%);
-    transition: all var(--speed) ease;
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
 }
 
 .menu-secondary-enter {
-    transform: translateX(110%);
+  transform: translateX(110%);
 }
 .menu-secondary-enter-active {
-    transform: translateX(0%);
-    transition: all var(--speed) ease;
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
 }
 .menu-secondary-exit {
 }

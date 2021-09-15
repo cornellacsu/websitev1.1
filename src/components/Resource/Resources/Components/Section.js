@@ -49,7 +49,7 @@ class Section extends Component{
     return(
         <div class="Section">
             <h1>{heading}</h1>
-            <div class="Body">{section}</div>
+            <div>{section}</div>
         </div>
     )
     }

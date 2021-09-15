@@ -33,13 +33,17 @@ class Resources extends Component {
 
   render() {
     return (
-      <div>
-        <Section current={this.state.current} />
+      <div class = "Body">
+        <div class="SideBarC Column">
         <SideBar
           current={this.state.current}
           changeSection={this.changeSection}
           checkSection={this.checkSection}
         />
+        </div>
+        <div class="SectionC Column">
+          <Section current={this.state.current} />
+        </div>
       </div>
     );
   }
