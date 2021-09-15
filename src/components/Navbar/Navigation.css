@@ -18,7 +18,7 @@ ul {
 }
 
 a {
-    color: var(--text-color);
+    /* color: var(--text-color); */
     text-decoration: none;
 }
 
@@ -28,10 +28,18 @@ a:hover {
 }
 
 .container {
-    justify-content: space-evenly !important;
+    justify-content: flex-end !important;
     flex: 1 0;
     margin-top: 20px !important;
     width: auto;
+}
+
+.nav-button {
+    margin-left: 3rem !important;
+}
+
+.nav-button span {
+    font-weight: 800;
 }
 
 /* ---- Logo ---- */

@@ -3,6 +3,37 @@ import "./Navigation.css";
 import { Link, withRouter } from "react-router-dom";
 import styled from "@emotion/styled";
 import logo from "./icons/logo.png";
+import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
+
+const JoinButton = withStyles({
+    root: {
+        boxShadow: "none",
+        textTransform: "none",
+        fontSize: 16,
+        padding: "6px 12px",
+        border: "1px solid",
+        lineHeight: 1.5,
+        backgroundColor: "#b01c33",
+        color: "white",
+        "&:hover": {
+            backgroundColor: "#c73046",
+            borderColor: "#b01c33",
+            boxShadow: "none",
+        },
+        "&:active": {
+            boxShadow: "none",
+            backgroundColor: "#b01c33",
+            borderColor: "#b01c33",
+        },
+        "&:focus": {
+            boxShadow: "0 0 0 0.2rem rgba(135, 22, 38,.5)",
+        },
+    },
+    label: {
+        textTransform: "capitalize",
+    },
+})(Button);
 
 const MyNavLink = styled(Link)`
     font-size: 20px;
@@ -41,10 +72,16 @@ function Navigation(props) {
                 <img src={logo} alt="ACSU logo" className="acsu-logo-img"></img>
             </Link>
             <div className="container">
-                <HomeLink to="/">🏠 Home</HomeLink>
-                <MyNavLink to="/board">😄 Board</MyNavLink>
-                <MyNavLink to="/sponsers">💪 Sponsors</MyNavLink>
-                <MyNavLink to="/resources">⚙️ Resources</MyNavLink>
+                <MyNavLink className="nav-button" to="/board">
+                    Board
+                </MyNavLink>
+                <MyNavLink className="nav-button" to="/sponsers">
+                    Sponsors
+                </MyNavLink>
+                <MyNavLink className="nav-button" to="/resources">
+                    Resources
+                </MyNavLink>
+                <JoinButton className="nav-button">Join Us!</JoinButton>
             </div>
         </nav>
     );
