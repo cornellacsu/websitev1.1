@@ -4,7 +4,7 @@ import "./Roles.css";
 import Company from "./images/company.svg";
 import Education from "./images/education.svg";
 import Faculty from "./images/faculty.svg";
-import Mentorship from "./images/mentorship.svg";
+import Mentorship from "./images/mentorship.png";
 import Resume from "./images/resume.svg";
 import Social from "./images/social.svg";
 
