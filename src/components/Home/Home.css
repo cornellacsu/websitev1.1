@@ -7,6 +7,7 @@ h1 {
     color: #b01c33;
     text-align: center;
     line-height: 5rem;
+    margin-top: 10rem !important;
 }
 
 h2 {
@@ -23,11 +24,11 @@ h2 {
 p {
     font-family: HelveticaNeue;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     color: #1c1d1b;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 .main {
     margin: 10px 20% 200px 20%;
@@ -38,7 +39,17 @@ p {
     margin-bottom: 5rem;
 }
 .subsection {
-    margin: 1.5rem 0px;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+.subheader {
+    /* font-weight: 600; */
+    font-style: italic;
+}
+.cover-logo-div {
+    height: 70vh;
+    display: flex;
+    /* margin-bottom: rem; */
 }
 .cover-logo {
     width: 100%;
