@@ -39,6 +39,11 @@ a:hover {
     margin-left: 3rem !important;
 }
 
+.container a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .nav-button span {
     font-weight: 800;
 }
