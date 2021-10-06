@@ -23,11 +23,11 @@ h2 {
 p {
     font-family: HelveticaNeue;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     color: #1c1d1b;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 .main {
     margin: 10px 20% 200px 20%;
@@ -38,17 +38,7 @@ p {
     margin-bottom: 5rem;
 }
 .subsection {
-    margin-bottom: 7rem;
-    text-align: center;
-}
-.subheader {
-    /* font-weight: 600; */
-    font-style: italic;
-}
-.cover-logo-div {
-    height: 70vh;
-    display: flex;
-    /* margin-bottom: rem; */
+    margin: 1.5rem 0px;
 }
 .cover-logo {
     width: 100%;

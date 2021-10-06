@@ -62,7 +62,7 @@ function Card({ itemId, link, imgName }) {
             <CardMedia
                 className="media"
                 image={`/static/articles/${imgName}.png`}
-                // title="Contemplative Reptile"
+                title="Contemplative Reptile"
             />
             <CardActions>
                 <Button
@@ -132,21 +132,19 @@ const getItems = () => articles;
 export default function EventsScroll() {
     const [items, setItems] = useState(getItems);
     return (
-        <div className="events-container">
-            <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-                {items.map((article) => {
-                    console.log(article);
-                    const id = article.date;
-                    return (
-                        <Card
-                            itemId={id} // NOTE: itemId is required for track items
-                            key={id}
-                            imgName={article.date}
-                            link={article.link}
-                        />
-                    );
-                })}
-            </ScrollMenu>
-        </div>
+        <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+            {items.map((article) => {
+                console.log(article);
+                const id = article.date;
+                return (
+                    <Card
+                        itemId={id} // NOTE: itemId is required for track items
+                        key={id}
+                        imgName={article.date}
+                        link={article.link}
+                    />
+                );
+            })}
+        </ScrollMenu>
     );
 }

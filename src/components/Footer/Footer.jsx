@@ -1,8 +1,8 @@
 import React from "react";
 import copyright from "./copyright.svg";
-import facebook from "./facebook.svg";
-import insta from "./insta.svg";
 import youtube from "./youtube.svg";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
 import "./Footer.css";
 import { Flex, Box } from "reflexbox";
 
@@ -21,14 +21,14 @@ function Footer() {
                     <Box width={[1 / 3]} p={2}>
                         <div className="icon">
                             <a href="https://www.instagram.com/cornellacsu/">
-                                <img src={insta} alt={"fb"}></img>
+                                <img src={instagram} alt={"ig"}></img>
                             </a>
                         </div>
                     </Box>
                     <Box width={[1 / 3]} p={2}>
                         <div className="icon">
                             <a href="https://www.youtube.com/channel/UCrL2JCxZi14q_nzuF04TlXQ">
-                                <img src={youtube} alt={"fb"}></img>
+                                <img src={youtube} alt={"yt"}></img>
                             </a>
                         </div>
                     </Box>

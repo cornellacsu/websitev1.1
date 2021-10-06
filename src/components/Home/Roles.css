@@ -8,9 +8,9 @@
 .card-media-container {
     text-align: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 0;
     top: 0;
-    height: 55%;
+    height: 45%;
     width: 100%;
 }
 
@@ -25,9 +25,6 @@
     margin-right: auto;
 }
 .card-description {
-    /* font-family: sans-serif; */
-    /* font-weight: 900;s */
-    font-style: italic;
     text-align: center;
     font-size: 1.1rem;
 }

@@ -10,17 +10,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-    font-size: 3rem !important;
-    align-self: center;
-    margin-top: 1rem !important;
-    margin-bottom: 1.5rem !important;
-}
-
-/* h2 {
-    margin-top: 2rem !important;
-} */
-
 /* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
