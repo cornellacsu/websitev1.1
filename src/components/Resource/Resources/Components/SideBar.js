@@ -9,7 +9,7 @@ class SideBar extends Component{
         return(
             <router>
                 <div className="SideBar">
-                    <a style={{color:this.props.checkSection(0)}} onClick={() => this.props.changeSection(0)}>Preface</a>
+                    <a style={{color:this.props.checkSection(0)}} onClick={() => this.props.changeSection(0)}>Foreword</a>
                     <a style={{color:this.props.checkSection(1)}} onClick={() => this.props.changeSection(1)}>FAQ</a>
                     <a style={{color:this.props.checkSection(2)}} onClick={() => this.props.changeSection(2)}>Courses</a>
                     <a style={{color:this.props.checkSection(3)}} onClick={() => this.props.changeSection(3)}>Clubs</a>

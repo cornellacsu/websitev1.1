@@ -13,7 +13,7 @@ const Graduate = ()  => {
                     specific application details, see the <a href="https://www.cs.cornell.edu/ms/admissions" target="_blank">requirements page</a> on the graduate school website.
 
                     To summarize, the Master of Science in Computer Science program lasts 4 semesters and requires 34 credits to
-                    graduate, 6-12 of those credits dedicated to your thesis research. It’s required that you work as a TA for each of those semesters. However, you do receive full tuition and a housing stipend while you are in the program. To be accepted into the program, you will need your college transcript, 3 letters of recommendation, a statement of purpose, and an essay describing how a CS MS aligns with your career plans; all of which are due in mid-December.
+                    graduate, 6-12 of those credits dedicated to your thesis research. It’s required that you work as a TA for each of those semesters. However, you do receive full tuition and a housing stipend while you are in the program. To be accepted into the program, you will need your college transcript, 3 letters of recommendation, a statement of purpose, and an essay describing how a CS MS aligns with your career plans: all of which are due in mid-December.
                 </p>
             </section>
             <section className="MEng">
@@ -28,8 +28,8 @@ const Graduate = ()  => {
                 <h2>Doctor of Philosophy (PhD)</h2>
                 <p>
                     A lot has been written on the topic of applying to PhD programs and what it takes to succeed in them. One excellent source is <a href="https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf" target="_blank">this document</a> written by a professor at CMU.
-
-                    A Ph.D. is a roughly 6-year commitment, which is almost entirely devoted to doing research. Applications are typically due mid-December of your senior year, and typically require 3 recommendation letters, a statement of purpose, transcript, and GRE scores. Unlike undergrad, there is really only one main criterion for admission: whether the university believes that you can excel at doing research. Naturally the best way to demonstrate this is to have undergraduate research experience, which you can read more about below.
+                    <br /><br />
+                    A Ph.D. is a roughly 6-year commitment, which is almost entirely devoted to doing research. Applications are typically due mid-December of your senior year, and typically require 3 recommendation letters, a statement of purpose, transcript, and GRE scores. Unlike undergrad, there is really only one main criterion for admission: whether the university believes that you can excel at doing research. Naturally the best way to demonstrate this is to have undergraduate research experience, which you can read more about in the Research section.
                 </p>
             </section>
         </section>

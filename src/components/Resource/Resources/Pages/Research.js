@@ -36,7 +36,7 @@ const Research = () => {
         <p id='subhead'>
             Research can be done either for course credit or (if the research group has sufficient resources) for pay. If you
             opt to take course credit it will appear on your transcript as CS 4999, which can be used to fill a technical
-            elective. The CS department website describes the process in more detail here.
+            elective. The CS department website describes the process in more detail <a href="https://www.cs.cornell.edu/undergrad/uresch/registeringforcs4999">here</a>.
         </p>
     </section>
     )

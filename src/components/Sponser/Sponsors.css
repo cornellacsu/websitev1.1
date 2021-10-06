@@ -1,4 +1,4 @@
-.container {
+.sponsers-container {
     margin: auto;
     text-align: center;
     width: 80%;
@@ -10,15 +10,15 @@
 }
 
 h2.gold {
-    color: #FFD700;
+    color: #ffd700;
 }
 
 h3.silver {
     font-weight: bold;
-    color: #C0C0C0;
+    color: #c0c0c0;
 }
 
 h4.bronze {
     font-weight: bold;
-    color: #CD7F32;
+    color: #cd7f32;
 }

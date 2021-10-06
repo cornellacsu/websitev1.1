@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
 body {
@@ -35,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
   font-size: 1.25rem;
   border-right: 0.1rem solid #000000;
   position: relative;
@@ -64,7 +63,7 @@ div.SideBarWidth {
 }
 
 .Section h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
   font-size: rem;
   text-align: center;
   margin: auto;
@@ -89,6 +88,15 @@ div.SideBarWidth {
 
 .FAQ .Content {
   margin-bottom: 2.5rem;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul li {
+  margin: 5px;
+  margin-left: 30px;
 }
 
 /* Courses Styling */
@@ -155,6 +163,27 @@ div.SideBarWidth {
   max-width: 20%;
 }
 
+.Clubs .WICC img {
+  max-width: 30%;
+}
+
+.Clubs .H4I img {
+  max-width: 50%;
+}
+
+.Clubs .PT img {
+  max-width: 30%;
+}
+
+.Clubs .ACM img {
+  height: 100px;
+  max-width: 50%;
+}
+
+.Clubs .AppDev img {
+  max-width: 80%;
+}
+
 .Clubs h2 {
   text-align: center;
   max-width: 100%;
@@ -177,7 +206,7 @@ div.SideBarWidth {
 /* General h1 and p Styling */
 
 h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
   font-size: 2rem;
   margin-top: 2rem;
 }
