@@ -90,6 +90,15 @@ div.SideBarWidth {
   margin-bottom: 2.5rem;
 }
 
+ul {
+  list-style-type: circle;
+}
+
+ul li {
+  margin: 5px;
+  margin-left: 30px;
+}
+
 /* Courses Styling */
 .Courses h2 {
   margin-top: 2.5rem;
@@ -152,6 +161,27 @@ div.SideBarWidth {
   margin-left: auto;
   margin-right: auto;
   max-width: 20%;
+}
+
+.Clubs .WICC img {
+  max-width: 30%;
+}
+
+.Clubs .H4I img {
+  max-width: 50%;
+}
+
+.Clubs .PT img {
+  max-width: 30%;
+}
+
+.Clubs .ACM img {
+  height: 100px;
+  max-width: 50%;
+}
+
+.Clubs .AppDev img {
+  max-width: 80%;
 }
 
 .Clubs h2 {

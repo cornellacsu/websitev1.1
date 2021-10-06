@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from "react";
-import Preface from "../Pages/Preface"
+import Foreword from "../Pages/Foreword"
 import FAQ from "../Pages/FAQ"
 import Courses from "../Pages/Courses"
 import Clubs from "../Pages/Clubs"
@@ -18,8 +18,8 @@ class Section extends Component{
     const current = this.props.current;
     switch(current){
         case 0:
-            heading = "Preface";
-            section = <Preface />
+            heading = "Foreword";
+            section = <Foreword />
             break;
         case 1:
             heading = "FAQ";
