@@ -6,6 +6,8 @@ import capitalone from "./icons/capitalone.png";
 import amazonrobotics from "./icons/amazonrobotics.png";
 import bloomberg from "./icons/bloomberg.png";
 import stripe from "./icons/stripe.png";
+import facebook from "./icons/facebook.png";
+import blackstone from "./icons/blackstone.png";
 
 function Sponsers() {
     return (
@@ -54,6 +56,14 @@ function Sponsers() {
                                     className="d-inline-block align-text-top">
                                 </img>
                             </a>
+                            <a href="https://facebook.com/">
+                                <img
+                                    src={facebook}
+                                    alt="Facebook logo"
+                                    width="24%"
+                                    className="d-inline-block align-text-top">
+                                </img>
+                            </a>
                         </div>
 
                         <div class="tier">
@@ -70,6 +80,15 @@ function Sponsers() {
                                 <img
                                         src={capitalone}
                                         alt="Capital One logo"
+                                        width="14%"
+                                        className="d-inline-block align-text-top">
+                                </img>
+                            </a>
+                            {/*how do I fix the spacing and alignment for this one*/}
+                            <a href="https://www.blackstone.com/">
+                                <img
+                                        src={blackstone}
+                                        alt="Blackstone logo"
                                         width="14%"
                                         className="d-inline-block align-text-top">
                                 </img>
