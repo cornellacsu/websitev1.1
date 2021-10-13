@@ -8,9 +8,9 @@ import { Flex, Box } from "reflexbox";
 
 function Footer() {
     return (
-        <footer className="footer-section">
+        <footer className="footer-section" justifyContent="center">
             <div className="sm-handles">
-                <Flex flexWrap="wrap">
+                <Flex flexWrap="wrap">  
                     <Box width={[1 / 3]} p={2}>
                         <div className="icon">
                             <a href="https://www.facebook.com/CornellACSU">
@@ -31,7 +31,7 @@ function Footer() {
                                 <img src={youtube} alt={"yt"}></img>
                             </a>
                         </div>
-                    </Box>
+                    </Box> 
                 </Flex>
             </div>
             <div className="copyright">
