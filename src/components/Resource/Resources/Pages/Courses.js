@@ -353,7 +353,7 @@ const Courses = () => {
                     <li>Team dynamics is really important. Communicate often and resolve conflicts as soon as possible. Know your teammates strengths and weaknesses so as to balance work amongst yourselves.</li>
                     <li>Take the labs seriously and use them as a guideline to learn. A lot of the programming part is based heavily on some of the labs, and you are free to use any lab code. Knowing the labs well will make your lives easier when developing the game. For designers, the labs are great tutorials to help you get familiar with photoshop (if you are not already so) on digital art and animation.</li>
                     <li>Learn to use git well. Merge conflicts on the morning of a demo day is a very bad idea.</li></ul>
-
+                    <br>
                     <b>📅 Offered:</b> Every spring
                     <br>
                     <b>✅ Prerequisites:</b> For programmers it is CS 2110 or permission of instructor. For designers it is INFO 2450 and/or submission of art/design portfolio to instructor.
@@ -361,6 +361,27 @@ const Courses = () => {
                     <b>📔 Historical Median Grade:</b> A-
                     <br>
                     <b>⏰ Workload:</b> Approximately 10 hours per week outside of class"
+                />
+                <Accordion
+                    title="CS 3220: Computational Mathematics"
+                    content="<em>Note: This information is from a virtual offering of the course. In particular, exam structure may vary.</em>
+                    <br></br>
+                    This course covers mathematics relevant to upper-division computer science courses in machine learning, numerical analysis, graphics, vision, robotics, etc. The major topics are [numerical] linear algebra, statistics, and optimization. There is no required textbook; Damle provides a long list of resources (books, other lectures, etc.) you can reference if you would like.
+                    <br></br>
+                    Grading is based on participation, homework assignments, exams, and a final project. Homework assignments consist of both mathematical questions (including proofs) and programming (i.e. implementing algorithms taught in lecture), and you do get some slip days. The final project was open-ended; the goal was basically to demonstrate what you learned over the course and explore some kind of application for [a] concept[s] in the form of a project and accompanying paper. Exams were take-home, and lasted 4-ish days; they were open everything (you could even look at sources on the Internet, as long as you cited them) and also very hard. 
+                    <br></br>
+                    Some helpful advice for the class include…
+                    <ul>
+                    <li>Join the class’ groupchat (on GroupMe or whatever) and/or find a study group early on. The homeworks will be much more manageable if you work with others.</li>
+                    <li>Start homework assignments earlier rather than later so you can hound the professor/TA for help (as you will probably need).</li>
+                    <br>
+                    <b>📅 Offered:</b> Fall
+                    <br>
+                    <b>✅ Prerequisites:</b> MATH 2940 or MATH 2210 or equivalent
+                    <br>
+                    <b>☑️ Corequisites:</b> CS 2800
+                    <br>
+                    <b>⏰ Workload:</b> Medium. Each homework assignment can take several hours (including debugging time), ~6 homeworks in total. Exams were take-home, a few days long, and very difficult. Final project/paper was variable (as described above)."
                 />
                 <Accordion
                     title="CS 4110: Programming Languages and Logic"
@@ -372,7 +393,7 @@ const Courses = () => {
                     <ul>
                     <li>Homeworks can be done in partners. If dividing the work, make sure to go over everything to know you understand the solutions. Some problems might be tricky.</li>
                     <li>It’s good to be comfortable with proofs and induction!</li></ul>
-                    
+                    <br>
                     <b>📅 Offered:</b> Usually every fall
                     <br>
                     <b>✅ Prerequisites:</b> CS 3110 or permission of instructor
@@ -388,7 +409,8 @@ const Courses = () => {
                     <li>Don’t underestimate the assignments. Always over-estimate the amount of time they will take to finish, and make sure to allow for a few days of debugging. Especially on the latter assignments, debugging can get tricky.</li>
                     <li>Make sure to apply all the good practices of software design and engineering you have learned. The compiler you write will be a significantly-sized project; big enough so that no single person will be able to know all the parts. Document, write regression tests, don’t allow technical debt; it will come back to bite you! Investing that extra hour or two on the first few projects will save you days on the last few.</li>
                     <li>Don’t leave team-members behind. Sometimes people have a rough week, and might fall behind; the amount of work that needs to be done is enough that it will always pay off to invest a few hours to keep your team members up to speed and productive, over focusing on work and letting them figure it out themselves.</li></ul>
-                    <b>📅 Offered:</b> Every other spring
+                    <br>
+                    <b>📅 Offered:</b> Every Spring
                     <br>
                     <b>✅ Prerequisites:</b> CS 3110 and CS 3410
                     <br>
@@ -414,9 +436,10 @@ const Courses = () => {
                     <li>Planning is everything. Know your teammates’ strengths, weaknesses, and schedules, and balance work accordingly.</li>
                     <li>Documentation and collaboration are key when working on a software project of this magnitude. Write sustainable code, and be prepared for inevitable refactoring and cleanup efforts.</li>
                     <li>Success is interdisciplinary! Successful team members often fill multiple roles as needed.</li></ul>
-                    <b>📅 Offered:</b> Every spring
                     <br>
-                    <b>✅ Prerequisites:</b> For programmers it is  CS 3152 and one of the following (or permission of the instructor): CS 3300, CS 4620, CS 4700, CS 4758, or CS 5414. For designers it is INFO 3152 and INFO 3450 (or permission of the instructor).
+                    <b>📅 Offered:</b> Spring
+                    <br>
+                    <b>✅ Prerequisites:</b> For programmers it is CS 3152 and one of the following (or permission of the instructor): CS 3300, CS 4620, CS 4700, CS 4758, or CS 5414. For designers it is INFO 3152 and INFO 3450 (or permission of the instructor).
                     <br>
                     <b>📔 Historical Median Grade:</b> A-
                     <br>
@@ -441,15 +464,40 @@ const Courses = () => {
                     Some helpful advice for the class:
                     <ul>
                     <li>Make absolute sure that your game is correctly logging player actions before (and after!) each milestone release.</li>
-                    <li>Work together with your team. Schedule work meetings and make sure everyone comes. It will help you keep track of your game’s progress, and generally help your team dynamic. This includes designers as well.
-                    Helpful advice in the other game design classes apply here as well.</li></ul>
-                    <b>📅 Offered:</b> Last offered Fall 2018
+                    <li>Work together with your team. Schedule work meetings and make sure everyone comes. It will help you keep track of your game’s progress, and generally help your team dynamic. This includes designers as well.</li>
+                    <li>Helpful advice in the other game design classes apply here as well.</li></ul>
+                    <br>
+                    <b>📅 Offered:</b> Has not been offered since Fall 2018
                     <br>
                     <b>✅ Prerequisites:</b> Programmers: CS 2110 (or permission of the instructor). Designers: Submission of art/design portfolio to instructor.
                     <br>
                     <b>📔 Historical Median Grade:</b> A-
                     <br>
                     <b>⏰ Workload:</b> At least 10 hours per week"
+                />
+                <Accordion
+                    title="CS 4300: Language and Information"
+                    content="<em>Note: This information is from a virtual offering of the course. Things like exam structure may vary.</em>
+                    <br></br>
+                    Lecture attendance is not “required” (as attendance is not generally taken, although the professor does take note of who asks/answers questions (for participation credit)), but is generally recommended, for two major reasons: 1) The professor does not have nor post slides/recordings, his philosophy being that you should be coming to class and actively note-taking, and 2) There are occasionally in-class quizzes/activities that will not be announced in advance.
+                    <br></br>
+                    Homework assignments were generally manageable conceptually but could get time-consuming. They were all or almost all programming; difficulties tend to be in debugging or improving efficiency (reducing runtime) rather than in understanding/executing the actual algorithms.
+                    <br></br>
+                    The final project is to create an app/website (in a team of 4 or 5) which takes in some ad hoc user inputs (text, keywords/tags, slider values, etc.) and then outputs some result which is generated from some kind of relevance computation and machine learning. It spans many weeks, with clear milestones that you have to submit along the way, including a proposal, versions of your application, and short (<5 minutes) presentations to the class. You also get assigned a TA to guide you and consult regarding your choices/goals. It is not hard to do, but does take time (depending on how your team works and what experience you have going in). 
+                    <br></br>
+                    Exams were in-class; they were not difficult except for that the time provided is notably short; you are more likely to run out of time than not know the answers. You also get one sheet of notes.
+                    <br></br>
+                    Some advice...
+                    <ul>
+                    <li>For the final project, diversify your team’s backgrounds. The appearance of your application can be made passable with just HTML, CSS, and Jinja (or similar), but you can achieve a much more elegant final product if someone has experience with React, for example. The actual computational code will likely be done in Python. You also will likely have to do web scraping of some kind. Learning these things as you go is manageable, though. (You can pretty easily find past projects public on GitHub which you can use for reference if you find yourself struggling with the coding.)</li>
+                    <li>For the timed exams, keep your eye on the clock! Try to follow the recommended times that they note for each question (they’ll say, for example, 10 minutes recommended for Question 4). Do not get carried away doing one problem extremely neatly and in depth. (You won’t necessarily benefit from having a super detailed cheatsheet. Since time is more likely to be an issue than knowledge/comprehension, focus more on making sure formulas/topics are clear and quick to refer to, so you don’t waste time searching or trying to make out what you wrote.)</li>
+                    </ul>
+                    <br>
+                    <b>📅 Offered:</b> Spring
+                    <br>
+                    <b>✅ Prerequisites:</b> Linear algebra and Discrete Math ((MATH 2940 + CS 2800) or INFO 2950, or equivalent)*, programming proficiency (strong Python skills) (CS 2110 or equivalent) (*You don’t need much linear algebra or discrete math but you do work with matrices a bit and some set theory.)
+                    <br>
+                    <b>⏰ Workload:</b> Medium-Heavy. Each homework assignment takes a few hours at least, and the final project takes 25+ hours per person."
                 />
                 <Accordion
                     title="CS 4320: Introduction to Database Systems"
@@ -473,6 +521,7 @@ const Courses = () => {
                     <ul>
                     <li>At least do a cursory read-through of each homework the day it’s released! Then you can stew over ideas from the start and maybe come up with your solution faster once you actually get coding.</li>
                     <li>Especially if you divvy up the work for homeworks, make sure to revisit the parts your partner did and try them yourself so that you can ace those topics on the midterm/final.</li></ul>
+                    <br>
                     <b>📅 Offered:</b> Every semester
                     <br>
                     <b>✅ Prerequisites:</b> CS 2110 and CS 2800
@@ -485,13 +534,14 @@ const Courses = () => {
                     <br></br>
                     In terms of material, this course can easily be taken concurrently OR after you’ve completed CS 4320. If you’re taking it concurrently, each project assumes only knowledge that you’ve covered during CS 4320 already. There are around 5 projects that are spaced out during the semester and are worked on in groups of 2 or 3. These projects are pretty substantial, which means get started early and work on it every day if you can!
                     <br></br>
-                    Grading your projects is almost entirely automated, so you have to be extremely careful about following the instructions precisely, especially your input/output format. There is a “breaking automation” policy that allows you to recover points if you were genuinely misunderstanding something, and there is the normal regrading policy--both should be exercised very rarely and only if the cost for a regrade is worth the correction.
+                    Grading your projects is almost entirely automated, so you have to be extremely careful about following the instructions precisely, especially your input/output format. There is a “breaking automation” policy that allows you to recover points if you were genuinely misunderstanding something, and there is the normal regrading policy–both should be exercised very rarely and only if the cost for a regrade is worth the correction.
                     <br></br>
                     Some helpful advice for the class include…
                     <ul>
                     <li>Same as for the main course, try to at least do a cursory read-through of each project the day it’s released! Then you can stew over ideas from the start and maybe come up with your solution faster once you actually get coding.</li>
-                    <li>Use some version control system, like Github to sync with your partner(s). Also, if you ever need to undo what you changed that make your system break, having saved previous versions makes rollback much easier!</li></ul>
-                    <b>📅 Offered:</b> Every semester
+                    <li>Use some version control system like GitHub to sync with your partner(s). Also, if you ever need to undo what you changed that make your system break, having saved previous versions makes rollback much easier!</li></ul>
+                    <br>
+                    <b>📅 Offered:</b> Fall
                     <br>
                     <b>✅ Prerequisite/Corequisite:</b> CS 4320
                     <br>
@@ -499,13 +549,13 @@ const Courses = () => {
                 />
                 <Accordion
                     title="CS 4620: Introduction to Computer Graphics"
-                    content="This course gives an introduction to the field of generating images using computers and provides a foundation for pursuing the subject more advanced and specific areas like animated films and video games. The course starts with the basic building blocks of representing a three-dimensional scene, including object meshes, perspective, lighting, and transformations in space, and then goes on to rendering techniques like ray tracing and rasterization through the graphics pipeline. Finally, subjects such as curves, textures, animation, and other advanced topics are covered. The course involves a decent amount of mathematics, including mostly linear algebra with a little bit of calculus, and prior knowledge is not a prerequisite but of course would be helpful.
+                    content="This course gives an introduction to the field of generating images using computers and provides a foundation for pursuing more advanced and specific areas like animated films and video games. The course starts with the basic building blocks of representing a three-dimensional scene, including object meshes, perspective, lighting, and transformations in space, and then goes on to rendering techniques like ray tracing and rasterization through the graphics pipeline. Finally, subjects such as curves, textures, animation, and other advanced topics are covered. The course involves a decent amount of mathematics, including mostly linear algebra with a little bit of calculus, and prior knowledge is not a prerequisite but of course would be helpful.
                     <br></br>
                     There are generally around 7 projects (under Professor Bala), covering object meshes, basic ray tracing, scene rendering, shaders in GLSL, splines, animation, and advanced ray tracing. Projects consist of a programming part (done with a partner) and a written part (done alone). The written parts are usually a few questions designed to reinforce the theory taught in class. Programming assignments are done in Java and come with skeleton code as well as the course-created Java graphics framework. These are straightforward for the most part, as most of it is just translating the procedures or mathematics they describe into code. However, it is easy to make minor mistakes that are often very difficult to debug due to the nature of the subject, as you generally have few references other than the generated image to troubleshoot the problem, so it is important to be careful when programming and to really understand the theory before tackling the implementation. The course Java framework, although constantly being improved by the TAs, can also be buggy at times or counterintuitive if you're not careful, so read the specs carefully. Programming assignments are graded in scheduled demo sessions and are evaluated mostly visually based on the end result rather than through automated test cases.
                     <br></br>
                     There is also a midterm and a final, which along with the programming and written assignments encompass graded material in the course.
                     <br></br>
-                    <b>📅 Offered:</b> Fall, sometimes spring
+                    <b>📅 Offered:</b> traditionally Fall, now sometimes Spring
                     <br>
                     <b>✅ Prerequisite:</b> CS/ENGRD 2110
                     <br>
@@ -519,9 +569,9 @@ const Courses = () => {
                     <br></br>
                     The final project is open-ended and done over the course of about a month, from project proposal to final demo. The project should go beyond the scope of the regular assignments and demonstrate techniques learned in the main course. Other than that, the entire subject and how far you want to go is up to you, so you have a lot of room to be creative. In terms of the written portion, the project proposal should be about two pages and the final project report is three to five pages.
                     <br></br>
-                    Grading for the regular assignments is just like the grading in the main course (demo with a TA). The final project is also graded at a demo session and is evaluated based on difficulty of the techniques attempted/achieved and effort.
+                    Grading for the regular assignments is just like the grading in the main course (demo with a TA). The final project is also graded at a demo session and is evaluated based on the difficulty of the techniques attempted/achieved and effort.
                     <br></br>
-                    <b>📅 Offered:</b> Same as CS 4620
+                    <b>📅 Offered:</b> Same as CS 4620 (traditionally Fall, now sometimes Spring)
                     <br>
                     <b>✅ Prerequisite/Corequisite:</b> CS 4620
                     <br>
@@ -552,13 +602,14 @@ const Courses = () => {
                     <li>Logic and deduction</li>
                     <li>Reasoning and planning</li>
                     <li>Machine learning (decision trees, neural networks)</li></ul>
+                    <br>
                     This class is structured around past research, kind of in a theory-and-example format, and requires attending lecture a couple of days during the week. There is a textbook (typically the one published by Russell and Norvig) that supplements the lectures and also contains a few of the homework problems.
                     <br></br>
-                    The 4 homework assignments are assigned a bit sporadically, but always cover the material since last assignment. You also tend to get a handful of late-day extensions for turning in homeworks. These assignments are nontrivial for the most part, and cover much of the material that will be tested during the exams. There are two exams: the midterm and the final, which account for the bulk of your grade, and feature questions similar to those you’ve seen in the homeworks. In the past, class participation (questions/answers and comments during class) was also included as a mandatory part of your grade, but was changed to an optional extra-credit in Fall 2016 due to the size of the class.
+                    The 4 homework assignments are assigned a bit sporadically, but always cover the material after the last assignment. You also tend to get a handful of late-day extensions for turning in homeworks. These assignments are nontrivial for the most part, and cover much of the material that will be tested during the exams. There are two exams: the midterm and the final, which account for the bulk of your grade, and feature questions similar to those you’ve seen in the homeworks. In the past, class participation (questions/answers and comments during class) was also included as a mandatory part of your grade, but was changed to an optional extra-credit in Fall 2016 due to the size of the class.
                     <br></br>
-                    There are a few TAs for this course, so use this resource wisely! Discussion of topics is encouraged, again because this class covers relevant modern AI theory and research, so the TAs can often shed some light on questions you have that are even outside the scope of the course. Finding a study group or discussing concepts on Piazza is a good way to way of reviewing your weak subjects.
+                    There are a few TAs for this course, so use this resource wisely! Discussion of topics is encouraged, again because this class covers relevant modern AI theory and research, so the TAs can often shed some light on questions you have that are even outside the scope of the course. Finding a study group or discussing concepts on Piazza is a good way to review your weak subjects.
                     <br></br>
-                    <b>📅 Offered:</b> Fall, sometimes spring
+                    <b>📅 Offered:</b> Every semester
                     <br>
                     <b>✅ Prerequisite:</b> CS 2110/ENGRD 2110 and CS 2800 or equivalent
                     <br>
@@ -570,14 +621,13 @@ const Courses = () => {
                     <br></br>
                     Aside from a scheduled section to explain the project requirements, there are no lectures or discussions for this course. Performance in the class is mainly determined by a final project presentation to the professor at the end of the semester. Although it is recommended that enrolled students have taken CS 4700, many students have taken only CS 4701, as they can independently learn the AI concepts required for the development of their project.
                     <br></br>
-                    CS 4701 is required for the AI vector.
-                    
                     Loose structure:
                     <ul>
                     <li>Project proposal (6-8 pages)</li>
                     <li>Project content/code</li>
                     <li>Final Report (10-20 pages)</li>
                     <li>20-min presentations given during finals (10-20 slides)</li></ul>
+                    <br>
                     Some helpful advice for the class include…
                     <ul>
                     <li>This class is nice in that students get to define their own deadlines in terms of project milestones but don’t leave all the work to finals week!</li>
@@ -590,7 +640,7 @@ const Courses = () => {
                 />
                 <Accordion
                     title="CS 4740: Introduction to Natural Language Processing"
-                    content="This course is an introductory course to Natural Language Processing (as the name clearly suggest). It teaches how computers use human languages as inputs, outputs, or both and covers parsing, machine translation, grammar induction, and information retrieval. Basically the course is about how computers can take human language and understand it. (Very very basic concepts of parsing and grammar induction were taught in CS 2800 and CS 2110 so the ideas might seem familiar.)
+                    content="This course is an introductory course to Natural Language Processing (as the name clearly suggests). It teaches how computers use human languages as inputs, outputs, or both and covers parsing, machine translation, grammar induction, and information retrieval. Basically the course is about how computers can take human language and understand it. (Very very basic concepts of parsing and grammar induction were taught in CS 2800 and CS 2110 so the ideas might seem familiar.)
                     <br></br>
                     Some helpful advice for the class include… (Note some of this advice pertaining to the course is from the course Professor Cardie taught)
                     <ul>
@@ -599,6 +649,7 @@ const Courses = () => {
                     <li>Find a good group for the projects</li>
                     <li>Start the projects at least 3 to 4 days in advance if you don’t want the class to get too stressful</li>
                     <li>Do not wait until the last day to do projects. Some algorithms take a long time to run.</li></ul>
+                    <br>
                     <b>📅 Offered:</b> Fall
                     <br>
                     <b>✅ Prerequisite:</b> CS 2110
@@ -608,14 +659,17 @@ const Courses = () => {
                 <Accordion
                     title="CS 4780: Introduction to Machine Learning"
                     content="An introductory course to supervised learning. This course is recommended to any student wanting a starting point to explore the field of machine learning, since the materials covered assume no prior knowledge. This course covers the theory behind some of the most important supervised machine learning models, and is focused on theory and proofs of why these models work. This gives the students the ability to reason about in what situations certain models can be advantageous. In addition, students get to implement/debug each of these models themselves in order to figure out the nuances, which helps build a stronger intuition of how they work. This class does not focus heavily on the applications of machine learning. For applications, see NLP or CV.
-                    
-                    The notes given during class and posted online are outlines of the proofs / theory that the class went over that day. During class, be attentive and don’t accept the proofs as they are. Try to focus on why certain things are true and ask after class for clarification, if blocked.
                     <br></br>
-                    <b>📅 Offered:</b> Spring
+                    Some helpful advice for the class include...
+                    <ul>
+                    <li>The notes given during class and posted online are outlines of the proofs / theory that the class went over that day. During class, be attentive and don’t accept the proofs as they are. Try to focus on why certain things are true and ask after class for clarification, if blocked.</li>
+                    </ul>
+                    <br>
+                    <b>📅 Offered:</b> Fall
                     <br>
                     <b>✅ Prerequisite:</b> Programming skills (e.g. CS 2110 or CS 3110), and basic knowledge of linear algebra (e.g. MATH 2940), and probability theory (e.g. CS 2800). Familiarity in statistics and linear algebra is recommended but fluency is not required. The programming language used is Julia or Python.
                     <br>
-                    <b>⏰ Workload:</b> About 1 Programming assignment a week, but they are light and take a couple hours at most. In Fall 2016 with Prof. Weinberger, there was an autograder that displayed your assignment scores immediately upon submission, so you could stop working depending on how satisfied you were with your score. Programming projects are usually worked on with 1 other partner."
+                    <b>⏰ Workload:</b> About 1 programming assignment a week, but they are light and take a couple hours at most. In Fall 2019 with Prof. Joachims and Haghtalab, there was an autograder that displayed your assignment scores immediately upon submission, so you could stop working depending on how satisfied you were with your score. Programming projects are usually worked on with 1 other partner."
                 />
                 <Accordion
                     title="CS 4786: Machine Learning for Data Science"
@@ -635,7 +689,7 @@ const Courses = () => {
                 />
                 <Accordion
                     title="CS 4810: Introduction to Theory of Computing"
-                    content="An introductory course to some topics in theoretical computer science. This course is useful for anyone interested in more theoretical aspects of computer science. The topics generally include finite automata, nondeterminism, Turing machines, computability, and NP-completeness. <a href=https://www.google.com/url?q=https://docs.google.com/a/cornell.edu/document/d/1yJw9Co0l7j6g3M03z5QQAykTRZPJmku5Kan12hBVMho/edit?usp%3Dsharing&sa=D&ust=1522738116993000>Here's a detailed topic list from fall 2017</a>.
+                    content="An introductory course to some topics in theoretical computer science. This course is useful for anyone interested in more theoretical aspects of computer science. The topics generally include finite automata, nondeterminism, Turing machines, computability, and NP-completeness. <a href=https://www.google.com/url?q=https://docs.google.com/a/cornell.edu/document/d/1yJw9Co0l7j6g3M03z5QQAykTRZPJmku5Kan12hBVMho/edit?usp%3Dsharing&sa=D&ust=1522738116993000 target=_blank>Here's a detailed topic list from fall 2017</a>.
                     <br></br>
                     The course emphasizes a thorough understanding of the main ideas rather than the fine details of the underlying proofs (although understanding of the proofs are emphasized as well). Often on homeworks and exams, you will be asked to give the idea or a high level explanation of a proof rather than a formal proof. Lectures generally follow in this manner as well.
                     <br></br>
@@ -643,11 +697,13 @@ const Courses = () => {
                     <br></br>
                     Some helpful advice:
                     <ul>
-                    <li>Pay attention in class and take notes. Often the homework will have questions that ask you to recreate a proof or algorithm given in lecture. Sometimes, Professor Hopcroft will teach a theorem or idea that isn’t published in the textbook or elsewhere so if you miss lecture, or forget you’ll have to go to office hours. Reading the textbook is also helpful and sometimes the exposition there is clearer than in the lectures. Ask questions in lecture.</li>
-                    <li>When studying for the prelims, it is useful to go through the past exams on the <a href=https://www.cs.cornell.edu/courses/cs4810/2012sp/>2012 course website</a>. Sometimes Professor Hopcroft recycles questions.</li></ul>
-                    <b>📅 Offered:</b> Fall
+                    <li>Pay attention in class and take notes. Often the homework will have questions that ask you to recreate a proof or algorithm given in lecture. Sometimes, Professor Hopcroft will teach a theorem or idea that isn’t published in the textbook or elsewhere so if you miss lecture, or forget you’ll have to go to office hours.</li>
+                    <li>Reading the textbook is also helpful and sometimes the exposition there is clearer than in the lectures. Ask questions in lecture.</li>
+                    <li>When studying for the prelims, it is useful to go through the past exams on the <a href=https://www.cs.cornell.edu/courses/cs4810/2012sp/ target=_blank>2012 course website</a>. Sometimes Professor Hopcroft recycles questions.</li></ul>
                     <br>
-                    <b>✅ Prerequisite:</b>Technically 2800, but depending on your interests and background it may not be hard to take without 2800.
+                    <b>📅 Offered:</b> Has not been offered since Fall 2019 (Although rumor has it that it will be offered in Spring 2022)
+                    <br>
+                    <b>✅ Prerequisite:</b> Technically 2800, but depending on your interests and background it may not be hard to take without 2800.
                     <br>
                     <b>⏰ Workload:</b> One homework every week - usually 5 questions. In fall 2017, there were a total of 12 homeworks. Usually homeworks can be done pretty quickly if you’ve already gone to lectures and understand the material. Very often questions will come straight from lectures. Other times, they come from the textbook."
                 />
@@ -655,11 +711,11 @@ const Courses = () => {
                     title="CS 4830: Introduction to Cryptography"
                     content="An introductory course to cryptography. This course covers both the theory and application sides of cryptography. On the theory side, beginning with a formal definition of security, it goes on to cover computational indistinguishability, numerous methods of message encryption, digital signatures, and finally various consensus protocols. On the application side, topics include oblivious RAM and garbled circuits, which are fascinating ideas proposed only during the last few decades.
                     <br></br>
-                    There is one written homework assignment that emphasizes rigorous proofs based on a solid understanding of definitions and concepts covered in class. Besides, there are also two coding projects, for which you will use Java to implement two interesting applications of cryptography and then run large-scale performance tests to reason about their security. Besides,there are two take-home prelims and one final.
+                    There is one written homework assignment that emphasizes rigorous proofs based on a solid understanding of definitions and concepts covered in class. Besides, there are also two coding projects, for which you will use Java to implement two interesting applications of cryptography and then run large-scale performance tests to reason about their security. Besides, there are two take-home prelims and one final.
                     <br></br>
                     The professor usually starts the class with a 5-minute quiz on the material of the previous lecture and takes attendance in this way.
                     <br></br>
-                    <b>📅 Offered:</b> Spring
+                    <b>📅 Offered:</b> Every Spring before 2018
                     <br>
                     <b>✅ Prerequisite:</b> CS 2800, as the class assumes knowledge of number theory, probability theory and proof techniques.
                     <br>
