@@ -9,14 +9,14 @@ import stripe from "./icons/stripe.png";
 import facebook from "./icons/facebook.png";
 import blackstone from "./icons/blackstone.png";
 
-function Sponsers() {
+function Sponsors() {
     return (
-        <div className="sponsers">
+        <div className="sponsors">
             <div class="row align-items-center">
                 <div>
                     <h1 class="font-weight-light">Sponsors</h1>
                     <h5>Thank you to all our 2021 sponsors!</h5>
-                    <div class="tier">
+                    <div class="sponsors-tier">
                         <h2 class="gold">Gold</h2>
                         <a href="https://www.bloomberg.com/">
                             <img
@@ -91,4 +91,4 @@ function Sponsers() {
     );
 }
 
-export default Sponsers;
+export default Sponsors;
