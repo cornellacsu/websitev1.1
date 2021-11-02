@@ -1,6 +1,6 @@
 import React from "react";
 import ACSU from "../Images/ACSU.svg";
-import WICC from "../Images/WICC.svg";
+import WICC from "../Images/WICC.png";
 import URMC from "../Images/URMC.svg";
 import ISSA from "../Images/ISSA.svg";
 import H4I from "../Images/H4I.svg"
