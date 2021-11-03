@@ -20,6 +20,11 @@ h2 {
     line-height: 4rem;
 }
 
+h3 {
+    font-family: HelveticaNeue, sans-serif;
+    font-weight: lighter;
+}
+
 p {
     font-family: HelveticaNeue;
     font-style: normal;
