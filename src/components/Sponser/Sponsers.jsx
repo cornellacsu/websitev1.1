@@ -10,7 +10,6 @@ import facebook from "./icons/facebook.png";
 import blackstone from "./icons/blackstone.png";
 import SponsorCard from "./SponsorCard";
 import { useState } from "react";
-import { DriveEtaSharp } from "@material-ui/icons";
 
 function Sponsors() {
     //manually add to just this list, the code does everything else for you.
