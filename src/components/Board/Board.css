@@ -19,9 +19,15 @@ h1 {
   float: left;
   flex: 50%;
   border-right: 1px solid #000000;
+  font-size: 1.25rem;
 }
 
 .Board-card-img {
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+
+.Board-card-icon {
   margin: 0 auto;
   display: block;
   width: 15%;

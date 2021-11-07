@@ -25,51 +25,38 @@ function Board() {
 
     const theme = useTheme();
 
-    const screenLarge = useMediaQuery(theme.breakpoints.only('lg'));
+    const screenLarge = useMediaQuery(theme.breakpoints.up('lg'));
     const screenMedium = useMediaQuery(theme.breakpoints.only('md'));
     const screenSmall = useMediaQuery(theme.breakpoints.only('sm'));
 
     const sidebarElts = [
         {
-            name: "Eboard",
-            onClick: setName,
-            param: "Eboard"
+            name: "Eboard"
         },
         {
-            name: "Academic",
-            onClick: setName,
-            param: "Academic"
+            name: "Academic"
         },
         {
-            name: "Corporate",
-            onClick: setName,
-            param: "Corporate"
+            name: "Corporate"
         },
         {
-            name: "Graphic Design",
-            onClick: setName,
-            param: "Graphic Design"
+            name: "Graphic Design"
         },
         {
-            name: "Social",
-            onClick: setName,
-            param: "Social"
+            name: "Social"
         },
         {
-            name: "Web Dev",
-            onClick: setName,
-            param: "Web Dev"
+            name: "Web Dev"
         },
         {
-            name: "Publicity",
-            onClick: setName,
-            param: "Publicity"
+            name: "Publicity"
         }
     ]
 
     const loadOfficerData = (json, teamName) => {
         const officers = json.officers.filter(person => {
-            return person ? person.team === teamName : null;
+            return person ? person.team === teamName ||
+                (teamName === 'Eboard' && person.eboard) : null;
         });
         return officers;
     };
@@ -85,6 +72,7 @@ function Board() {
                             height="200"
                             image={require("../../img/team/" + elt.img)}
                             alt={elt.img}
+                            className="Board-card-img"
                         />
                     </CardActionArea>
                     <CardContent className="Board-text-center">
@@ -92,12 +80,12 @@ function Board() {
                             {elt.name}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            {elt.eboard ? (elt.team) + " Chair" : "Officer"}
+                            {elt.position}
                         </Typography>
                     </CardContent>
                     <CardActions>
                         <a href={"mailto:" + elt.email}>
-                            <img className="Board-card-img" src={require("../../img/email.png")} />
+                            <img className="Board-card-icon" src={require("../../img/email.png")} />
                         </a>
                     </CardActions>
                 </Card>
