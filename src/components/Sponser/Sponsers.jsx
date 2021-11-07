@@ -13,6 +13,7 @@ function Sponsors() {
     const [silver, setSilver] = useState(getSilver);
     const [bronze, setBronze] = useState(getBronze);
 
+    // So for some reason none of the images are actually properly showing up and I think it has something to do with how I am accessing the images from the json
     return (
         <div className="sponsors">
             <div class="row align-items-center">
