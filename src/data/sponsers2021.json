@@ -1,0 +1,60 @@
+{
+    "sponsers": [
+        {
+            "class": "gold",
+            "link": "https://www.bloomberg.com/",
+            "img": "bloomberg",
+            "imgName": "Bloomberg logo",
+            "width": "30%"
+        },
+        {
+            "class": "gold",
+            "link": "https://www.ghs.com/",
+            "img": "greenhills",
+            "imgName": "Greenhills logo",
+            "width": "28%"
+        },
+        {
+            "class": "silver",
+            "link": "https://www.deshaw.com/",
+            "img": "deshaw",
+            "imgName": "De Shaw logo",
+            "width": "22%"
+        },
+        {
+            "class": "silver",
+            "link": "https://stripe.com/",
+            "img": "stripe",
+            "imgName": "Stripe logo",
+            "width": "22%"
+        },
+        {
+            "class": "silver",
+            "link": "https://facebook.com/",
+            "img": "facebook",
+            "imgName": "Facebook logo",
+            "width": "24%"
+        },
+        {
+            "class": "bronze",
+            "link": "https://www.amazon.com/",
+            "img": "amazonrobotics",
+            "imgName": "Amazon Robotics logo",
+            "width": "14%"
+        },
+        {
+            "class": "bronze",
+            "link": "https://www.capitalone.com/",
+            "img": "capitalone",
+            "imgName": "Capital One logo",
+            "width": "14%"
+        },
+        {
+            "class": "bronze",
+            "link": "https://www.blackstone.com/",
+            "img": "blackstone",
+            "imgName": "Blackstone logo",
+            "width": "14%"
+        }
+    ]
+}
