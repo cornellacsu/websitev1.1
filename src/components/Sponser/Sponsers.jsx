@@ -1,80 +1,13 @@
-import React from "react";
 import "./Sponsors.css";
-import deshaw from "./icons/deshaw.jpeg";
-import greenhills from "./icons/greenhills.jpeg";
-import capitalone from "./icons/capitalone.png";
-import amazonrobotics from "./icons/amazonrobotics.png";
-import bloomberg from "./icons/bloomberg.jpg";
-import stripe from "./icons/stripe.png";
-import facebook from "./icons/facebook.png";
-import blackstone from "./icons/blackstone.png";
 import SponsorCard from "./SponsorCard";
-import { useState } from "react";
+import React, {useState } from "react";
+import json from '../../data/sponsors2021.json';
 
 function Sponsors() {
-    //manually add to just this list, the code does everything else for you.
-    const sponsors = [
-        {
-            class: "gold",
-            link: "https://www.bloomberg.com/",
-            img: bloomberg,
-            imgName: "Bloomberg logo",
-            width: "30%",
-        },
-        {
-            class: "gold",
-            link: "https://www.ghs.com/",
-            img: greenhills,
-            imgName: "Greenhills logo",
-            width: "28%",
-        },
-        {
-            class: "silver",
-            link: "https://www.deshaw.com/",
-            img: deshaw,
-            imgName: "De Shaw logo",
-            width: "22%",
-        },
-        {
-            class: "silver",
-            link: "https://stripe.com/",
-            img: stripe,
-            imgName: "Stripe logo",
-            width: "22%",
-        },
-        {
-            class: "silver",
-            link: "https://facebook.com/",
-            img: facebook,
-            imgName: "Facebook logo",
-            width: "24%",
-        },
-        {
-            class: "bronze",
-            link: "https://www.amazon.com/",
-            img: amazonrobotics,
-            imgName: "Amazon Robotics logo",
-            width: "14%",
-        },
-        {
-            class: "bronze",
-            link: "https://www.capitalone.com/",
-            img: capitalone,
-            imgName: "Capital One logo",
-            width: "14%",
-        },
-        {
-            class: "bronze",
-            link: "https://www.blackstone.com/",
-            img: blackstone,
-            imgName: "Blackstone logo",
-            width: "14%",
-        },
-    ];
 
-    const getGold = sponsors.filter((sponsor) => sponsor.class == "gold");
-    const getSilver = sponsors.filter((sponsor) => sponsor.class == "silver");
-    const getBronze = sponsors.filter((sponsor) => sponsor.class == "bronze");
+    const getGold = json.sponsors.filter((sponsor) => sponsor.class === "gold");
+    const getSilver = json.sponsors.filter((sponsor) => sponsor.class === "silver");
+    const getBronze = json.sponsors.filter((sponsor) => sponsor.class === "bronze");
 
     const [gold, setGold] = useState(getGold);
     const [silver, setSilver] = useState(getSilver);
@@ -96,7 +29,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        img={sponsor.img}
+                                        image={require("./icons/" + sponsor.img)}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
@@ -113,7 +46,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        img={sponsor.img}
+                                        image={require("./icons/" + sponsor.img)}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
@@ -130,7 +63,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        img={sponsor.img}
+                                        image={require("./icons/" + sponsor.img)}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
