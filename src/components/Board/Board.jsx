@@ -18,6 +18,7 @@ function Board() {
     const [pageName, setPageName] = useState('Eboard');
     const [officers, setOfficers] = useState([]);
     const [spacing, setSpacing] = useState(3);
+    const [width, setWidth] = useState(0);
 
     const setName = (name) => {
         setPageName(name)
@@ -25,9 +26,10 @@ function Board() {
 
     const theme = useTheme();
 
-    const screenLarge = useMediaQuery(theme.breakpoints.up('lg'));
+    const screenLarge = useMediaQuery(theme.breakpoints.only('lg'));
     const screenMedium = useMediaQuery(theme.breakpoints.only('md'));
     const screenSmall = useMediaQuery(theme.breakpoints.only('sm'));
+    const screenXsmall = useMediaQuery(`(max-width:712px)`);
 
     const sidebarElts = [
         {
@@ -53,6 +55,8 @@ function Board() {
         }
     ]
 
+    const imageWidth = 300;
+
     const loadOfficerData = (json, teamName) => {
         const officers = json.officers.filter(person => {
             return person ? person.team === teamName ||
@@ -65,7 +69,7 @@ function Board() {
         const officerElts = []
         officers.forEach((elt) => {
             officerElts.push(
-                <Card>
+                <Card sx={{ width: 200 }}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -88,16 +92,30 @@ function Board() {
                             <img className="Board-card-icon" src={require("../../img/email.png")} />
                         </a>
                     </CardActions>
-                </Card>
+                </Card >
             )
         });
         return officerElts
     };
 
     const calculateSpacing = () => {
-        if (screenSmall) return 6;
-        else if (screenMedium) return 4;
-        else if (screenLarge) return 3;
+        // setWidth(imageWidth * )
+        if (screenXsmall) {
+            setWidth(imageWidth * 12);
+            return 12;
+        }
+        else if (screenSmall) {
+            setWidth(imageWidth * 6);
+            return 6;
+        }
+        else if (screenMedium) {
+            setWidth(imageWidth * 4);
+            return 4;
+        }
+        else if (screenLarge) {
+            setWidth(imageWidth * 3);
+            return 3;
+        }
     };
 
     const genGridItems = (officers) => {
@@ -110,11 +128,12 @@ function Board() {
         return gridElts;
     };
 
-    window.addEventListener('resize', () => { setSpacing(calculateSpacing()) });
+    window.addEventListener('resize', () => { setSpacing(calculateSpacing()); console.log(spacing); console.log('width: ', width); });
 
     useEffect(() => {
         const officerData = loadOfficerData(officerJson, pageName);
         setOfficers(renderOfficers(officerData));
+        setWidth(officerData.length * imageWidth)
     }, [pageName]);
 
     return (
