@@ -17,8 +17,7 @@ import officerJson from '../../data/officers2122.json';
 function Board() {
     const [pageName, setPageName] = useState('Eboard');
     const [officers, setOfficers] = useState([]);
-    const [spacing, setSpacing] = useState(3);
-    const [width, setWidth] = useState(0);
+    const [spacing, setSpacing] = useState(2);
 
     const setName = (name) => {
         setPageName(name)
@@ -26,9 +25,11 @@ function Board() {
 
     const theme = useTheme();
 
+    const screenXlarge = useMediaQuery(theme.breakpoints.only('xl'));
     const screenLarge = useMediaQuery(theme.breakpoints.only('lg'));
     const screenMedium = useMediaQuery(theme.breakpoints.only('md'));
     const screenSmall = useMediaQuery(theme.breakpoints.only('sm'));
+    // Custom xs breakpoint
     const screenXsmall = useMediaQuery(`(max-width:712px)`);
 
     const sidebarElts = [
@@ -54,8 +55,6 @@ function Board() {
             name: "Publicity"
         }
     ]
-
-    const imageWidth = 300;
 
     const loadOfficerData = (json, teamName) => {
         const officers = json.officers.filter(person => {
@@ -99,27 +98,22 @@ function Board() {
     };
 
     const calculateSpacing = () => {
-        // setWidth(imageWidth * )
         if (screenXsmall) {
-            setWidth(imageWidth * 12);
             return 12;
         }
         else if (screenSmall) {
-            setWidth(imageWidth * 6);
             return 6;
         }
         else if (screenMedium) {
-            setWidth(imageWidth * 4);
             return 4;
         }
         else if (screenLarge) {
-            setWidth(imageWidth * 3);
             return 3;
         }
     };
 
     const genGridItems = (officers) => {
-        const gridElts = []
+        const gridElts = [];
         officers.forEach(elt => {
             gridElts.push(<Grid item xs={spacing}>
                 {elt}
@@ -128,12 +122,11 @@ function Board() {
         return gridElts;
     };
 
-    window.addEventListener('resize', () => { setSpacing(calculateSpacing()); console.log(spacing); console.log('width: ', width); });
-
     useEffect(() => {
+        setSpacing(calculateSpacing());
         const officerData = loadOfficerData(officerJson, pageName);
         setOfficers(renderOfficers(officerData));
-        setWidth(officerData.length * imageWidth)
+        // window.addEventListener('resize', () => { setSpacing(calculateSpacing()) });
     }, [pageName]);
 
     return (
