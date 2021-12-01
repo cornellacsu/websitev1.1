@@ -17,7 +17,8 @@ import officerJson from '../../data/officers2122.json';
 function Board() {
     const [pageName, setPageName] = useState('Eboard');
     const [officers, setOfficers] = useState([]);
-    const [spacing, setSpacing] = useState(2);
+    const [spacing, setSpacing] = useState(3);
+    const [gridWidth, setGridWidth] = useState(1100);
 
     const setName = (name) => {
         setPageName(name)
@@ -25,12 +26,14 @@ function Board() {
 
     const theme = useTheme();
 
-    const screenXlarge = useMediaQuery(theme.breakpoints.only('xl'));
-    const screenLarge = useMediaQuery(theme.breakpoints.only('lg'));
-    const screenMedium = useMediaQuery(theme.breakpoints.only('md'));
-    const screenSmall = useMediaQuery(theme.breakpoints.only('sm'));
-    // Custom xs breakpoint
-    const screenXsmall = useMediaQuery(`(max-width:712px)`);
+    const screenLarge = useMediaQuery(theme.breakpoints.up(1300));
+    const screenMedium = useMediaQuery(theme.breakpoints.up(1000));
+    const screenSmall = useMediaQuery(theme.breakpoints.up(800));
+    const screenXsmall = useMediaQuery(theme.breakpoints.up(600));
+    // const screenLarge = useMediaQuery(theme.breakpoints.up('lg'));
+    // const screenMedium = useMediaQuery(theme.breakpoints.up('md'));
+    // const screenSmall = useMediaQuery(theme.breakpoints.up('sm'));
+    // const screenXsmall = useMediaQuery(theme.breakpoints.up('xs'));
 
     const sidebarElts = [
         {
@@ -68,7 +71,7 @@ function Board() {
         const officerElts = []
         officers.forEach((elt) => {
             officerElts.push(
-                <Card sx={{ width: 200 }}>
+                <Card sx={{ width: 250 }}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -98,40 +101,53 @@ function Board() {
     };
 
     const calculateSpacing = () => {
-        if (screenXsmall) {
-            return 12;
-        }
-        else if (screenSmall) {
-            return 6;
+        if (screenLarge) {
+            return 3;
         }
         else if (screenMedium) {
             return 4;
         }
-        else if (screenLarge) {
-            return 3;
+        else if (screenSmall) {
+            return 6;
+        }
+        else if (screenXsmall) {
+            return 12;
         }
     };
 
     const genGridItems = (officers) => {
         const gridElts = [];
         officers.forEach(elt => {
-            gridElts.push(<Grid item xs={spacing}>
-                {elt}
-            </Grid>);
+            gridElts.push(<Grid item>{elt}</Grid>);
         });
         return gridElts;
     };
 
+    // const resize = () => {
+    //     setSpacing(calculateSpacing());
+    // }
+
+    // window.addEventListener('resize', () => resize());
+
     useEffect(() => {
-        setSpacing(calculateSpacing());
         const officerData = loadOfficerData(officerJson, pageName);
         setOfficers(renderOfficers(officerData));
-        // window.addEventListener('resize', () => { setSpacing(calculateSpacing()) });
     }, [pageName]);
+
+    // useEffect(() => {
+    //     const resizeListener = () => {
+    //         setSpacing(calculateSpacing());
+    //     }
+    //     window.addEventListener('resize', () => resizeListener());
+
+    //     return () => {
+    //         window.removeEventListener('resize', resizeListener);
+    //     }
+    // }, []);
 
     return (
         <div>
-            <h1>{pageName}</h1>
+            <h1 className="Board-text-center">{pageName}</h1>
             <div className="Board">
                 <List sx={{ maxWidth: 140 }}
                     className="Box-sidebar" anchor="left" variant="permanent">
@@ -141,8 +157,8 @@ function Board() {
                         </ListItem>
                     ))}
                 </List>
-                <Box sx={{ flexGrow: 1 }} ml={10} mr={10} className="Board-box">
-                    <Grid container spacing={2}>
+                <Box sx={{ flexGrow: 1 }} className="Board-box">
+                    <Grid container spacing={2} m="auto" width={{ xs: 400, sm: 700, md: 850, lg: 1100, xl: 1300 }}>
                         {genGridItems(officers)}
                     </Grid>
                 </Box>

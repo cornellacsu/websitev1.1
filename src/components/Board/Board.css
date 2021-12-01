@@ -8,6 +8,7 @@ h1 {
 .Board {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
 }
 
 .Board-text-center {
@@ -33,7 +34,6 @@ h1 {
 }
 
 .Board-box {
-  width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   flex: 50%;
 }
