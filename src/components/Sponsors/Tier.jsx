@@ -1,6 +1,6 @@
 // import React from "react";
 
-// function Sponsers() {
+// function Sponsors() {
 //     return (
 //         <div>
 //             <h2>

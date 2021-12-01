@@ -75,7 +75,7 @@ function Navigation(props) {
                 <MyNavLink className="nav-button" to="/board">
                     Board
                 </MyNavLink>
-                <MyNavLink className="nav-button" to="/sponsers">
+                <MyNavLink className="nav-button" to="/sponsors">
                     Sponsors
                 </MyNavLink>
                 <MyNavLink className="nav-button" to="/resources">

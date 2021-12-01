@@ -8,6 +8,8 @@ function Sponsors() {
     const getGold = json.sponsors.filter((sponsor) => sponsor.class === "gold");
     const getSilver = json.sponsors.filter((sponsor) => sponsor.class === "silver");
     const getBronze = json.sponsors.filter((sponsor) => sponsor.class === "bronze");
+    console.log(getGold)
+    console.log("hello")
 
     const [gold, setGold] = useState(getGold);
     const [silver, setSilver] = useState(getSilver);
@@ -30,7 +32,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={ sponsor.img}
+                                        img={ sponsor.img}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
@@ -47,7 +49,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={sponsor.img}
+                                        img={sponsor.img}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
@@ -64,7 +66,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={sponsor.img}
+                                        img={sponsor.img}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
