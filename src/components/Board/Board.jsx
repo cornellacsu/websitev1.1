@@ -9,31 +9,16 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import { CardActionArea, CardActions } from '@mui/material';
 import officerJson from '../../data/officers2122.json';
 
 function Board() {
     const [pageName, setPageName] = useState('Eboard');
     const [officers, setOfficers] = useState([]);
-    const [spacing, setSpacing] = useState(3);
-    const [gridWidth, setGridWidth] = useState(1100);
 
     const setName = (name) => {
         setPageName(name)
     };
-
-    const theme = useTheme();
-
-    const screenLarge = useMediaQuery(theme.breakpoints.up(1300));
-    const screenMedium = useMediaQuery(theme.breakpoints.up(1000));
-    const screenSmall = useMediaQuery(theme.breakpoints.up(800));
-    const screenXsmall = useMediaQuery(theme.breakpoints.up(600));
-    // const screenLarge = useMediaQuery(theme.breakpoints.up('lg'));
-    // const screenMedium = useMediaQuery(theme.breakpoints.up('md'));
-    // const screenSmall = useMediaQuery(theme.breakpoints.up('sm'));
-    // const screenXsmall = useMediaQuery(theme.breakpoints.up('xs'));
 
     const sidebarElts = [
         {
@@ -100,21 +85,6 @@ function Board() {
         return officerElts
     };
 
-    const calculateSpacing = () => {
-        if (screenLarge) {
-            return 3;
-        }
-        else if (screenMedium) {
-            return 4;
-        }
-        else if (screenSmall) {
-            return 6;
-        }
-        else if (screenXsmall) {
-            return 12;
-        }
-    };
-
     const genGridItems = (officers) => {
         const gridElts = [];
         officers.forEach(elt => {
@@ -123,27 +93,10 @@ function Board() {
         return gridElts;
     };
 
-    // const resize = () => {
-    //     setSpacing(calculateSpacing());
-    // }
-
-    // window.addEventListener('resize', () => resize());
-
     useEffect(() => {
         const officerData = loadOfficerData(officerJson, pageName);
         setOfficers(renderOfficers(officerData));
     }, [pageName]);
-
-    // useEffect(() => {
-    //     const resizeListener = () => {
-    //         setSpacing(calculateSpacing());
-    //     }
-    //     window.addEventListener('resize', () => resizeListener());
-
-    //     return () => {
-    //         window.removeEventListener('resize', resizeListener);
-    //     }
-    // }, []);
 
     return (
         <div>
