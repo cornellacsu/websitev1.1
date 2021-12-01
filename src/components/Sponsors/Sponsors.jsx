@@ -30,7 +30,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={require("./icons/" + sponsor.img)}
+                                        image={ sponsor.img}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
@@ -47,7 +47,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={require("./icons/" + sponsor.img)}
+                                        image={sponsor.img}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />
@@ -64,7 +64,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={require("./icons/" + sponsor.img)}
+                                        image={sponsor.img}
                                         imgName={sponsor.imgName}
                                         width={sponsor.width}
                                     />

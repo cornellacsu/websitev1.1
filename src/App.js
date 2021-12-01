@@ -5,7 +5,7 @@ import {
     Footer,
     Home,
     Board,
-    Sponsers,
+    Sponsors,
     Resources,
 } from "./components";
 function App() {
@@ -17,9 +17,9 @@ function App() {
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/board" exact component={() => <Board />} />
                     <Route
-                        path="/sponsers"
+                        path="/sponsors"
                         exact
-                        component={() => <Sponsers />}
+                        component={() => <Sponsors />}
                     />
                     <Route
                         path="/resources"
