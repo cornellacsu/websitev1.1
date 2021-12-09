@@ -3,12 +3,10 @@ import {Palette} from 'react-palette';
 import "./Sponsors.css";
 
 function SponsorCard({ link, img, imgName}) {
-  console.log(img)
   return ( imgName === "Blackstone logo" ?
   <Palette src={require("./icons/" + img)}>
   {({ data, loading, error }) => (
     <div class="color-container-sponsors" style={{ 'background-color': data.vibrant }}>
-      {/* what does this actually do? How do I make the box around blackstone not white.. */}
         <div id = "blackstone" class="white-container-sponsors">
         <a href={link}>
             <img

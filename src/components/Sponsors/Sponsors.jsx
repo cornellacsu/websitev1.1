@@ -8,22 +8,17 @@ function Sponsors() {
     const getGold = json.sponsors.filter((sponsor) => sponsor.class === "gold");
     const getSilver = json.sponsors.filter((sponsor) => sponsor.class === "silver");
     const getBronze = json.sponsors.filter((sponsor) => sponsor.class === "bronze");
-    console.log(getGold)
-    console.log("hello")
 
     const [gold, setGold] = useState(getGold);
     const [silver, setSilver] = useState(getSilver);
     const [bronze, setBronze] = useState(getBronze);
 
-    // So for some reason none of the images are actually properly showing up and I think it has something to do with how I am accessing the images from the json
     return (
         <div className="sponsors">
             <div class="row align-items-center">
                 <div>
                     <h1 class="font-weight-light">Sponsors</h1>
                     <h5>Thank you to all our 2021 sponsors!</h5>
-                    {/* I wish there is a way to combine all three of these into one and use some sort of filtering to vertically 
-                    place them on the page/in a container? */}
                     <div class="sponsors-tier tier">
                         <h2 class="gold">Gold</h2>
                         <div class="tier-container tier-gold">
@@ -34,7 +29,6 @@ function Sponsors() {
                                         link={sponsor.link}
                                         img={ sponsor.img}
                                         imgName={sponsor.imgName}
-                                        width={sponsor.width}
                                     />
                                 );
                             })}
@@ -51,7 +45,6 @@ function Sponsors() {
                                         link={sponsor.link}
                                         img={sponsor.img}
                                         imgName={sponsor.imgName}
-                                        width={sponsor.width}
                                     />
                                 );
                             })}
@@ -68,7 +61,6 @@ function Sponsors() {
                                         link={sponsor.link}
                                         img={sponsor.img}
                                         imgName={sponsor.imgName}
-                                        width={sponsor.width}
                                     />
                                 );
                             })}
