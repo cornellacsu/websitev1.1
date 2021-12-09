@@ -13,15 +13,12 @@ function Sponsors() {
     const [silver, setSilver] = useState(getSilver);
     const [bronze, setBronze] = useState(getBronze);
 
-    // So for some reason none of the images are actually properly showing up and I think it has something to do with how I am accessing the images from the json
     return (
         <div className="sponsors">
             <div class="row align-items-center">
                 <div>
                     <h1 class="font-weight-light">Sponsors</h1>
                     <h5>Thank you to all our 2021 sponsors!</h5>
-                    {/* I wish there is a way to combine all three of these into one and use some sort of filtering to vertically 
-                    place them on the page/in a container? */}
                     <div class="sponsors-tier tier">
                         <h2 class="gold">Gold</h2>
                         <div class="tier-container tier-gold">
@@ -30,9 +27,8 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={require("./icons/" + sponsor.img)}
+                                        img={ sponsor.img}
                                         imgName={sponsor.imgName}
-                                        width={sponsor.width}
                                     />
                                 );
                             })}
@@ -47,9 +43,8 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={require("./icons/" + sponsor.img)}
+                                        img={sponsor.img}
                                         imgName={sponsor.imgName}
-                                        width={sponsor.width}
                                     />
                                 );
                             })}
@@ -64,9 +59,8 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        image={require("./icons/" + sponsor.img)}
+                                        img={sponsor.img}
                                         imgName={sponsor.imgName}
-                                        width={sponsor.width}
                                     />
                                 );
                             })}

@@ -3,15 +3,14 @@ import {Palette} from 'react-palette';
 import "./Sponsors.css";
 
 function SponsorCard({ link, img, imgName}) {
-  return ( imgName === "blackstone" ?
-  <Palette src={img}>
+  return ( imgName === "Blackstone logo" ?
+  <Palette src={require("./icons/" + img)}>
   {({ data, loading, error }) => (
     <div class="color-container-sponsors" style={{ 'background-color': data.vibrant }}>
-      {/* what does this actually do? How do I make the box around blackstone not white.. */}
         <div id = "blackstone" class="white-container-sponsors">
         <a href={link}>
             <img
-                src={img}
+                src={require("./icons/" + img)}
                 alt={imgName}
                 className="d-inline-block align-text-top">
             </img>
@@ -21,13 +20,13 @@ function SponsorCard({ link, img, imgName}) {
   )}
 </Palette> :
 
-<Palette src={img}>
+<Palette src={require("./icons/" + img)}>
 {({ data, loading, error }) => (
     <div class="color-container-sponsors" style={{ 'background-color': data.vibrant }}>
         <div class="white-container-sponsors">
         <a href={link}>
             <img
-                src={img}
+                src={require("./icons/" + img)}
                 alt={imgName}
                 className="d-inline-block align-text-top">
             </img>
