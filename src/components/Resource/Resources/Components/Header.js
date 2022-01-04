@@ -1,17 +1,6 @@
-import React, { Component, Fragment } from "react";
-import Foreword from "../Pages/Foreword";
-import FAQ from "../Pages/FAQ";
-import Courses from "../Pages/Courses";
-import Clubs from "../Pages/Clubs";
-import Research from "../Pages/Research";
-import Graduate from "../Pages/Graduate";
-import Anecdotes from "../Pages/Anecdotes";
+import React, { Component } from "react";
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         let heading = null;
         const current = this.props.current;
@@ -36,6 +25,8 @@ class Header extends Component {
                 break;
             case 6:
                 heading = "Anecdotes";
+                break;
+            default:
                 break;
         }
         return (
