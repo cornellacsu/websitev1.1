@@ -27,8 +27,11 @@ const Clubs = () => {
             </p>
             <hr></hr>
             <section className="ACSU">
-                <a href="https://acsu.cornell.edu/" target="_blank">
-                    <img src={ACSU} />
+                <a
+                    href="https://acsu.cornell.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={ACSU} alt="ACSU Logo" />
                 </a>
                 <h2>ACSU: Association of Computer Science Undergraduates</h2>
                 <p>
@@ -50,8 +53,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="WICC">
-                <a href="https://wicc.cornell.edu/" target="_blank">
-                    <img src={WICC} />
+                <a
+                    href="https://wicc.cornell.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={WICC} alt="WICC" />
                 </a>
                 <h2>WICC: Women in Computing at Cornell</h2>
                 <p>
@@ -69,8 +75,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="URMC">
-                <a href="https://urmc-website.herokuapp.com" target="_blank">
-                    <img src={URMC} />
+                <a
+                    href="https://urmc-website.herokuapp.com"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={URMC} alt="URMC" />
                 </a>
                 <h2>URMC: Under-Represented Minorities in Computing</h2>
                 <p>
@@ -90,8 +99,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="ISSA">
-                <a href="https://issa.infosci.cornell.edu" target="_blank">
-                    <img src={ISSA} />
+                <a
+                    href="https://issa.infosci.cornell.edu"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={ISSA} alt="ISSA" />
                 </a>
                 <h2>ISSA: Information Science Student Association</h2>
                 <p>
@@ -106,8 +118,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="H4I">
-                <a href="https://cornellh4i.netlify.app" target="_blank">
-                    <img src={H4I} />
+                <a
+                    href="https://cornellh4i.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={H4I} alt="Hack4Impact" />
                 </a>
                 <h2>HackForImpact</h2>
                 <p>
@@ -124,8 +139,9 @@ const Clubs = () => {
             <section className="PT">
                 <a
                     href="https://www.engineering.cornell.edu/students/undergraduate-students/special-programs/project-teams"
-                    target="_blank">
-                    <img src={PT} />
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={PT} alt="Cornell Project Teams" />
                 </a>
                 <h2>Project Teams</h2>
                 <p>
@@ -155,8 +171,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="ACM">
-                <a href="http://www.cs.cornell.edu/acm/" target="_blank">
-                    <img src={ACM} />
+                <a
+                    href="http://www.cs.cornell.edu/acm/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={ACM} alt="Cornell ACM" />
                 </a>
                 <h2>ACM Programming Team</h2>
                 <p>
@@ -175,8 +194,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="AppDev">
-                <a href="https://www.cornellappdev.com" target="_blank">
-                    <img src={AppDev} />
+                <a
+                    href="https://www.cornellappdev.com"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={AppDev} alt="Cornell AppDev" />
                 </a>
                 <h2>AppDev: Cornell App Development</h2>
                 <p>
@@ -194,8 +216,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="CDS">
-                <a href="https://cornelldata.science" target="_blank">
-                    <img src={CDS} />
+                <a
+                    href="https://cornelldata.science"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={CDS} alt="Cornell Data Science" />
                 </a>
                 <h2>CDS: Cornell Data Science</h2>
                 <p>
@@ -213,8 +238,11 @@ const Clubs = () => {
             </section>
             <hr></hr>
             <section className="DTI">
-                <a href="https://www.cornelldti.org" target="_blank">
-                    <img src={DTI} />
+                <a
+                    href="https://www.cornelldti.org"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={DTI} alt="Cornell DTI" />
                 </a>
                 <h2>DTI: Cornell Design & Tech Initiative</h2>
                 <p>
