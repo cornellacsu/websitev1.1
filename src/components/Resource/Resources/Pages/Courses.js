@@ -16,7 +16,7 @@ const Courses = () => {
                     from the CS Department page, which outlines the necessary
                     prerequisites for all undergraduate CS courses.
                 </p>
-                <img src={prerequisites} />
+                <img src={prerequisites} alt="Prerequisites" />
                 <p>
                     The following links provide more information about the CS
                     major directly from the Cornell CS Department.
@@ -50,7 +50,8 @@ const Courses = () => {
                     college. More information can be found on{" "}
                     <a
                         href="http://www.cs.cornell.edu/undergrad/csminor"
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         the department’s website
                     </a>
                     .
