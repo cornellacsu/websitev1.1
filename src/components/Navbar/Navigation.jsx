@@ -61,10 +61,6 @@ const MyNavLink = styled(Link)`
     }
 `;
 
-const HomeLink = styled(MyNavLink)`
-    margin-left: 0;
-`;
-
 function Navigation(props) {
     return (
         <nav className="navbar">

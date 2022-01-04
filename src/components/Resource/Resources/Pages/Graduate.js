@@ -16,13 +16,17 @@ const Graduate = () => {
                 <p>
                     The overview for this degree and what it entails can be
                     found starting from the{" "}
-                    <a href="https://www.cs.cornell.edu/ms" target="_blank">
+                    <a
+                        href="https://www.cs.cornell.edu/ms"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         main landing page
                     </a>
                     . For more specific application details, see the{" "}
                     <a
                         href="https://www.cs.cornell.edu/ms/admissions"
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         requirements page
                     </a>{" "}
                     on the graduate school website. To summarize, the Master of
@@ -49,7 +53,8 @@ const Graduate = () => {
                     MEng program, check out the{" "}
                     <a
                         href="https://www.cs.cornell.edu/masters"
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         website
                     </a>
                     .
@@ -63,7 +68,8 @@ const Graduate = () => {
                     source is{" "}
                     <a
                         href="https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf"
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         this document
                     </a>{" "}
                     written by a professor at CMU.
