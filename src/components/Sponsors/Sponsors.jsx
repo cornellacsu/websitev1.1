@@ -1,13 +1,16 @@
 import "./Sponsors.css";
 import SponsorCard from "./SponsorCard";
-import React, {useState } from "react";
-import json from '../../data/sponsors2021.json';
+import React, { useState } from "react";
+import json from "../../data/sponsors2021.json";
 
 function Sponsors() {
-
     const getGold = json.sponsors.filter((sponsor) => sponsor.class === "gold");
-    const getSilver = json.sponsors.filter((sponsor) => sponsor.class === "silver");
-    const getBronze = json.sponsors.filter((sponsor) => sponsor.class === "bronze");
+    const getSilver = json.sponsors.filter(
+        (sponsor) => sponsor.class === "silver"
+    );
+    const getBronze = json.sponsors.filter(
+        (sponsor) => sponsor.class === "bronze"
+    );
 
     const [gold, setGold] = useState(getGold);
     const [silver, setSilver] = useState(getSilver);
@@ -27,7 +30,7 @@ function Sponsors() {
                                     <SponsorCard
                                         itemId={sponsor.imgName} // NOTE: itemId is required for track items
                                         link={sponsor.link}
-                                        img={ sponsor.img}
+                                        img={sponsor.img}
                                         imgName={sponsor.imgName}
                                     />
                                 );
