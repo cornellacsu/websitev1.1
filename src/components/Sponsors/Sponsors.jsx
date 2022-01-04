@@ -12,9 +12,9 @@ function Sponsors() {
         (sponsor) => sponsor.class === "bronze"
     );
 
-    const [gold, setGold] = useState(getGold);
-    const [silver, setSilver] = useState(getSilver);
-    const [bronze, setBronze] = useState(getBronze);
+    const [gold] = useState(getGold);
+    const [silver] = useState(getSilver);
+    const [bronze] = useState(getBronze);
 
     return (
         <div className="sponsors">
