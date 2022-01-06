@@ -75,22 +75,22 @@ function Navigation(props) {
                 </Fade>
             </Link>
             <div className="container">
-                <Fade triggerOnce delay={interval}>
+                <Fade direction="up" triggerOnce delay={interval}>
                     <MyNavLink className="nav-button" to="/board">
                         Board
                     </MyNavLink>
                 </Fade>
-                <Fade triggerOnce delay={2 * interval}>
+                <Fade direction="up" triggerOnce delay={2 * interval}>
                     <MyNavLink className="nav-button" to="/sponsors">
                         Sponsors
                     </MyNavLink>
                 </Fade>
-                <Fade triggerOnce delay={3 * interval}>
+                <Fade direction="up" triggerOnce delay={3 * interval}>
                     <MyNavLink className="nav-button" to="/resources">
                         Resources
                     </MyNavLink>
                 </Fade>
-                <Fade triggerOnce delay={4 * interval}>
+                <Fade direction="up" triggerOnce delay={4 * interval}>
                     <JoinButton className="nav-button">Join Us!</JoinButton>
                 </Fade>
             </div>

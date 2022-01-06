@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./Resources/CSS/Resources.css";
-import Header  from "./Resources/Components/Header";
+import Header from "./Resources/Components/Header";
 import Section from "./Resources/Components/Section";
 import SideBar from "./Resources/Components/SideBar";
+import { Fade } from "react-awesome-reveal";
 
 class Resources extends Component {
     constructor(props) {
