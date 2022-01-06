@@ -8,9 +8,11 @@ import {
     Sponsors,
     Resources,
 } from "./components";
+import ProgressBar from "react-scroll-progress-bar";
 function App() {
     return (
         <div className="App">
+            <ProgressBar bgcolor="#b81c34" />
             <Router>
                 <Navigation />
                 <Switch>

@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import logo from "./icons/logo.png";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
+import { Fade } from "react-awesome-reveal";
 
 const JoinButton = withStyles({
     root: {
@@ -62,22 +63,36 @@ const MyNavLink = styled(Link)`
 `;
 
 function Navigation(props) {
+    const interval = 100;
     return (
         <nav className="navbar">
             <Link className="acsu-logo-wrapper" to="/">
-                <img src={logo} alt="ACSU logo" className="acsu-logo-img"></img>
+                <Fade triggerOnce>
+                    <img
+                        src={logo}
+                        alt="ACSU logo"
+                        className="acsu-logo-img"></img>
+                </Fade>
             </Link>
             <div className="container">
-                <MyNavLink className="nav-button" to="/board">
-                    Board
-                </MyNavLink>
-                <MyNavLink className="nav-button" to="/sponsors">
-                    Sponsors
-                </MyNavLink>
-                <MyNavLink className="nav-button" to="/resources">
-                    Resources
-                </MyNavLink>
-                <JoinButton className="nav-button">Join Us!</JoinButton>
+                <Fade triggerOnce delay={interval}>
+                    <MyNavLink className="nav-button" to="/board">
+                        Board
+                    </MyNavLink>
+                </Fade>
+                <Fade triggerOnce delay={2 * interval}>
+                    <MyNavLink className="nav-button" to="/sponsors">
+                        Sponsors
+                    </MyNavLink>
+                </Fade>
+                <Fade triggerOnce delay={3 * interval}>
+                    <MyNavLink className="nav-button" to="/resources">
+                        Resources
+                    </MyNavLink>
+                </Fade>
+                <Fade triggerOnce delay={4 * interval}>
+                    <JoinButton className="nav-button">Join Us!</JoinButton>
+                </Fade>
             </div>
         </nav>
     );
