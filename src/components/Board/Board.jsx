@@ -111,7 +111,7 @@ function Board() {
                     ))}
                 </List>
                 <Box sx={{ flexGrow: 1 }} className="Board-box">
-                    <Grid container spacing={2} m="auto" width={{ xs: 400, sm: 700, md: 850, lg: 1100, xl: 1300 }}>
+                    <Grid container spacing={2} m="auto" width={{ xs: 400, sm: 700, md: 800, lg: 1100, xl: 1300 }}>
                         {genGridItems(officers)}
                     </Grid>
                 </Box>
