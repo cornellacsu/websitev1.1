@@ -130,7 +130,7 @@ const articles = [
 const getItems = () => articles;
 
 export default function EventsScroll() {
-    const [items, setItems] = useState(getItems);
+    const [items] = useState(getItems);
     return (
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
             {items.map((article) => {

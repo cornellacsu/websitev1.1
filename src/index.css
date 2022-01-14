@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: #151616;
-    font-family: "HelveticaNeue", "Roboto";
+    font-family: "HelveticaNeue";
     src: local("HelveticaNeue"),
         url(./fonts/HelveticaNeue/HelveticaNeueLTPro-Th.otf) format("truetype");
     src: local("Roboto") url(./fonts/Roboto/Roboto-Regular.ttf)
@@ -23,4 +23,5 @@ body {
     --border: 1px solid white;
     --border-radius: 8px;
     --speed: 500ms;
+    --acsu-red: #b81c34;
 }

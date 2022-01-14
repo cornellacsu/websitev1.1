@@ -27,6 +27,9 @@ a:hover {
     color: var(--text-color);
     text-decoration: none;
 }
+.navbar {
+    height: 12vh;
+}
 
 .container {
     justify-content: flex-end !important;
@@ -89,7 +92,7 @@ a:hover {
 
 .navbar-nav {
     max-width: 100%;
-    height: 100%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./Resources/CSS/Resources.css";
+import Header from "./Resources/Components/Header";
 import Section from "./Resources/Components/Section";
 import SideBar from "./Resources/Components/SideBar";
+import { Fade } from "react-awesome-reveal";
 
 class Resources extends Component {
     constructor(props) {
@@ -34,6 +36,9 @@ class Resources extends Component {
     render() {
         return (
             <div class="Body">
+                <div class="Header">
+                    <Header current={this.state.current} />
+                </div>
                 <div class="SideBarC Column">
                     <SideBar
                         current={this.state.current}

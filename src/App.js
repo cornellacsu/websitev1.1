@@ -5,21 +5,23 @@ import {
     Footer,
     Home,
     Board,
-    Sponsers,
+    Sponsors,
     Resources,
 } from "./components";
+import ProgressBar from "react-scroll-progress-bar";
 function App() {
     return (
         <div className="App">
+            <ProgressBar bgcolor="#b81c34" />
             <Router>
                 <Navigation />
                 <Switch>
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/board" exact component={() => <Board />} />
                     <Route
-                        path="/sponsers"
+                        path="/sponsors"
                         exact
-                        component={() => <Sponsers />}
+                        component={() => <Sponsors />}
                     />
                     <Route
                         path="/resources"
