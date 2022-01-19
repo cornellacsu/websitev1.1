@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
-import officerJson from '../../data/officers2122.json';
+import officerJson from '../../data/officers2223.json';
 
 function Board() {
     const [pageName, setPageName] = useState('Eboard');
@@ -55,13 +55,14 @@ function Board() {
     const renderOfficers = officers => {
         const officerElts = []
         officers.forEach((elt) => {
+            console.log(elt.img)
             officerElts.push(
                 <Card sx={{ width: 250 }}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
                             height="200"
-                            image={require("../../img/team/" + elt.img)}
+                            image={require("../../img/team/2022-2023/" + elt.img)}
                             alt={elt.img}
                             className="Board-card-img"
                         />
