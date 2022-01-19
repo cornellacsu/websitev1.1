@@ -1,31 +1,74 @@
 import React from "react";
 import Accordion from "../Components/Accordion";
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 
-import prerequisites from "../Images/CS_chart.jpg"
+import prerequisites from "../Images/CS_chart.jpg";
 
 const Courses = () => {
-    return(
+    return (
         <section className="Courses">
             <section className="Intro">
                 <h2 id="top">The Major</h2>
-                <p>The CS major is open to students in the College of Arts and Sciences and the College of Engineering. Below is a chart from the CS Department page, which outlines the necessary prerequisites for all undergraduate CS courses.</p>
-                <img src={prerequisites} />
-                <p>The following links provide more information about the CS major directly from the Cornell CS Department.</p>
+                <p>
+                    The CS major is open to students in the College of Arts and
+                    Sciences and the College of Engineering. Below is a chart
+                    from the CS Department page, which outlines the necessary
+                    prerequisites for all undergraduate CS courses.
+                </p>
+                <img src={prerequisites} alt="Prerequisites" />
+                <p>
+                    The following links provide more information about the CS
+                    major directly from the Cornell CS Department.
+                </p>
                 <div className="ButtonGroup">
-                <ButtonGroup orientation="vertical" color="secondary" aria-label="outlined secondary button group" fullWidth="true">
-                    <Button href="https://www.cs.cornell.edu/undergrad/CSMajor" target="_blank">General Major Requirements</Button>
-                    <Button href="https://www.cs.cornell.edu/undergrad/rulesandproceduresarts/artschecklist" target="_blank">Arts & Sciences Requirements</Button>
-                    <Button href="https://www.cs.cornell.edu/undergrad/rulesandproceduresengineering/engineeringchecklist" target="_blank">Engineering Requirements</Button>
-                </ButtonGroup>
+                    <ButtonGroup
+                        orientation="vertical"
+                        color="secondary"
+                        aria-label="outlined secondary button group"
+                        fullWidth="true">
+                        <Button
+                            href="https://www.cs.cornell.edu/undergrad/CSMajor"
+                            target="_blank">
+                            General Major Requirements
+                        </Button>
+                        <Button
+                            href="https://www.cs.cornell.edu/undergrad/rulesandproceduresarts/artschecklist"
+                            target="_blank">
+                            Arts & Sciences Requirements
+                        </Button>
+                        <Button
+                            href="https://www.cs.cornell.edu/undergrad/rulesandproceduresengineering/engineeringchecklist"
+                            target="_blank">
+                            Engineering Requirements
+                        </Button>
+                    </ButtonGroup>
                 </div>
                 <h2>The Minor</h2>
-                <p>The CS minor can be completed by any student from any college. More information can be found on <a href="http://www.cs.cornell.edu/undergrad/csminor" target="_blank">the department’s website</a>.</p>
+                <p>
+                    The CS minor can be completed by any student from any
+                    college. More information can be found on{" "}
+                    <a
+                        href="http://www.cs.cornell.edu/undergrad/csminor"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        the department’s website
+                    </a>
+                    .
+                </p>
             </section>
             <section className="Core">
                 <h2>Core Classes</h2>
-                <p>These classes are required for anyone majoring in computer science. With the exception of CS 2110 and CS 2800 (which are often taken together), it is generally recommended that students should take one core class each semester. However, that isn’t to say taking more than one (say, CS 4820 and CS 3410) is impossible. See the Alternatives to the Core Classes section below for alternate classes, and why you might want to take them instead.</p>
+                <p>
+                    These classes are required for anyone majoring in computer
+                    science. With the exception of CS 2110 and CS 2800 (which
+                    are often taken together), it is generally recommended that
+                    students should take one core class each semester. However,
+                    that isn’t to say taking more than one (say, CS 4820 and CS
+                    3410) is impossible. See the Alternatives to the Core
+                    Classes section below for alternate classes, and why you
+                    might want to take them instead.
+                </p>
                 <Accordion
                     title="CS 1110: Introduction to Computing Using Python"
                     content="
@@ -223,7 +266,11 @@ const Courses = () => {
             </section>
             <section className="Supplements">
                 <h2>Supplements to the Core Classes</h2>
-                <p>These classes can be taken alongside their respective core classes, to enhance your understanding of the material and to reinforce topics.</p>
+                <p>
+                    These classes can be taken alongside their respective core
+                    classes, to enhance your understanding of the material and
+                    to reinforce topics.
+                </p>
                 <Accordion
                     title="CS 2111: Programming Practicum"
                     content="This is a weekly one hour supplemental class for CS 2110 that is graded S/U. This course does NOT fulfill the CS project requirement despite being called a practicum. It is usually taught by the course instructor(s) and delves deeper into topics covered in recent CS 2110 lectures. Before exams, it can also double as a review or Q&A session."
@@ -265,7 +312,7 @@ const Courses = () => {
                     <br>
                     <b>⏰ Workload:</b> Heavy, 10 to 20 hours per week"
                 />
-                <Accordion 
+                <Accordion
                     title="CS 2802: Discrete Structures - Honors"
                     content="This course is the honors version of CS 2800. The primary difference between the two classes is the workload and difficulty of the homework assignments and prelim, but both classes cover the same content.
                     <br></br>
@@ -723,7 +770,7 @@ const Courses = () => {
                 />
             </section>
         </section>
-    )
-}
+    );
+};
 
 export default Courses;
