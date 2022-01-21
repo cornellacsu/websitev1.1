@@ -77,7 +77,7 @@ function Board() {
                     </CardContent>
                     <CardActions>
                         <a href={"mailto:" + elt.email}>
-                            <img className="Board-card-icon" src={require("../../img/email.png")} />
+                            <img className="Board-card-icon" src={require("../../img/email.png")} alt="mailto" />
                         </a>
                     </CardActions>
                 </Card >

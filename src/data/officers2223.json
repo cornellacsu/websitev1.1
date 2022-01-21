@@ -43,7 +43,7 @@
       "team": "Eboard",
       "position": "Co-Secretary",
       "year": "23",
-      "img": "unknown.jpg",
+      "img": "eboard/michelle_shou.jpeg",
       "email": "mcs349",
       "eboard": "true"
     },
@@ -52,7 +52,7 @@
       "team": "Eboard",
       "position": "Treasurer",
       "year": "23",
-      "img": "corporate/margaret_chan.jpg",
+      "img": "eboard/christian_donovan.jpg",
       "email": "cjd237",
       "eboard": "true"
     },
@@ -86,8 +86,7 @@
       "position": "Academic Co-Chair",
       "year": "24",
       "img": "academic/travis_zhang.jpg",
-      "email": "tz98",
-      "eboard": "true"
+      "email": "tz98"
     },
     {
       "name": "Michelle Li",
@@ -111,8 +110,7 @@
       "position": "Publicity Chair",
       "year": "22",
       "img": "publicity/lydia_kim.jpg",
-      "email": "lmk225",
-      "eboard": "true"
+      "email": "lmk225"
     },
     {
       "name": "Miranda Ren",
@@ -120,8 +118,7 @@
       "position": "Graphic Design Co-Chair",
       "year": "24",
       "img": "graphic_design/miranda_ren.jpg",
-      "email": "qr23",
-      "eboard": "true"
+      "email": "qr23"
     },
     {
       "name": "Prachi Kelkar",
@@ -129,15 +126,14 @@
       "position": "Graphic Design Co-Chair",
       "year": "22",
       "img": "unknown.jpg",
-      "email": "pak226",
-      "eboard": "true"
+      "email": "pak226"
     },
     {
       "name": "Justin Ngai",
       "team": "Web Dev",
       "position": "Web Dev Chair",
       "year": "23",
-      "img": "web dev/justin_ngai.jpg",
+      "img": "web_dev/justin_ngai.jpg",
       "email": "jn537"
     },
     {
@@ -145,7 +141,7 @@
       "team": "Corporate",
       "position": "Corporate Officer",
       "year": "23",
-      "img": "unknown.jpg",
+      "img": "corporate/zhuoyu_xu.jpg",
       "email": "zx85"
     },
     {
@@ -154,8 +150,7 @@
       "position": "Corporate Officer",
       "year": "22",
       "img": "corporate/margaret_chan.jpg",
-      "email": "myc39",
-      "eboard": "true"
+      "email": "myc39"
     },
     {
       "name": "Arnav Parashar",
@@ -163,8 +158,7 @@
       "position": "Corporate Officer",
       "year": "24",
       "img": "corporate/arnav_parashar.jpg",
-      "email": "ap736",
-      "eboard": "true"
+      "email": "ap736"
     },
     {
       "name": "Archit Mehta",
@@ -172,8 +166,7 @@
       "position": "Corporate Officer",
       "year": "25",
       "img": "corporate/archit_mehta.jpg",
-      "email": "am2283",
-      "eboard": "true"
+      "email": "am2283"
     },
     {
       "name": "Derek Sanchez",
@@ -181,26 +174,23 @@
       "position": "Corporate Officer",
       "year": "24",
       "img": "unknown.jpg",
-      "email": "dms554",
-      "eboard": "true"
+      "email": "dms554"
     },
     {
       "name": "Chuhan Ouyang",
       "team": "Corporate",
       "position": "Corporate Officer",
       "year": "25",
-      "img": "unknown.jpg",
-      "email": "co232",
-      "eboard": "true"
+      "img": "corproate/chuhan_ouyang.jpg",
+      "email": "co232"
     },
     {
       "name": "Ben Wu",
       "team": "Corporate",
       "position": "Corporate Officer",
       "year": "24",
-      "img": "unknown.jpg",
-      "email": "bnw36",
-      "eboard": "true"
+      "img": "corporate/ben_wu.jpg",
+      "email": "bnw36"
     },
     {
       "name": "Benjamin Tang",
@@ -208,8 +198,7 @@
       "position": "Corporate Officer",
       "year": "25",
       "img": "unknown.jpg",
-      "email": "bt283",
-      "eboard": "true"
+      "email": "bt283"
     },
     {
       "name": "Lawrence Fan",
@@ -217,8 +206,7 @@
       "position": "Corporate Officer",
       "year": "25",
       "img": "unknown.jpg",
-      "email": "ljf85",
-      "eboard": "true"
+      "email": "ljf85"
     },
     {
       "name": "Winnie Chow",
@@ -226,8 +214,7 @@
       "position": "Academic Officer",
       "year": "22",
       "img": "academic/winnie_chow.jpg",
-      "email": "wc459",
-      "eboard": "true"
+      "email": "wc459"
     },
     {
       "name": "Mo Islam",
@@ -250,7 +237,7 @@
       "team": "Academic",
       "position": "Academic Officer",
       "year": "23",
-      "img": "unknown.jpg",
+      "img": "academic/caleb_biddulph.jpg",
       "email": "cdb229"
     },
     {
@@ -346,7 +333,7 @@
       "team": "Publicity",
       "position": "Publicity Officer",
       "year": "23",
-      "img": "unknown.jpg",
+      "img": "publicity/yihan_huang.jpg",
       "email": "yh373"
     },
     {
@@ -395,8 +382,7 @@
       "position": "Graphic Design Officer",
       "year": "22",
       "img": "graphic_design/jackie_woo.jpg",
-      "email": "jmw499",
-      "eboard": "true"
+      "email": "jmw499"
     },
     {
       "name": "Rose Zhou",
