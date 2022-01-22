@@ -10,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
+import { Fade } from "react-awesome-reveal";
 import officerJson from "../../data/officers2223.json";
 
 function Board() {
@@ -58,7 +59,7 @@ function Board() {
         const officerElts = [];
         officers.forEach((elt) => {
             officerElts.push(
-                <Card sx={{ width: 250 }}>
+                <Card sx={{ width: 250 }} key={elt.name}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -94,8 +95,16 @@ function Board() {
 
     const genGridItems = (officers) => {
         const gridElts = [];
+        let elemCounter = 1;
         officers.forEach((elt) => {
-            gridElts.push(<Grid item>{elt}</Grid>);
+            gridElts.push(
+                <Grid item key={elt.key}>
+                    <Fade triggerOnce delay={elemCounter * 100}>
+                        {elt}
+                    </Fade>
+                </Grid>
+            );
+            elemCounter += 1;
         });
         return gridElts;
     };
