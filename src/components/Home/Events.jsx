@@ -134,7 +134,6 @@ export default function EventsScroll() {
     return (
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
             {items.map((article) => {
-                console.log(article);
                 const id = article.date;
                 return (
                     <Card
