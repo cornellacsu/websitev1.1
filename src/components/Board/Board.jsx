@@ -60,7 +60,7 @@ function Board() {
         officers.forEach((elt) => {
             officerElts.push(
                 <Card sx={{ width: 250 }} key={elt.name}>
-                    <CardActionArea>
+                    <CardActionArea href={elt.link}>
                         <CardMedia
                             component="img"
                             height="200"
