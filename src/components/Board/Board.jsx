@@ -79,7 +79,10 @@ function Board() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <a href={"mailto:" + elt.email}>
+                        <a
+                            href={"mailto:" + elt.email + "@cornell.edu"}
+                            target="_blank"
+                            rel="noopener noreferrer">
                             <img
                                 className="Board-card-icon"
                                 src={require("../../img/email.png")}
