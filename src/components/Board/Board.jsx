@@ -1,68 +1,71 @@
 import React, { useState, useEffect } from "react";
 import "./Board.css";
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions } from '@mui/material';
-import officerJson from '../../data/officers2223.json';
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea, CardActions } from "@mui/material";
+import { Fade } from "react-awesome-reveal";
+import officerJson from "../../data/officers2223.json";
 
 function Board() {
-    const [pageName, setPageName] = useState('Eboard');
+    const [pageName, setPageName] = useState("Eboard");
     const [officers, setOfficers] = useState([]);
 
     const setName = (name) => {
-        setPageName(name)
+        setPageName(name);
     };
 
     const sidebarElts = [
         {
-            name: "Eboard"
+            name: "Eboard",
         },
         {
-            name: "Academic"
+            name: "Academic",
         },
         {
-            name: "Corporate"
+            name: "Corporate",
         },
         {
-            name: "Graphic Design"
+            name: "Graphic Design",
         },
         {
-            name: "Social"
+            name: "Social",
         },
         {
-            name: "Web Dev"
+            name: "Web Dev",
         },
         {
-            name: "Publicity"
-        }
-    ]
+            name: "Publicity",
+        },
+    ];
 
     const loadOfficerData = (json, teamName) => {
-        const officers = json.officers.filter(person => {
-            return person ? person.team === teamName ||
-                (teamName === 'Eboard' && person.eboard) : null;
+        const officers = json.officers.filter((person) => {
+            return person
+                ? person.team === teamName ||
+                      (teamName === "Eboard" && person.eboard)
+                : null;
         });
         return officers;
     };
 
-    const renderOfficers = officers => {
-        const officerElts = []
+    const renderOfficers = (officers) => {
+        const officerElts = [];
         officers.forEach((elt) => {
-            console.log(elt.img)
             officerElts.push(
-                <Card sx={{ width: 250 }}>
-                    <CardActionArea>
+                <Card sx={{ width: 250 }} key={elt.name}>
+                    <CardActionArea href={elt.link}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image={require("../../img/team/2022-2023/" + elt.img)}
+                            image={require("../../img/team/2022-2023/" +
+                                elt.img)}
                             alt={elt.img}
                             className="Board-card-img"
                         />
@@ -77,19 +80,31 @@ function Board() {
                     </CardContent>
                     <CardActions>
                         <a href={"mailto:" + elt.email + "@cornell.edu"}>
-                            <img className="Board-card-icon" src={require("../../img/email.png")} alt="mailto" />
+                            <img
+                                className="Board-card-icon"
+                                src={require("../../img/email.png")}
+                                alt="mailto"
+                            />
                         </a>
                     </CardActions>
-                </Card >
-            )
+                </Card>
+            );
         });
-        return officerElts
+        return officerElts;
     };
 
     const genGridItems = (officers) => {
         const gridElts = [];
-        officers.forEach(elt => {
-            gridElts.push(<Grid item>{elt}</Grid>);
+        let elemCounter = 1;
+        officers.forEach((elt) => {
+            gridElts.push(
+                <Grid item key={elt.key}>
+                    <Fade triggerOnce delay={elemCounter * 100}>
+                        {elt}
+                    </Fade>
+                </Grid>
+            );
+            elemCounter += 1;
         });
         return gridElts;
     };
@@ -103,21 +118,40 @@ function Board() {
         <div>
             <h1 className="Board-text-center">{pageName}</h1>
             <div className="Board">
-                <List sx={{ maxWidth: 140 }}
-                    className="Box-sidebar" anchor="left" variant="permanent">
-                    {sidebarElts.map(elt => (
-                        <ListItem button key={elt.name} onClick={() => setName(elt.name)}>
-                            <ListItemText className="Board-text-center" primary={elt.name} />
+                <List
+                    sx={{ maxWidth: 140 }}
+                    className="Box-sidebar"
+                    anchor="left"
+                    variant="permanent">
+                    {sidebarElts.map((elt) => (
+                        <ListItem
+                            button
+                            key={elt.name}
+                            onClick={() => setName(elt.name)}>
+                            <ListItemText
+                                className="Board-text-center"
+                                primary={elt.name}
+                            />
                         </ListItem>
                     ))}
                 </List>
                 <Box sx={{ flexGrow: 1 }} className="Board-box">
-                    <Grid container spacing={2} m="auto" width={{ xs: 400, sm: 700, md: 800, lg: 1100, xl: 1300 }}>
+                    <Grid
+                        container
+                        spacing={2}
+                        m="auto"
+                        width={{
+                            xs: 400,
+                            sm: 700,
+                            md: 800,
+                            lg: 1100,
+                            xl: 1300,
+                        }}>
                         {genGridItems(officers)}
                     </Grid>
                 </Box>
             </div>
-        </div >
+        </div>
     );
 }
 

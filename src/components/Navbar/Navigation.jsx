@@ -3,38 +3,8 @@ import "./Navigation.css";
 import { Link, withRouter } from "react-router-dom";
 import styled from "@emotion/styled";
 import logo from "./icons/logo.png";
-import Button from "@material-ui/core/Button";
-import { withStyles } from "@material-ui/core/styles";
 import { Fade } from "react-awesome-reveal";
-
-const JoinButton = withStyles({
-    root: {
-        boxShadow: "none",
-        textTransform: "none",
-        fontSize: 16,
-        padding: "6px 12px",
-        border: "1px solid",
-        lineHeight: 1.5,
-        backgroundColor: "#b01c33",
-        color: "white",
-        "&:hover": {
-            backgroundColor: "#c73046",
-            borderColor: "#b01c33",
-            boxShadow: "none",
-        },
-        "&:active": {
-            boxShadow: "none",
-            backgroundColor: "#b01c33",
-            borderColor: "#b01c33",
-        },
-        "&:focus": {
-            boxShadow: "0 0 0 0.2rem rgba(135, 22, 38,.5)",
-        },
-    },
-    label: {
-        textTransform: "capitalize",
-    },
-})(Button);
+import JoinUs from "./JoinUs";
 
 const MyNavLink = styled(Link)`
     font-size: 20px;
@@ -91,7 +61,9 @@ function Navigation(props) {
                     </MyNavLink>
                 </Fade>
                 <Fade direction="up" triggerOnce delay={4 * interval}>
-                    <JoinButton className="nav-button">Join Us!</JoinButton>
+                    <div className="nav-button">
+                        <JoinUs />
+                    </div>
                 </Fade>
             </div>
         </nav>
