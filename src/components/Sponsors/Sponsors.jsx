@@ -2,7 +2,7 @@ import "./Sponsors.css";
 import SponsorCard from "./SponsorCard";
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import json from "../../data/sponsors2021.json";
+import json from "../../data/sponsors2023.json";
 
 function Sponsors() {
     const getGold = json.sponsors.filter((sponsor) => sponsor.class === "gold");
@@ -23,7 +23,7 @@ function Sponsors() {
                 <div class="row align-items-center">
                     <div>
                         <h1 class="font-weight-light">Sponsors</h1>
-                        <h5>Thank you to all our 2021 sponsors!</h5>
+                        <h5>Thank you to all our 2023 sponsors!</h5>
                         <div class="sponsors-tier tier">
                             <h2 class="gold">Gold</h2>
                             <div class="tier-container tier-gold">

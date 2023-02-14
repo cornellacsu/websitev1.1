@@ -11,8 +11,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
-import officerJson from "../../data/officers2223.json";
+import officerJson from "../../data/officers2324.json";
 
+
+// TODO: Add in officer pictures that are missing
 function Board() {
     const [pageName, setPageName] = useState("Eboard");
     const [officers, setOfficers] = useState([]);
@@ -64,8 +66,8 @@ function Board() {
                         <CardMedia
                             component="img"
                             height="200"
-                            image={require("../../img/team/2022-2023/" +
-                                elt.img)}
+                            image={require("../../img/team/2023 -2024/".concat(
+                                elt.img))}
                             alt={elt.img}
                             className="Board-card-img"
                         />
