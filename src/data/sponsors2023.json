@@ -5,14 +5,14 @@
             "link": "https://www2.deloitte.com/us/en.html",
             "img": "deloitte.png",
             "imgName": "Deloitte logo",
-            "width": "28%"
+            "width": "26%"
         },
         {
             "class": "gold",
             "link": "https://www.janestreet.com/",
             "img": "janestreet.png",
             "imgName": "Jane Street Capital logo",
-            "width": "28%"
+            "width": "26%"
         },
         {
             "class": "bronze",
@@ -33,7 +33,7 @@
             "link": "https://www.uber.com/",
             "img": "uber.png",
             "imgName": "Uber logo",
-            "width": "22%"
+            "width": "16%"
         },
         {
             "class": "bronze",

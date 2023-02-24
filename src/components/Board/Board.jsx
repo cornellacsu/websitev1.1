@@ -66,8 +66,8 @@ function Board() {
                         <CardMedia
                             component="img"
                             height="200"
-                            image={require("../../img/team/2023 -2024/".concat(
-                                elt.img))}
+                            image={require("../../img/team/2023-2024/".concat(
+                                elt.img)).default}
                             alt={elt.img}
                             className="Board-card-img"
                         />
@@ -87,7 +87,7 @@ function Board() {
                             rel="noopener noreferrer">
                             <img
                                 className="Board-card-icon"
-                                src={require("../../img/email.png")}
+                                src={require("../../img/email.png").default}
                                 alt="mailto"
                             />
                         </a>

@@ -10,9 +10,9 @@ function SponsorCard({ link, img, imgName }) {
                     class="color-container-sponsors"
                     style={{ "background-color": data.vibrant }}>
                     <div class="white-container-sponsors">
-                        <a href={link}>
+                        <a href={link}> 
                             <img
-                                src={require("./icons/" + img)}
+                                src={require("./icons/".concat(img)).default}
                                 alt={imgName}
                                 className="d-inline-block align-text-top"></img>
                         </a>
