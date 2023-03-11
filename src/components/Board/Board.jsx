@@ -87,7 +87,7 @@ function Board() {
             >
               <img
                 className="Board-card-icon"
-                src={require("../../img/email.png")}
+                src={require("../../img/email.png").default}
                 alt="mailto"
               />
             </a>
