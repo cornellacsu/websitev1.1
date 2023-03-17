@@ -75,56 +75,9 @@ function Card({ itemId, link, imgName }) {
   );
 }
 
+// TODO: write a script to update automatically.
 // Add new articles here -- add image named after the published date
 const articles = [
-  // {
-  //     date: "04-16-21",
-  //     link: "https://cis.cornell.edu/cloud-optimization-startup-secures-5-million-seed-funding",
-  // },
-  // {
-  //     date: "05-03-21",
-  //     link: "https://cis.cornell.edu/info-sci-phd-launches-accelerator-elevate-black-startup-founders",
-  // },
-  // {
-  //     date: "05-26-21",
-  //     link: "https://cis.cornell.edu/grant-accelerate-ai-materials-discovery-and-design",
-  // },
-  // {
-  //     date: "06-17-21",
-  //     link: "https://cis.cornell.edu/zhang-receives-cornell-china-center-grant-support-joint-research-china",
-  // },
-  // {
-  //     date: "06-17-21-2",
-  //     link: "https://cis.cornell.edu/info-sci-research-team-receives-cornell-atkinson-grant-expand-repertoire-community-led-climate",
-  // },
-  // {
-  //     date: "06-18-21",
-  //     link: "https://cis.cornell.edu/mental-health-helplines-need-human-centered-solutions",
-  // },
-  // {
-  //     date: "06-21-21",
-  //     link: "https://cis.cornell.edu/kilian-weinberger-finalist-blavatnik-foundation-and-new-york-academy-sciences-national-award-young",
-  // },
-  // {
-  //     date: "06-21-21-2",
-  //     link: "https://cis.cornell.edu/kizilcec-testing-ai-fairness-predicting-college-dropout-rate",
-  // },
-  // {
-  //     date: "06-22-21",
-  //     link: "https://cis.cornell.edu/gomes-receives-cornell-atkinson-grant-study-amazonian-aquaculture",
-  // },
-  // {
-  //     date: "07-06-21",
-  //     link: "https://cis.cornell.edu/machine-learning-tool-sorts-nuances-quantum-data",
-  // },
-  // {
-  //     date: "07-09-21",
-  //     link: "https://cis.cornell.edu/nsf-funds-work-flagging-bad-online-behavior",
-  // },
-  // {
-  //     date: "07-19-21",
-  //     link: "https://cis.cornell.edu/info-scis-aspen-russell-publishes-piece-tech-remote-work-and-equity",
-  // },
   {
     date: "03-06-23",
     link: "https://cis.cornell.edu/trummer-and-zhang-receive-nsf-career-awards",
