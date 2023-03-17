@@ -123,8 +123,12 @@ const articles = [
     // },
     // {
     //     date: "07-19-21",
-    //     link: "https://cis.cornell.edu/info-scis-aspen-russell-publishes-piece-tech-remote-work-and-equity",
+    //     lin/sites/default/files/styles/medium_square/public/mor_naaman_0.jpgk: "https://cis.cornell.edu/info-scis-aspen-russell-publishes-piece-tech-remote-work-and-equity",
     // },
+    {
+        date: "03-08-23",
+        link: "https://cis.cornell.edu/ai-or-human-written-language-assumptions-mislead",
+    },
     {
         date: "03-06-23",
         link: "https://cis.cornell.edu/trummer-and-zhang-receive-nsf-career-awards",
@@ -132,6 +136,42 @@ const articles = [
     {
         date: "03-03-23",
         link: "https://cis.cornell.edu/cornell-bowers-cis-expands-summer-research-program-all-majors",
+    },
+    {
+        date: "03-01-23",
+        link: "https://cis.cornell.edu/kay-zhang-%E2%80%9822-charting-course-success",
+    },
+    {
+        date: "02-27-23",
+        link: "https://cis.cornell.edu/bowers-cis-new-majors-welcome-draws-200-plus-future-innovators",
+    },
+    {
+        date: "02-24-23",
+        link: "https://cis.cornell.edu/basu-bhattacharjee-receive-nsf-early-career-awards",
+    },
+    {
+        date: "02-21-23",
+        link: "https://cis.cornell.edu/articles#:~:text=National%20Society%20of%20Black%20Engineers%20thrives%20at%20Cornell",
+    },
+    {
+        date: "02-16-23",
+        link: "https://cis.cornell.edu/sengers-named-chi-academy",
+    },
+    {
+        date: "02-17-23",
+        link: "https://cis.cornell.edu/chattopadhyay-tan-phd-%E2%80%9916-win-sloan-research-fellowships",
+    },
+    {
+        date: "02-15-23",
+        link: "https://cis.cornell.edu/human-computer-interaction-scholar-receives-societal-impact-award",
+    },
+    {
+        date: "02-14-23",
+        link: "https://cis.cornell.edu/regret-being-hostile-online-ai-tool-guides-users-away-vitriol",
+    },
+    {
+        date: "02-10-23",
+        link: "https://cis.cornell.edu/same-race-reviews-reduce-inequality-airbnb-bookings",
     }
 
 ];
