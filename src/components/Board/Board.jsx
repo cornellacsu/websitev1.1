@@ -44,6 +44,9 @@ function Board() {
     {
       name: "Publicity",
     },
+    {
+      name: "Faculty",
+    }
   ];
 
   const loadOfficerData = (json, teamName) => {

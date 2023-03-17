@@ -48,14 +48,6 @@
       "eboard": "true"
     },
     {
-      "name": "Chuhan Ouyang",
-      "team": "Corporate",
-      "position": "Corporate Co-Chair",
-      "year": "25",
-      "img": "corporate/chuhan_ouyang.jpg",
-      "email": "co232"
-    },
-    {
       "name": "Derek Sanchez",
       "team": "Corporate",
       "position": "Corporate Co-Chair",
@@ -118,6 +110,14 @@
       "year": "24",
       "img": "web_dev/mahi_nair.jpg",
       "email": "mfn37"
+    },
+    {
+      "name": "Chuhan Ouyang",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "corporate/chuhan_ouyang.jpg",
+      "email": "co232"
     },
     {
       "name": "Arnav Parashar",
@@ -374,6 +374,13 @@
       "year": "26",
       "img": "unknown.jpg",
       "email": "bc525"
+    },
+    {
+      "name": "Lillian Lee",
+      "team": "Faculty",
+      "position": "Faculty Advisor",
+      "img": "unknown.jpg",
+      "email": "llee@cs.cornell.edu"
     }
   ]
 }
