@@ -4,6 +4,8 @@ import Header from "./Resources/Components/Header";
 import Section from "./Resources/Components/Section";
 import SideBar from "./Resources/Components/SideBar";
 
+// TODO: completely update sidebar to have better/safer routing
+
 class Resources extends Component {
     constructor(props) {
         super(props);
