@@ -30,23 +30,25 @@
 }
 
 .tier-gold div {
-    width: 40%;
+    width: 44%;
     margin-right: 1em;
 }
 
 .tier-silver div {
-    width: 28%;
+    width: 30%;
     margin-right: 1em;
 }
 
 .tier-bronze div {
-    width: 22%;
+    width: 18%;
     margin-right: 1em;
+    /* flex-grow: 1; */
 }
 
 .tier-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 

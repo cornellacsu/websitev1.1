@@ -57,7 +57,6 @@ function Home() {
                     <Roles />
                 </div>
             </Section>
-            {/* TODO: Update Articles */}
             <Fade triggerOnce>
                 <h1>Featured Articles</h1>
                 <Events />
