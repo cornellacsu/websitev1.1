@@ -1,11 +1,10 @@
 {
   "year": "2023-2024",
   "date": "02/13/2023",
-  "officers": [
-    {
+  "officers": [{
       "name": "Arya Song",
       "team": "Eboard",
-      "position": "President",
+      "position": "Co-President",
       "year": "24",
       "img": "eboard/arya_song.jpg",
       "email": "ys434",
@@ -14,7 +13,7 @@
     {
       "name": "Will Zhang",
       "team": "Eboard",
-      "position": "Co-Vice President",
+      "position": "Co-President",
       "year": "25",
       "img": "eboard/will_zhang.jpg",
       "email": "wz282",
