@@ -59,7 +59,7 @@ const FAQ = () => {
         <h2>Classes</h2>
         <Accordion
           title="Should I take CS 1110 or CS 1112?"
-          content="CS 1110 teaches you the basics of Computer Science in using the Python programming language, whereas CS 1112 teaches you the basics using the Matlab language. Because writing code in Python is less complex, more readable, and is easier to transition to learn how to write code in other popular languages such as Java, most prospective CS majors elect to take CS 1110. However, CS 1112 would be a good choice for students who are interested in classes associated with Computational Science & Engineering (CS 4210, CS 4220) or have interest in other science fields outside of Computer Science because it is useful for mathematical computations."
+          content="As of Fall 2023, both classes will be in Python. The CS department <a href='https://www.cs.cornell.edu/undergrad/firstcscourse'>statement</a> says: “The computer science department views either course (CS 1110 [Introduction to Computing: A Design & Development Perspective] and CS 1112 [Introduction to Computing: An Engineering & Science Perspective]) as equally good preparation for the CS major. If one doesn't have a preference between a more design-oriented perspective and a perspective more influenced by scientific or engineering applications, and no scheduling constraints apply, then we advise students to simply pick the class with fewer students enrolled at the time."
         />
         <Accordion
           title="Should I take CS 2110 or CS 2112?"

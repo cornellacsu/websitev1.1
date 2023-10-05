@@ -11,6 +11,7 @@ function Accordion(props) {
   const [setRotate, setRotateState] = useState("accordion__icon");
 
   const content = useRef(null);
+  
 
   function toggleAccordion() {
     setActiveState(setActive === "" ? "active" : "");
