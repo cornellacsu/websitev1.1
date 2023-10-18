@@ -1,7 +1,8 @@
 {
   "year": "2023-2024",
   "date": "02/13/2023",
-  "officers": [{
+  "officers": [
+    {
       "name": "Arya Song",
       "team": "Eboard",
       "position": "Co-President",
@@ -29,157 +30,28 @@
       "eboard": "true"
     },
     {
-      "name": "Michelle Li",
-      "team": "Eboard",
+      "name": "Grace Kim",
+      "team": "Academic",
       "position": "Treasurer",
-      "year": "24",
-      "img": "eboard/michelle_li.jpg",
-      "email": "myl39",
-      "eboard": "true"
-    },
-    {
-      "name": "Derek Sanchez",
-      "team": "Corporate",
-      "position": "Corporate Co-Chair",
-      "year": "24",
+      "year": "26",
       "img": "unknown.jpg",
-      "email": "dms554"
-    },
-    {
-      "name": "Emmett Breen",
-      "team": "Academic",
-      "position": "Academic Co-Chair",
-      "year": "23",
-      "img": "unknown.jpg",
-      "email": "ejb284"
-    },
-    {
-      "name": "Mo Islam",
-      "team": "Academic",
-      "position": "Academic Co-Chair",
-      "year": "23",
-      "img": "academic/mo_islam.jpg",
-      "email": "mti7"
-    },
-    {
-      "name": "David Forcinito",
-      "team": "Social",
-      "position": "Social Chair",
-      "year": "23",
-      "img": "social/david_forcinito.jpg",
-      "email": "dvf26"
-    },
-    {
-      "name": "Sally Zhang",
-      "team": "Publicity",
-      "position": "Publicity Chair",
-      "year": "24",
-      "img": "publicity/sally_zhang.jpg",
-      "email": "syz7"
-    },
-    {
-      "name": "Will Zhang",
-      "team": "Graphic Design",
-      "position": "Graphic Design Co-Chair",
-      "year": "25",
-      "img": "eboard/will_zhang.jpg",
-      "email": "wz282"
-    },
-    {
-      "name": "Jacqueline Woo",
-      "team": "Graphic Design",
-      "position": "Graphic Design Co-Chair",
-      "year": "24",
-      "img": "graphic_design/jacqueline_woo.jpg",
-      "email": "jw2234"
-    },
-    {
-      "name": "Mahi Narayanan Nair",
-      "team": "Web Dev",
-      "position": "Web Dev Lead",
-      "year": "24",
-      "img": "web_dev/mahi_nair.jpg",
-      "email": "mfn37"
-    },
-    {
-      "name": "Chuhan Ouyang",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "corporate/chuhan_ouyang.jpg",
-      "email": "co232"
-    },
-    {
-      "name": "Arnav Parashar",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "24",
-      "img": "corporate/arnav_parashar.jpg",
-      "email": "ap736"
-    },
-    {
-      "name": "Archit Mehta",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "corporate/archit_mehta.jpg",
-      "email": "am2283"
-    },
-    {
-      "name": "Ben Wu",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "24",
-      "img": "corporate/ben_wu.jpg",
-      "email": "bnw36"
-    },
-    {
-      "name": "Benjamin Tang",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "bt283"
+      "email": "gsk68"
     },
     {
       "name": "Lawrence Fan",
       "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
+      "position": "Corporate Co-Lead",
+      "year": "24",
       "img": "unknown.jpg",
       "email": "ljf85"
     },
     {
-      "name": "Arjun Mehta",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "ahm247"
-    },
-    {
-      "name": "Princeton Zhou",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "pz57"
-    },
-    {
       "name": "Richard Gu",
       "team": "Corporate",
-      "position": "Corporate Officer",
+      "position": "Corporate Co-Lead",
       "year": "25",
       "img": "unknown.jpg",
-      "email": "rg779"
-    },
-    {
-      "name": "Sunny Sun",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "xs275"
+      "email": "rg7794"
     },
     {
       "name": "Benjamin Li",
@@ -190,28 +62,60 @@
       "email": "bbl35"
     },
     {
-      "name": "Michelle Prior",
-      "team": "Academic",
-      "position": "Academic Officer",
+      "name": "Benjamin Tang",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "bt283"
+    },
+    {
+      "name": "Princeton Zhou",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "pz57"
+    },
+    {
+      "name": "Sunny Sun",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "xs275"
+    },
+    {
+      "name": "Arjun Mehta",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "ahm247"
+    },
+    {
+      "name": "Arnav Parashar",
+      "team": "Corporate",
+      "position": "Corporate Officer",
       "year": "24",
-      "img": "academic/michelle_prior.jpg",
-      "email": "map398"
+      "img": "corporate/arnav_parashar.jpg",
+      "email": "ap736"
     },
     {
-      "name": "Christian Donovan",
+      "name": "Purit Butsapak",
       "team": "Academic",
-      "position": "Academic Officer",
-      "year": "23",
-      "img": "academic/christian_donovan.jpg",
-      "email": "cjd237"
+      "position": "Academic Co-Lead",
+      "year": "25",
+      "img": "academic/purit_butsapak.jpg",
+      "email": "pb465"
     },
     {
-      "name": "Ethan Hersch",
+      "name": "Allison Hui",
       "team": "Academic",
-      "position": "Academic Officer",
+      "position": "Academic Co-Lead",
       "year": "26",
       "img": "unknown.jpg",
-      "email": "esh87"
+      "email": "alh322"
     },
     {
       "name": "Grace Kim",
@@ -222,116 +126,132 @@
       "email": "gsk68"
     },
     {
-      "name": "Ilia Raiszadeh",
-      "team": "Academic",
-      "position": "Academic Officer",
-      "year": "26",
+      "name": "Tasmin Sangha",
+      "team": "Social",
+      "position": "Social Co-Lead",
+      "year": "25",
       "img": "unknown.jpg",
-      "email": "ipr6"
-    },
-    {
-      "name": "Purit Butsapak",
-      "team": "Academic",
-      "position": "Academic Officer",
-      "year": "26",
-      "img": "academic/purit_butsapak.jpg",
-      "email": "pb465"
-    },
-    {
-      "name": "Robyn Burger",
-      "team": "Academic",
-      "position": "Academic Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "rlb388"
-    },
-    {
-      "name": "Allison Hui",
-      "team": "Academic",
-      "position": "Academic Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "alh322"
+      "email": "tks39"
     },
     {
       "name": "Nidhi Mylavarapu",
       "team": "Social",
-      "position": "Social Officer",
+      "position": "Social Co-Lead",
       "year": "26",
       "img": "unknown.jpg",
       "email": "nm549"
     },
     {
-      "name": "Tasmin Sangha",
+      "name": "David Forcinito",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "23",
+      "img": "unknown.jpg",
+      "email": "dvf26"
+    },
+    {
+      "name": "Anishka Raina",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "ar933"
+    },
+    {
+      "name": "Ryan Park",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "rp3"
+    },
+    {
+      "name": "Lucas Li",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "lyl27"
+    },
+    {
+      "name": "Tina Sherpa",
       "team": "Social",
       "position": "Social Officer",
       "year": "25",
-      "img": "social/tasmin_sangha.jpg",
-      "email": "tks39"
+      "img": "unknown.jpg",
+      "email": "ts556"
     },
     {
-      "name": "Steven Chen",
+      "name": "Omisha Sharma",
       "team": "Social",
       "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "os226"
+    },
+    {
+      "name": "Robyn Bruger",
+      "team": "Publicity",
+      "position": "Publicity Lead",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "rlb388"
+    },
+    {
+      "name": "Jacqueline Woo",
+      "team": "Graphic Design",
+      "position": "Graphic Lead",
       "year": "24",
       "img": "unknown.jpg",
-      "email": "sc2796"
+      "email": "jw2234"
     },
     {
-      "name": "Ankit Lakkapragada",
+      "name": "Shihan Gao",
       "team": "Graphic Design",
-      "position": "Graphic Design Officer",
-      "year": "25",
+      "position": "Graphic Officer",
+      "year": "26",
       "img": "unknown.jpg",
-      "email": "asl256"
+      "email": "tg329"
     },
     {
       "name": "Chloe Chan",
       "team": "Graphic Design",
-      "position": "Graphic Design Officer",
+      "position": "Graphic Officer",
       "year": "26",
       "img": "unknown.jpg",
       "email": "cac499"
     },
     {
-      "name": "Crystal Jin",
+      "name": "Caroline Cheng",
       "team": "Graphic Design",
-      "position": "Graphic Design Officer",
-      "year": "24",
-      "img": "graphic_design/crystal_jin.jpg",
-      "email": "xj65"
-    },
-    {
-      "name": "Chunyu Wu",
-      "team": "Graphic Design",
-      "position": "Graphic Design Officer",
-      "year": "24",
+      "position": "Graphic Officer",
+      "year": "27",
       "img": "unknown.jpg",
-      "email": "cw577"
+      "email": "cyc59"
     },
     {
-      "name": "Rachel Jiang",
+      "name": "Venus Zheng",
       "team": "Graphic Design",
-      "position": "Graphic Design Officer",
-      "year": "24",
+      "position": "Graphic Officer",
+      "year": "26",
       "img": "unknown.jpg",
-      "email": "tj232"
+      "email": "vz49"
     },
     {
-      "name": "Ben Bigdelle",
+      "name": "Ken Chiem",
       "team": "Web Dev",
-      "position": "Web Dev Officer",
+      "position": "Web Dev Co-Lead",
       "year": "25",
-      "img": "web_dev/ben_bigdelle.jpg",
-      "email": "brb227"
+      "img": "unknown.jpg",
+      "email": "kc696"
     },
     {
-      "name": "Rohit Valveti",
+      "name": "Brittanie Chen",
       "team": "Web Dev",
-      "position": "Web Dev Officer",
+      "position": "Web Dev Co-Lead",
       "year": "25",
-      "img": "web_dev/rohit_valveti.jpg",
-      "email": "rvv6"
+      "img": "unknown.jpg",
+      "email": "bc525"
     },
     {
       "name": "Corey Wang",
@@ -342,14 +262,6 @@
       "email": "clw233"
     },
     {
-      "name": "Ken Chiem",
-      "team": "Web Dev",
-      "position": "Web Dev Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "kc696"
-    },
-    {
       "name": "Brendan Lo",
       "team": "Web Dev",
       "position": "Web Dev Officer",
@@ -358,12 +270,20 @@
       "email": "bl536"
     },
     {
-      "name": "Brittanie Chen",
+      "name": "Daisy Chang",
       "team": "Web Dev",
       "position": "Web Dev Officer",
-      "year": "26",
+      "year": "27",
       "img": "unknown.jpg",
-      "email": "bc525"
+      "email": "dmc387"
+    },
+    {
+      "name": "Nathan Chu",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "nwc35"
     },
     {
       "name": "Lillian Lee",
