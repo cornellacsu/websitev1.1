@@ -21,6 +21,15 @@
       "eboard": "true"
     },
     {
+      "name": "Grace Kim",
+      "team": "Eboard",
+      "position": "Treasurer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "gsk68",
+      "eboard": "true"
+    },
+    {
       "name": "Joanna Zhang",
       "team": "Eboard",
       "position": "Secretary",
@@ -28,14 +37,6 @@
       "img": "eboard/joanna_zhang.jpg",
       "email": "jaz76",
       "eboard": "true"
-    },
-    {
-      "name": "Grace Kim",
-      "team": "Academic",
-      "position": "Treasurer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "gsk68"
     },
     {
       "name": "Lawrence Fan",
