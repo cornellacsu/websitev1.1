@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   Navigation,
   Footer,
@@ -15,20 +15,12 @@ function App() {
       <ProgressBar bgcolor="#b81c34" />
       <Router>
         <Navigation />
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/board" exact>
-            <Board />
-          </Route>
-          <Route path="/sponsors" exact>
-            <Sponsors />
-          </Route>
-          <Route path="/resources" exact>
-            <Resources />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/board/*" element={<Board />} />
+          <Route path="/sponsors/*" element={<Sponsors />} />
+          <Route path="/resources/*" element={<Resources />} />
+        </Routes>
         <Footer />
       </Router>
     </div>

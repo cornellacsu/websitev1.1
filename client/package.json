@@ -1,55 +1,55 @@
 {
-    "name": "new-acsu-webapp",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@emotion/react": "^11.4.1",
-        "@emotion/styled": "^10.0.27",
-        "@material-ui/core": "^4.11.4",
-        "@material-ui/icons": "^4.11.2",
-        "@mui/icons-material": "^5.0.5",
-        "@mui/material": "^5.0.6",
-        "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.1.0",
-        "@testing-library/user-event": "^12.1.10",
-        "react": "^16.8.6",
-        "react-awesome-reveal": "^3.8.1",
-        "react-bootstrap": "^1.5.2",
-        "react-dom": "^17.0.2",
-        "react-horizontal-scrolling-menu": "^2.0.0",
-        "react-palette": "^1.0.2",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "4.0.3",
-        "react-scroll-progress-bar": "^1.1.13",
-        "react-transition-group": "^4.4.1",
-        "reflexbox": "^4.0.6",
-        "styled-components": "^5.3.1",
-        "web-vitals": "^1.0.1",
-        "follow-redirects": ">=1.14.7",
-        "merge": ">=2.1.1"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "homepage": "https://acsu.cornell.edu"
+  "name": "new-acsu-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/material": "^5.0.6",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "follow-redirects": ">=1.14.7",
+    "merge": ">=2.1.1",
+    "react": "^16.8.2",
+    "react-awesome-reveal": "^3.8.1",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^17.0.2",
+    "react-horizontal-scrolling-menu": "^2.0.0",
+    "react-palette": "^1.0.2",
+    "react-router-dom": "^6.17.0",
+    "react-scripts": "4.0.3",
+    "react-scroll-progress-bar": "^1.1.13",
+    "react-transition-group": "^4.4.1",
+    "reflexbox": "^4.0.6",
+    "styled-components": "^5.3.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "https://acsu.cornell.edu"
 }
