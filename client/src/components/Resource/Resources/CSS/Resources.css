@@ -10,9 +10,10 @@ body {
 }
 
 .SideBarC {
-  min-width: 160px;
-  width: 15%;
-  position: relative;
+  margin: 0 auto;
+  float: left;
+  flex: 50%;
+  font-size: 1.25rem;
 }
 
 .SectionC {
@@ -230,30 +231,31 @@ a {
 @media only screen and (max-width: 1300px) {
   .SideBar {
     border-right: 0rem solid #000000;
-    /* left: 2.5rem;
+    left: 2.5rem;
     font-size: 1rem;
-    width: auto; */
+    width: auto;
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .Section {
     /* position: absolute; */
-    /* min-width: 50px; */
-    /* left: 150px; */
-    margin-left: 0;
+    min-width: 5%;
+    left: 50px;
+    margin-left: 5%;
   }
 
   .Courses img {
-    /* width: 320px; */
+    width: 320px;
     height: auto;
-    /* margin-left: 0; */
+    margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .Section {
-    /* width: calc(100% - 150px); */
+    width: 100%;
+    margin-left: 0%;
   }
 
   h1 {
