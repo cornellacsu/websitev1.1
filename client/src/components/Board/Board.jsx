@@ -46,7 +46,7 @@ function Board() {
     },
     {
       name: "Faculty",
-    }
+    },
   ];
 
   const loadOfficerData = (json, teamName) => {
@@ -105,8 +105,9 @@ function Board() {
     const gridElts = [];
     let elemCounter = 1;
     officers.forEach((elt) => {
+      let uniqueKey = `${elt.name}-${elt.position}`; // establish unique key
       gridElts.push(
-        <Grid item key={elt.key}>
+        <Grid item key={uniqueKey}>
           <Fade triggerOnce delay={elemCounter * 100}>
             {elt}
           </Fade>
