@@ -228,21 +228,30 @@ a {
   color: #b01c33;
 } */
 
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
   .SideBar {
     border-right: 0rem solid #000000;
     left: 2.5rem;
     font-size: 1rem;
     width: auto;
-  }
-}
+    /* padding-right: 1rem; */
+/* } */
+/* } */
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
   .Section {
     /* position: absolute; */
     min-width: 5%;
     left: 50px;
-    margin-left: 5%;
+    margin-left: 10%;
+  }
+
+  .SideBar {
+    border-right: 0rem solid #000000;
+    left: 2.5rem;
+    font-size: 1rem;
+    width: auto;
+    /* padding-right: 1rem; */
   }
 
   .Courses img {
