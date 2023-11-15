@@ -61,6 +61,11 @@ function Navigation(props) {
                     </MyNavLink>
                 </Fade>
                 <Fade direction="up" triggerOnce delay={4 * interval}>
+                    <MyNavLink className="nav-button" to="/resumebook">
+                        Resume Book
+                    </MyNavLink>
+                </Fade>
+                <Fade direction="up" triggerOnce delay={5 * interval}>
                     <div className="nav-button">
                         <JoinUs />
                     </div>
