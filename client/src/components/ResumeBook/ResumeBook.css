@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+.Section {
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+}
+
+.Summary {
+    margin:auto;
+    width: 60%;
+}
+
+p {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.15rem;
+}
+
+.gs-button {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nav-button span {
+    font-weight: 800;
+}
+
+/* Button Div */
+.button-div {
+    width: 100%;
+    transform: skew(20deg);
+    background-image: linear-gradient(
+        100deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5) 100%,
+        rgba(0, 0, 0, 0)
+    );
+}
+
+/* Icon Button */
+.icon-button {
+    --button-size: calc(var(--nav-size) * 0.6);
+    width: calc(var(--button-size) * 5);
+    height: var(--button-size);
+    background-color: #484a4d;
+    border-radius: 30%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+}
+
+.icon-button:hover {
+    filter: brightness(1.5);
+}
+
+.icon-button img {
+    transform: skew(-20deg);
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+}
+
+.icon-button svg {
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+}

@@ -8,6 +8,7 @@ import {
     Sponsors,
     Resources,
 } from "./components";
+import ResumeBook from "./components/ResumeBook/ResumeBook"
 import ProgressBar from "react-scroll-progress-bar";
 function App() {
     return (
@@ -27,6 +28,11 @@ function App() {
                         path="/resources"
                         exact
                         component={() => <Resources />}
+                    />
+                    <Route 
+                        path="/resumebook"
+                        exact
+                        component={() => <ResumeBook />}
                     />
                 </Switch>
                 <Footer />
