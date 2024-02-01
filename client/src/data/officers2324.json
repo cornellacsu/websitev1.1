@@ -3,12 +3,12 @@
   "date": "02/13/2023",
   "officers": [
     {
-      "name": "Arya Song",
+      "name": "Robyn Burger",
       "team": "Eboard",
       "position": "Co-President",
       "year": "24",
-      "img": "eboard/arya_song.jpg",
-      "email": "ys434",
+      "img": "unknown.jpg",
+      "email": "rlb388",
       "eboard": "true"
     },
     {
@@ -21,12 +21,21 @@
       "eboard": "true"
     },
     {
-      "name": "Joanna Zhang",
+      "name": "Caroline Cheng",
       "team": "Eboard",
-      "position": "Secretary",
+      "position": "Vice-President",
       "year": "24",
-      "img": "eboard/joanna_zhang.jpg",
-      "email": "jaz76",
+      "img": "unknown.jpg",
+      "email": "cyc59",
+      "eboard": "true"
+    },
+    {
+      "name": "Omisha Sharma",
+      "team": "Eboard",
+      "position": "Marketing Chair",
+      "year": "24",
+      "img": "social/Omisha_Sharma_Social.jpeg",
+      "email": "",
       "eboard": "true"
     },
     {
@@ -188,14 +197,6 @@
       "year": "26",
       "img": "social/Omisha_Sharma_Social.jpeg",
       "email": "os226"
-    },
-    {
-      "name": "Robyn Bruger",
-      "team": "Publicity",
-      "position": "Publicity Lead",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "rlb388"
     },
     {
       "name": "Jacqueline Woo",
