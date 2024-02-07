@@ -9,12 +9,9 @@ Change directory into the _client_ folder. From there:
 
 ## Contributers
 
-### 2023
+### Spring 2024
 
-- **Brittanie Chen** - Web Dev Co-Lead
+- **Daisy Chang** - Web Dev Co-Lead
 - **Kenneth Chiem** - Web Dev Co-Lead
-- **Brendan Lo** - Web Developer
-- **Corey Wang** - Web Developer
-- **Daisy Chang** - Web Developer
 - **Nathan Chu** - Web Developer
-- **Will Zhang** - Fake Developer
+- **Corey Wang** - Web Developer
