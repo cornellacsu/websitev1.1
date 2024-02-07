@@ -42,9 +42,6 @@ function Board() {
       name: "Web Dev",
     },
     {
-      name: "Publicity",
-    },
-    {
       name: "Faculty",
     },
   ];

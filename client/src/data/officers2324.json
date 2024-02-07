@@ -24,7 +24,7 @@
       "name": "Caroline Cheng",
       "team": "Eboard",
       "position": "Vice-President",
-      "year": "24",
+      "year": "27",
       "img": "unknown.jpg",
       "email": "cyc59",
       "eboard": "true"
@@ -33,7 +33,7 @@
       "name": "Omisha Sharma",
       "team": "Eboard",
       "position": "Marketing Chair",
-      "year": "24",
+      "year": "26",
       "img": "social/Omisha_Sharma_Social.jpeg",
       "email": "",
       "eboard": "true"
@@ -111,6 +111,54 @@
       "email": "ap736"
     },
     {
+      "name": "Jacky Chen",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "jc2623"
+    },
+    {
+      "name": "Andrea Thia",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "ajt259"
+    },
+    {
+      "name": "Alisha Lin",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "al853"
+    },
+    {
+      "name": "Esandi Perara",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "ekp53"
+    },
+    {
+      "name": "Kevin Ram",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "kmr232"
+    },
+    {
+      "name": "Varija Mehta",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "vvm26"
+    },
+    {
       "name": "Purit Butsapak",
       "team": "Academic",
       "position": "Academic Co-Lead",
@@ -135,6 +183,54 @@
       "email": "gsk68"
     },
     {
+      "name": "Edward Lee",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "eal265"
+    },
+    {
+      "name": "Kevin Huang",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "xh392"
+    },
+    {
+      "name": "Maggie Gao",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "mg2447"
+    },
+    {
+      "name": "Olina Zheng",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "oz36"
+    },
+    {
+      "name": "Sabrina Ning",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "sn634"
+    },
+    {
+      "name": "Susan Xu",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "zx323"
+    },
+    {
       "name": "Tasmin Sangha",
       "team": "Social",
       "position": "Social Co-Lead",
@@ -149,30 +245,6 @@
       "year": "26",
       "img": "social/Nidhi_Mylavarapu_Social.jpg",
       "email": "nm549"
-    },
-    {
-      "name": "David Forcinito",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "23",
-      "img": "unknown.jpg",
-      "email": "dvf26"
-    },
-    {
-      "name": "Anishka Raina",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "ar933"
-    },
-    {
-      "name": "Ryan Park",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "rp3"
     },
     {
       "name": "Lucas Li",
@@ -191,20 +263,68 @@
       "email": "ts556"
     },
     {
-      "name": "Omisha Sharma",
+      "name": "Jessia Jia",
       "team": "Social",
       "position": "Social Officer",
       "year": "26",
-      "img": "social/Omisha_Sharma_Social.jpeg",
-      "email": "os226"
+      "img": "unknown.jpg",
+      "email": "hj359"
+    },
+    {
+      "name": "Priyanka Sharma",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "ps733"
+    },
+    {
+      "name": "Isabel Maida",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "im299"
+    },
+    {
+      "name": "Evan Zhu",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "ejz26"
+    },
+    {
+      "name": "Elizabeth Chen",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "eyc54"
+    },
+    {
+      "name": "Sophia Wang",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "sw895"
     },
     {
       "name": "Jacqueline Woo",
       "team": "Graphic Design",
-      "position": "Graphic Lead",
+      "position": "Graphic Co-Lead",
       "year": "24",
       "img": "unknown.jpg",
       "email": "jw2234"
+    },
+    {
+      "name": "Caroline Cheng",
+      "team": "Graphic Design",
+      "position": "Graphic Co-Lead",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "cyc59"
     },
     {
       "name": "Shihan Gao",
@@ -223,22 +343,6 @@
       "email": "cac499"
     },
     {
-      "name": "Caroline Cheng",
-      "team": "Graphic Design",
-      "position": "Graphic Officer",
-      "year": "27",
-      "img": "unknown.jpg",
-      "email": "cyc59"
-    },
-    {
-      "name": "Venus Zheng",
-      "team": "Graphic Design",
-      "position": "Graphic Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "vz49"
-    },
-    {
       "name": "Ken Chiem",
       "team": "Web Dev",
       "position": "Web Dev Co-Lead",
@@ -247,12 +351,12 @@
       "email": "kc696"
     },
     {
-      "name": "Brittanie Chen",
+      "name": "Daisy Chang",
       "team": "Web Dev",
       "position": "Web Dev Co-Lead",
-      "year": "25",
+      "year": "27",
       "img": "unknown.jpg",
-      "email": "bc525"
+      "email": "dmc387"
     },
     {
       "name": "Corey Wang",
@@ -261,22 +365,6 @@
       "year": "26",
       "img": "unknown.jpg",
       "email": "clw233"
-    },
-    {
-      "name": "Brendan Lo",
-      "team": "Web Dev",
-      "position": "Web Dev Officer",
-      "year": "24",
-      "img": "unknown.jpg",
-      "email": "bl536"
-    },
-    {
-      "name": "Daisy Chang",
-      "team": "Web Dev",
-      "position": "Web Dev Officer",
-      "year": "27",
-      "img": "unknown.jpg",
-      "email": "dmc387"
     },
     {
       "name": "Nathan Chu",
