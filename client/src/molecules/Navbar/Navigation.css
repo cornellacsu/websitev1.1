@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #151616;
+  /* background: #151616; */
   font-family: "HelveticaNeue", "Roboto", "Arial", sans-serif;
   font-weight: lighter;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +19,6 @@ ul {
 }
 
 a {
-  /* color: var(--text-color); */
   text-decoration: none;
 }
 

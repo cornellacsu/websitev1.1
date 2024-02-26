@@ -6,8 +6,8 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import {withStyles} from "@material-ui/core/styles";
-import {useState} from "react";
+import { withStyles } from "@material-ui/core/styles";
+import { useState } from "react";
 
 export default function JoinUs() {
   const [open, setOpen] = React.useState(false);
@@ -17,7 +17,7 @@ export default function JoinUs() {
   });
 
   const handleInputChange = (e) => {
-    const {id, value} = e.target;
+    const { id, value } = e.target;
     setFormValues({
       ...formValues,
       [id]: value,
@@ -37,7 +37,7 @@ export default function JoinUs() {
     console.log(formValues);
     const requestOptions = {
       method: "POST",
-      headers: {"Content-Type": "application/json"},
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formValues),
     };
     fetch(
@@ -124,14 +124,14 @@ export default function JoinUs() {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleClose} style={{fontWeight: 700}}>
+            <Button onClick={handleClose} style={{ fontWeight: 700 }}>
               Cancel
             </Button>
             <Button
               variant="contained"
               color="primary"
               type="submit"
-              style={{fontWeight: 700}}
+              style={{ fontWeight: 700 }}
             >
               Subscribe
             </Button>

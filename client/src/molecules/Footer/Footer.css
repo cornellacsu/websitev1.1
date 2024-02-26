@@ -1,0 +1,26 @@
+.icon {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.footer-section {
+  margin: 5rem 0px;
+}
+
+.sm-handles {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.copyright p {
+  text-align: center;
+}
