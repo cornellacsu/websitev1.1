@@ -1,9 +1,8 @@
 .slot_container{
-    font-family: HelveticaNeue, sans-serif;
     width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
 }
