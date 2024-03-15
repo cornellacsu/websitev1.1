@@ -1,0 +1,21 @@
+.slot_container{
+    font-family: HelveticaNeue, sans-serif;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot{
+    display: flex;
+    gap: 40px;
+}
+
+.line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
