@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home, Board, Sponsors, Resources, Test, ResumeBook } from "./pages";
 import { Footer, Navigation } from "./molecules";
 import ProgressBar from "react-scroll-progress-bar";
+import Calendar from "./atoms/CalendarSlots/Calendar";
 function App() {
   return (
     <div className="App">
@@ -14,8 +15,7 @@ function App() {
           <Route path="/board" exact component={() => <Board />} />
           <Route path="/sponsors" exact component={() => <Sponsors />} />
           <Route path="/resources" exact component={() => <Resources />} />
-          <Route path="/test" exact component={() => <Test />} />
-          <Route path="/resumebook" exact component={() => <ResumeBook />} />
+          <Route path="/calendar" exact component={() => <Calendar />} />
         </Switch>
         <Footer />
       </Router>
