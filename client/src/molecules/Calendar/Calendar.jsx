@@ -8,11 +8,12 @@ const Calendar = () => {
     return (
         <div className='calendar_container'>
             <div className='title'>
-                <h1>Upcoming Events</h1>
-                {/* <span className='line'></span> */}
+                <h2>Upcoming Events</h2>
+                {line}
             </div>
-            <CalendarAtom date = "04/20/2024" event = "CS 2110 Prelim @ Statler 185"/>
+            <CalendarAtom date = "03/20/2024" event = "Research Night @ Gates G01"/>
             {line}
+            <CalendarAtom date = "03/23/2024" event = "Game Night @ Upson 221"/>
         </div>
     )
 }
