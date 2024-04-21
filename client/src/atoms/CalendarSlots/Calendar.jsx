@@ -10,7 +10,7 @@ const Calendar = ({ date, event }) => {
                 <div className="date">{date? date: dummyDate}</div>
                 <div className="event">{event? event: dummyEvent}</div>
             </div>
-            <span className='line'></span>
+            
         </div>
     )
 }
