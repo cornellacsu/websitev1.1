@@ -11,7 +11,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
-import officerJson from "../../data/officers2324.json";
+import officerJson from "../../data/officers2425.json";
 
 // TODO: Add in officer pictures that are missing
 function Board() {
@@ -65,7 +65,7 @@ function Board() {
               component="img"
               height="200"
               image={
-                require("../../img/team/2023-2024/".concat(elt.img)).default
+                require("../../img/team/2024-2025/".concat(elt.img)).default
               }
               alt={elt.img}
               className="Board-card-img"

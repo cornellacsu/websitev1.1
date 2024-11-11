@@ -32,6 +32,11 @@ const MyNavLink = styled(Link)`
   }
 `;
 
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 function Navigation(props) {
   const interval = 100;
   return (
@@ -55,6 +60,14 @@ function Navigation(props) {
         <Fade direction="up" triggerOnce delay={3 * interval}>
           <MyNavLink className="nav-button" to="/resources">
             Resources
+          </MyNavLink>
+        </Fade>
+        <Fade direction="up" triggerOnce delay={3 * interval}>
+          <MyNavLink
+            className="nav-button"
+            onClick={() => openInNewTab("https://forms.gle/ujsabynFfJWsZhea9")}
+          >
+            Officer Applications
           </MyNavLink>
         </Fade>
         <Fade direction="up" triggerOnce delay={4 * interval}>
