@@ -89,14 +89,6 @@
       "email": "cz539"
     },
     {
-      "name": "",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "",
-      "img": "unknown.jpg",
-      "email": ""
-    },
-    {
       "name": "Ajay Parthibha",
       "team": "Corporate",
       "position": "Corporate Officer",
@@ -313,25 +305,9 @@
       "email": "sw895"
     },
     {
-      "name": "Jacqueline Woo",
-      "team": "Graphic Design",
-      "position": "Graphic Co-Lead",
-      "year": "24",
-      "img": "unknown.jpg",
-      "email": "jw2234"
-    },
-    {
-      "name": "Caroline Cheng",
-      "team": "Graphic Design",
-      "position": "Graphic Co-Lead",
-      "year": "27",
-      "img": "unknown.jpg",
-      "email": "cyc59"
-    },
-    {
       "name": "Shihan Gao",
       "team": "Graphic Design",
-      "position": "Graphic Officer",
+      "position": "Graphic Lead",
       "year": "26",
       "img": "unknown.jpg",
       "email": "tg329"
@@ -339,42 +315,58 @@
     {
       "name": "Chloe Chan",
       "team": "Graphic Design",
-      "position": "Graphic Officer",
+      "position": "Graphic Lead",
       "year": "26",
       "img": "unknown.jpg",
       "email": "cac499"
     },
     {
-      "name": "Ken Chiem",
+      "name": "Priyanka Sharma",
       "team": "Web Dev",
-      "position": "Web Dev Co-Lead",
+      "position": "Web Dev Lead",
       "year": "25",
       "img": "unknown.jpg",
-      "email": "kc696"
+      "email": "ps733"
     },
     {
-      "name": "Daisy Chang",
-      "team": "Web Dev",
-      "position": "Web Dev Co-Lead",
-      "year": "27",
-      "img": "unknown.jpg",
-      "email": "dmc387"
-    },
-    {
-      "name": "Corey Wang",
+      "name": "Ashir Rao",
       "team": "Web Dev",
       "position": "Web Dev Officer",
-      "year": "26",
+      "year": "28",
       "img": "unknown.jpg",
-      "email": "clw233"
+      "email": "ar2558"
     },
     {
-      "name": "Nathan Chu",
+      "name": "Nicole Luo",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "nl545"
+    },
+    {
+      "name": "Rhea Agrawal",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ra677"
+    },
+    {
+      "name": "Rohan Mahajan",
       "team": "Web Dev",
       "position": "Web Dev Officer",
       "year": "27",
       "img": "unknown.jpg",
-      "email": "nwc35"
+      "email": "rm939"
+    },
+    {
+      "name": "Sophie Cheng",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ssc284"
     },
     {
       "name": "Lillian Lee",
