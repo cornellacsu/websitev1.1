@@ -1,6 +1,6 @@
 {
-  "year": "2023-2024",
-  "date": "02/13/2023",
+  "year": "2024-2025",
+  "date": "11/11/2024",
   "officers": [
     {
       "name": "Robyn Burger",
@@ -30,103 +30,98 @@
       "eboard": "true"
     },
     {
+      "name": "Olina Zheng",
+      "team": "Eboard",
+      "position": "PR and Marketing Chair",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "oz36",
+      "eboard": "true"
+    },
+    {
+      "name": "Claire Yu",
+      "team": "Eboard",
+      "position": "PR and Marketing Chair",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "cmy42",
+      "eboard": "true"
+    },
+    {
       "name": "Lawrence Fan",
       "team": "Eboard",
       "position": "Treasurer",
       "year": "25",
       "img": "board_2024_2025/lawrence_treasurer.jpeg",
-      "email": "ljf85"
+      "email": "ljf85",
+      "eboard": "true"
     },
     {
-      "name": "Lawrence Fan",
+      "name": "Murad Rasul",
       "team": "Corporate",
       "position": "Corporate Co-Lead",
       "year": "24",
       "img": "unknown.jpg",
-      "email": "ljf85"
-    },
-    {
-      "name": "Richard Gu",
-      "team": "Corporate",
-      "position": "Corporate Co-Lead",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "rg7794"
-    },
-    {
-      "name": "Benjamin Li",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "bbl35"
-    },
-    {
-      "name": "Benjamin Tang",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "bt283"
+      "email": "mr982"
     },
     {
       "name": "Princeton Zhou",
       "team": "Corporate",
-      "position": "Corporate Officer",
+      "position": "Corporate Co-Lead",
       "year": "25",
-      "img": "corporate/Princeton_Zhou_Corporate.png",
+      "img": "unknown.jpg",
       "email": "pz57"
     },
     {
-      "name": "Sunny Sun",
+      "name": "Rex Popick",
       "team": "Corporate",
       "position": "Corporate Officer",
-      "year": "25",
+      "year": "28",
       "img": "unknown.jpg",
-      "email": "xs275"
+      "email": "rp665"
     },
     {
-      "name": "Arjun Mehta",
+      "name": "Carol Zhang",
       "team": "Corporate",
       "position": "Corporate Officer",
-      "year": "25",
+      "year": "28",
       "img": "unknown.jpg",
-      "email": "ahm247"
+      "email": "cz539"
     },
     {
-      "name": "Arnav Parashar",
+      "name": "",
       "team": "Corporate",
       "position": "Corporate Officer",
-      "year": "24",
-      "img": "corporate/arnav_parashar.jpg",
-      "email": "ap736"
-    },
-    {
-      "name": "Jacky Chen",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
+      "year": "",
       "img": "unknown.jpg",
-      "email": "jc2623"
+      "email": ""
     },
     {
-      "name": "Andrea Thia",
+      "name": "Ajay Parthibha",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ap2453"
+    },
+    {
+      "name": "Maksym Ioffe",
       "team": "Corporate",
       "position": "Corporate Officer",
       "year": "26",
       "img": "unknown.jpg",
-      "email": "ajt259"
+      "email": "mi266"
     },
     {
-      "name": "Alisha Lin",
+      "name": "Amber Shen",
       "team": "Corporate",
       "position": "Corporate Officer",
-      "year": "25",
+      "year": "26",
       "img": "unknown.jpg",
-      "email": "al853"
+      "email": "as4288"
     },
     {
-      "name": "Esandi Perara",
+      "name": "Esandi Perera",
       "team": "Corporate",
       "position": "Corporate Officer",
       "year": "26",
@@ -134,20 +129,36 @@
       "email": "ekp53"
     },
     {
-      "name": "Kevin Ram",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "kmr232"
-    },
-    {
-      "name": "Varija Mehta",
+      "name": "Ali Telek",
       "team": "Corporate",
       "position": "Corporate Officer",
       "year": "27",
       "img": "unknown.jpg",
-      "email": "vvm26"
+      "email": "at784"
+    },
+    {
+      "name": "Anamitra Rawat",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "ar2342"
+    },
+    {
+      "name": "Colin Wu",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "cww72"
+    },
+    {
+      "name": "Henry Gao",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "ag836"
     },
     {
       "name": "Purit Butsapak",
