@@ -153,20 +153,20 @@
       "email": "ag836"
     },
     {
-      "name": "Purit Butsapak",
+      "name": "Sabrina Ning",
       "team": "Academic",
-      "position": "Academic Co-Lead",
-      "year": "25",
-      "img": "academic/purit_butsapak.jpg",
-      "email": "pb465"
+      "position": "Academic Lead",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "sn634"
     },
     {
-      "name": "Allison Hui",
+      "name": "Susan Xu",
       "team": "Academic",
-      "position": "Academic Co-Lead",
-      "year": "26",
+      "position": "Academic Lead",
+      "year": "27",
       "img": "unknown.jpg",
-      "email": "alh322"
+      "email": "zx323"
     },
     {
       "name": "Grace Kim",
@@ -185,14 +185,6 @@
       "email": "eal265"
     },
     {
-      "name": "Kevin Huang",
-      "team": "Academic",
-      "position": "Academic Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "xh392"
-    },
-    {
       "name": "Maggie Gao",
       "team": "Academic",
       "position": "Academic Officer",
@@ -209,81 +201,41 @@
       "email": "oz36"
     },
     {
-      "name": "Sabrina Ning",
+      "name": "Gwyneth Bao",
       "team": "Academic",
       "position": "Academic Officer",
-      "year": "27",
+      "year": "28",
       "img": "unknown.jpg",
-      "email": "sn634"
+      "email": "gqb2"
     },
     {
-      "name": "Susan Xu",
+      "name": "Jonathan Li",
       "team": "Academic",
       "position": "Academic Officer",
-      "year": "27",
+      "year": "28",
       "img": "unknown.jpg",
-      "email": "zx323"
+      "email": "jyl86"
     },
     {
-      "name": "Tasmin Sangha",
-      "team": "Social",
-      "position": "Social Co-Lead",
-      "year": "25",
+      "name": "Laerdon Kim",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "28",
       "img": "unknown.jpg",
-      "email": "tks39"
-    },
-    {
-      "name": "Nidhi Mylavarapu",
-      "team": "Social",
-      "position": "Social Co-Lead",
-      "year": "26",
-      "img": "social/Nidhi_Mylavarapu_Social.jpg",
-      "email": "nm549"
-    },
-    {
-      "name": "Lucas Li",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "26",
-      "img": "unknown.jpg",
-      "email": "lyl27"
-    },
-    {
-      "name": "Tina Sherpa",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "ts556"
+      "email": "lyk25"
     },
     {
       "name": "Jessia Jia",
       "team": "Social",
-      "position": "Social Officer",
+      "position": "Social Lead",
       "year": "26",
       "img": "unknown.jpg",
       "email": "hj359"
     },
     {
-      "name": "Priyanka Sharma",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "25",
-      "img": "unknown.jpg",
-      "email": "ps733"
-    },
-    {
-      "name": "Isabel Maida",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "27",
-      "img": "unknown.jpg",
-      "email": "im299"
-    },
-    {
       "name": "Evan Zhu",
       "team": "Social",
-      "position": "Social Officer",
+      "position": "Social Lead",
       "year": "26",
       "img": "unknown.jpg",
       "email": "ejz26"
@@ -305,20 +257,44 @@
       "email": "sw895"
     },
     {
-      "name": "Shihan Gao",
-      "team": "Graphic Design",
-      "position": "Graphic Lead",
-      "year": "26",
+      "name": "Isabel Maida",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
       "img": "unknown.jpg",
-      "email": "tg329"
+      "email": "im299"
     },
     {
-      "name": "Chloe Chan",
-      "team": "Graphic Design",
-      "position": "Graphic Lead",
-      "year": "26",
+      "name": "Sai Nellutla",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
       "img": "unknown.jpg",
-      "email": "cac499"
+      "email": "skn29"
+    },
+    {
+      "name": "Nikhil Andrew",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "nsa68"
+    },
+    {
+      "name": "Mini Ge",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "mjg398"
+    },
+    {
+      "name": "Zoeya Suhail",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "zs433"
     },
     {
       "name": "Priyanka Sharma",
