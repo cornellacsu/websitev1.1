@@ -86,7 +86,7 @@ export default function JoinUs() {
   return (
     <div>
       <JoinButton
-        onClick={() => openInNewTab("https://forms.gle/RWRvDtoZajzcVLk99")}
+        onClick={() => openInNewTab("https://forms.gle/3zNz5Qad2DX8i39D8")}
       >
         Join Us!
       </JoinButton>
