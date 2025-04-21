@@ -1,0 +1,355 @@
+{
+  "year": "2024-2025",
+  "date": "11/11/2024",
+  "officers": [
+    {
+      "name": "Robyn Burger",
+      "team": "Eboard",
+      "position": "Co-President",
+      "year": "25",
+      "img": "board_2024_2025/robyn_pres.jpg",
+      "email": "rlb388",
+      "eboard": "true"
+    },
+    {
+      "name": "Caroline Cheng",
+      "team": "Eboard",
+      "position": "Co-President",
+      "year": "27",
+      "img": "board_2024_2025/caroline_pres.jpg",
+      "email": "cyc59",
+      "eboard": "true"
+    },
+    {
+      "name": "Omisha Sharma",
+      "team": "Eboard",
+      "position": "Vice-President",
+      "year": "26",
+      "img": "board_2024_2025/omisha_vp.jpg",
+      "email": "os226",
+      "eboard": "true"
+    },
+    {
+      "name": "Olina Zheng",
+      "team": "Eboard",
+      "position": "PR and Marketing Chair",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "oz36",
+      "eboard": "true"
+    },
+    {
+      "name": "Claire Yu",
+      "team": "Eboard",
+      "position": "PR and Marketing Chair",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "cmy42",
+      "eboard": "true"
+    },
+    {
+      "name": "Lawrence Fan",
+      "team": "Eboard",
+      "position": "Treasurer",
+      "year": "25",
+      "img": "board_2024_2025/lawrence_treasurer.jpeg",
+      "email": "ljf85",
+      "eboard": "true"
+    },
+    {
+      "name": "Murad Rasul",
+      "team": "Corporate",
+      "position": "Corporate Co-Lead",
+      "year": "24",
+      "img": "unknown.jpg",
+      "email": "mr982"
+    },
+    {
+      "name": "Princeton Zhou",
+      "team": "Corporate",
+      "position": "Corporate Co-Lead",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "pz57"
+    },
+    {
+      "name": "Rex Popick",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "rp665"
+    },
+    {
+      "name": "Carol Zhang",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "cz539"
+    },
+    {
+      "name": "Ajay Parthibha",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ap2453"
+    },
+    {
+      "name": "Maksym Ioffe",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "mi266"
+    },
+    {
+      "name": "Amber Shen",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "as4288"
+    },
+    {
+      "name": "Esandi Perera",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "ekp53"
+    },
+    {
+      "name": "Ali Telek",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "at784"
+    },
+    {
+      "name": "Anamitra Rawat",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "ar2342"
+    },
+    {
+      "name": "Colin Wu",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "cww72"
+    },
+    {
+      "name": "Henry Gao",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "ag836"
+    },
+    {
+      "name": "Sabrina Ning",
+      "team": "Academic",
+      "position": "Academic Lead",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "sn634"
+    },
+    {
+      "name": "Susan Xu",
+      "team": "Academic",
+      "position": "Academic Lead",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "zx323"
+    },
+    {
+      "name": "Grace Kim",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "gsk68"
+    },
+    {
+      "name": "Edward Lee",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "eal265"
+    },
+    {
+      "name": "Maggie Gao",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "mg2447"
+    },
+    {
+      "name": "Olina Zheng",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "oz36"
+    },
+    {
+      "name": "Gwyneth Bao",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "gqb2"
+    },
+    {
+      "name": "Jonathan Li",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "jyl86"
+    },
+    {
+      "name": "Laerdon Kim",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "lyk25"
+    },
+    {
+      "name": "Jessia Jia",
+      "team": "Social",
+      "position": "Social Lead",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "hj359"
+    },
+    {
+      "name": "Evan Zhu",
+      "team": "Social",
+      "position": "Social Lead",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "ejz26"
+    },
+    {
+      "name": "Elizabeth Chen",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "eyc54"
+    },
+    {
+      "name": "Sophia Wang",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "26",
+      "img": "unknown.jpg",
+      "email": "sw895"
+    },
+    {
+      "name": "Isabel Maida",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "im299"
+    },
+    {
+      "name": "Sai Nellutla",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "skn29"
+    },
+    {
+      "name": "Nikhil Andrew",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "nsa68"
+    },
+    {
+      "name": "Mini Ge",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "mjg398"
+    },
+    {
+      "name": "Zoeya Suhail",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "zs433"
+    },
+    {
+      "name": "Priyanka Sharma",
+      "team": "Web Dev",
+      "position": "Web Dev Lead",
+      "year": "25",
+      "img": "unknown.jpg",
+      "email": "ps733"
+    },
+    {
+      "name": "Ashir Rao",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ar2558"
+    },
+    {
+      "name": "Nicole Luo",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "nl545"
+    },
+    {
+      "name": "Rhea Agrawal",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ra677"
+    },
+    {
+      "name": "Rohan Mahajan",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "27",
+      "img": "unknown.jpg",
+      "email": "rm939"
+    },
+    {
+      "name": "Sophie Cheng",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "unknown.jpg",
+      "email": "ssc284"
+    },
+    {
+      "name": "Lillian Lee",
+      "team": "Faculty",
+      "position": "Faculty Advisor",
+      "img": "unknown.jpg",
+      "email": "llee@cs.cornell.edu"
+    }
+  ]
+}

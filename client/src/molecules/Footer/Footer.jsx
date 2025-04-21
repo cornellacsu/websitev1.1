@@ -10,28 +10,28 @@ function Footer() {
   return (
     <footer className="footer-section" justifyContent="center">
       <div className="sm-handles">
-        <Flex flexWrap="wrap">
-          <Box width={[1 / 3]} p={2}>
+        <Flex flexWrap="wrap" mx={50}>
+          <Box width={[1 / 2]} p={1}>
             <div className="icon">
               <a href="https://www.facebook.com/CornellACSU">
                 <img src={facebook} alt={"fb"}></img>
               </a>
             </div>
           </Box>
-          <Box width={[1 / 3]} p={2}>
+          <Box width={[1 / 2]} p={1}>
             <div className="icon">
               <a href="https://www.instagram.com/cornellacsu/">
                 <img src={instagram} alt={"ig"}></img>
               </a>
             </div>
           </Box>
-          <Box width={[1 / 3]} p={2}>
+          {/* <Box width={[1 / 3]} p={2}>
             <div className="icon">
               <a href="https://www.youtube.com/channel/UCrL2JCxZi14q_nzuF04TlXQ">
                 <img src={youtube} alt={"yt"}></img>
               </a>
             </div>
-          </Box>
+          </Box> */}
         </Flex>
       </div>
       <div className="copyright">
