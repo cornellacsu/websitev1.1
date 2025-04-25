@@ -63,6 +63,16 @@ function Navigation(props) {
           </MyNavLink>
         </Fade>
         <Fade direction="up" triggerOnce delay={3 * interval}>
+          <MyNavLink className="nav-button" to="/resume-book">
+            Resume Book
+          </MyNavLink>
+        </Fade>
+        <Fade direction="up" triggerOnce delay={3 * interval}>
+          <MyNavLink className="nav-button" to="/calendar">
+            Calendar
+          </MyNavLink>
+        </Fade>
+        <Fade direction="up" triggerOnce delay={3 * interval}>
           <MyNavLink
             className="nav-button"
             onClick={() => openInNewTab("https://bit.ly/acsuspring25")}
