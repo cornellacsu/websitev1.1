@@ -37,7 +37,10 @@ function Footer() {
       <div className="copyright">
         <img src={copyright} alt={"copyright"}></img>
         <p>
-          This organization is a registered student organization of Cornell
+          <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment" style={{ color: "black", textDecoration: "underline" }}>
+            Equal Education and Employment
+          </a>{" "}
+          | This organization is a registered student organization of Cornell
           University
         </p>
       </div>
