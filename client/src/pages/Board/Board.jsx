@@ -59,20 +59,72 @@ function Board() {
     const officerElts = [];
     officers.forEach((elt) => {
       officerElts.push(
-        <Card sx={{ width: 250 }} key={elt.name}>
+        <Card
+          sx={{
+            width: 250,
+            height: 325,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+          key={elt.name}
+        >
           <CardActionArea href={elt.link}>
-            <CardMedia
-              component="img"
-              height="200"
-              image={
-                require("../../img/team/2024-2025/".concat(elt.img)).default
-              }
-              alt={elt.img}
-              className="Board-card-img"
-            />
+            <Box sx={{ position: "relative" }}>
+              <CardMedia
+                component="img"
+                height="200"
+                image={
+                  elt.img
+                    ? `/images/2025-2026/board/${elt.img}`
+                    : `/images/default-profile.png`
+                }
+                alt={elt.name}
+                className="Board-card-img"
+              />
+
+              {/* Year badge in btm right corner */}
+              {elt.year && (
+                <Box
+                  sx={{
+                    position: "absolute",
+                    bottom: 8,
+                    right: 8,
+                    backdropFilter: "blur(6px)",
+                    backgroundColor: "rgba(255, 255, 255, 0.35)",
+                    borderRadius: "8px",
+                    padding: "2px 8px",
+                    fontSize: "0.9rem",
+                    fontWeight: 600,
+                    color: "#000",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.15)",
+                  }}
+                >
+                  ’{elt.year}
+                </Box>
+              )}
+            </Box>
           </CardActionArea>
-          <CardContent className="Board-text-center">
-            <Typography gutterBottom variant="h5" component="div">
+          <CardContent
+            sx={{
+              flexGrow: 0,
+              height: 80,
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+            className="Board-text-center"
+          >
+            <Typography
+              variant="h5"
+              component="div"
+              sx={{
+                lineHeight: 1.2,
+                fontWeight: 500,
+                fontSize: "1.3rem",
+              }}
+            >
               {elt.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
@@ -87,7 +139,7 @@ function Board() {
             >
               <img
                 className="Board-card-icon"
-                src={require("../../img/email.png").default}
+                src="/images/icons/email.png"
                 alt="mailto"
               />
             </a>
