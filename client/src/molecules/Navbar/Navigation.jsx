@@ -61,22 +61,22 @@ function Navigation(props) {
           <MyNavLink className="nav-button" to="/resources">
             Resources
           </MyNavLink>
-        <Fade direction="up" triggerOnce delay={3 * interval}>
-          <MyNavLink className="nav-button" to="/calendar">
-            Calendar
-          </MyNavLink>
-        </Fade>  
+          <Fade direction="up" triggerOnce delay={3 * interval}>
+            <MyNavLink className="nav-button" to="/calendar">
+              Calendar
+            </MyNavLink>
+          </Fade>
         </Fade>
-        <Fade direction="up" triggerOnce delay={3 * interval}>
+        {/* <Fade direction="up" triggerOnce delay={3 * interval}>
           <MyNavLink
             className="nav-button"
             onClick={() => openInNewTab("https://bit.ly/acsufall25")}
           >
             Officer Applications
           </MyNavLink>
-        </Fade>
+        </Fade> */}
         <Fade direction="up" triggerOnce delay={4 * interval}>
-        <MyNavLink
+          <MyNavLink
             className="nav-button"
             onClick={() => openInNewTab("https://forms.gle/AyRTriREGNp2xj927")}
           >
