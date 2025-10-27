@@ -1,0 +1,380 @@
+{
+  "year": "2024-2025",
+  "date": "10/26/2025",
+  "officers": [
+    {
+      "name": "Caroline Cheng",
+      "team": "Eboard",
+      "position": "President",
+      "year": "27",
+      "img": "board_2025_2026/Caroline_Cheng.jpeg",
+      "email": "cyc59",
+      "eboard": "true"
+    },
+    {
+      "name": "Omisha Sharma",
+      "team": "Eboard",
+      "position": "President",
+      "year": "",
+      "img": "board_2025_2026/Omisha_Sharma.jpeg",
+      "email": "os226",
+      "eboard": "true"
+    },
+    {
+      "name": "Evan Zhu",
+      "team": "Eboard",
+      "position": "Vice-President",
+      "year": "26",
+      "img": "board_2025_2026/Evan_Zhu.jpeg",
+      "email": "ejz26",
+      "eboard": "true"
+    },
+    {
+      "name": "Susan Xu",
+      "team": "Eboard",
+      "position": "Treasurer",
+      "year": "27",
+      "img": "board_2025_2026/Susan_Xu.jpeg",
+      "email": "zx323",
+      "eboard": "true"
+    },
+    {
+      "name": "Olina Zheng",
+      "team": "Eboard",
+      "position": "PR & Marketing Chair",
+      "year": "27",
+      "img": "board_2025_2026/Olina_Zheng.jpeg",
+      "email": "oz36",
+      "eboard": "true"
+    },
+    {
+      "name": "Claire Yu",
+      "team": "Eboard",
+      "position": "PR & Marketing Chair",
+      "year": "28",
+      "img": "board_2025_2026/Claire_Yu.jpeg",
+      "email": "cmy42",
+      "eboard": "true"
+    },
+
+    {
+      "name": "Carol Zhang",
+      "team": "Corporate",
+      "position": "Corporate Lead",
+      "year": "28",
+      "img": "unknown.jpeg",
+      "email": "cz539",
+      "eboard": "false"
+    },
+    {
+      "name": "Ajay Parthibha",
+      "team": "Corporate",
+      "position": "Corporate Lead",
+      "year": "28",
+      "img": "corporate/Ajay_Parthibha.jpeg",
+      "email": "ap2453",
+      "eboard": "false"
+    },
+    {
+      "name": "Amber Shen",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "28",
+      "img": "corporate/Amber_Shen.jpeg",
+      "email": "as4288",
+      "eboard": "false"
+    },
+    {
+      "name": "Henrique Vianna",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "29",
+      "img": "unknown.jpeg",
+      "email": "ha437",
+      "eboard": "false"
+    },
+    {
+      "name": "Krish Pai",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "29",
+      "img": "corporate/Krish_Pai.jpeg",
+      "email": "kp656",
+      "eboard": "false"
+    },
+    {
+      "name": "Angela Chan",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "29",
+      "img": "unknown.jpeg",
+      "email": "ac3272",
+      "eboard": "false"
+    },
+    {
+      "name": "Trishia Khandelwal",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "29",
+      "img": "unknown.jpeg",
+      "email": "tk735",
+      "eboard": "false"
+    },
+    {
+      "name": "Leah Zhang",
+      "team": "Corporate",
+      "position": "Corporate Officer",
+      "year": "29",
+      "img": "corporate/Leah_Zhang.jpeg",
+      "email": "lz623",
+      "eboard": "false"
+    },
+
+    {
+      "name": "Laerdon Kim",
+      "team": "Academic",
+      "position": "Academic Lead",
+      "year": "28",
+      "img": "academic/Laerdon_Kim.jpeg",
+      "email": "lyk25",
+      "eboard": "false"
+    },
+    {
+      "name": "Gwyneth Bao",
+      "team": "Academic",
+      "position": "Academic Lead",
+      "year": "28",
+      "img": "unknown.jpeg",
+      "email": "gqb2",
+      "eboard": "false"
+    },
+    {
+      "name": "Maggie Gao",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "27",
+      "img": "academic/Maggie_Gao.jpeg",
+      "email": "mg2447",
+      "eboard": "false"
+    },
+    {
+      "name": "Jonathan Li",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "28",
+      "img": "unknown.jpeg",
+      "email": "jyl86",
+      "eboard": "false"
+    },
+    {
+      "name": "Trisha Nandakumar",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "28",
+      "img": "unknown.jpeg",
+      "email": "tsn7",
+      "eboard": "false"
+    },
+    {
+      "name": "Smriti Kumar",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "29",
+      "img": "academic/Smriti_Kumar.jpeg",
+      "email": "sk3452",
+      "eboard": "false"
+    },
+    {
+      "name": "Prisha Rai",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "29",
+      "img": "academic/Prisha_Rai.jpeg",
+      "email": "pr482",
+      "eboard": "false"
+    },
+    {
+      "name": "Audrey Zhang",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "29",
+      "img": "academic/Audrey_Zhang.jpeg",
+      "email": "hz756",
+      "eboard": "false"
+    },
+    {
+      "name": "Daniel Cao",
+      "team": "Academic",
+      "position": "Academic Officer",
+      "year": "25",
+      "img": "academic/Daniel_Cao.jpeg",
+      "email": "dyc33",
+      "eboard": "false"
+    },
+
+    {
+      "name": "Nikhill Andrew",
+      "team": "Social",
+      "position": "Social Lead",
+      "year": "28",
+      "img": "social/Nikhill_Andrew.jpeg",
+      "email": "nsa68",
+      "eboard": "false"
+    },
+    {
+      "name": "Sai Nellutla",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "social/Sai_Nellutla.jpeg",
+      "email": "skn29",
+      "eboard": "false"
+    },
+    {
+      "name": "Monisha Bommu",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "29",
+      "img": "social/Monisha_Bommu.jpeg",
+      "email": "mrb359",
+      "eboard": "false"
+    },
+    {
+      "name": "Elizabeth Chen",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "27",
+      "img": "social/Elizabeth_Chen.jpeg",
+      "email": "eyc54",
+      "eboard": "false"
+    },
+    {
+      "name": "Mini Ge",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "social/Mini_Ge.jpeg",
+      "email": "mjg398",
+      "eboard": "false"
+    },
+    {
+      "name": "Zoeya Suhail",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "social/Zoeya_Suhail.jpeg",
+      "email": "zs433",
+      "eboard": "false"
+    },
+    {
+      "name": "Viraj Kadakia",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "29",
+      "img": "social/Viraj_Kadakia.jpeg",
+      "email": "vhk8",
+      "eboard": "false"
+    },
+    {
+      "name": "Alex Strugacz",
+      "team": "Social",
+      "position": "Social Officer",
+      "year": "28",
+      "img": "social/Alex_Strugacz.jpeg",
+      "email": "aas396",
+      "eboard": "false"
+    },
+
+    {
+      "name": "Maia Schlesiger",
+      "team": "Graphic Design",
+      "position": "Graphic Lead",
+      "year": "",
+      "img": "graphic/Maia_Schlesiger.jpeg",
+      "email": "",
+      "eboard": "false"
+    },
+    {
+      "name": "Yawen Liao",
+      "team": "Graphic Design",
+      "position": "Graphic Designer",
+      "year": "",
+      "img": "graphic/Yawen_Liao.jpeg",
+      "email": "",
+      "eboard": "false"
+    },
+    {
+      "name": "Vivian Guo",
+      "team": "Graphic Design",
+      "position": "Graphic Designer",
+      "year": "",
+      "img": "graphic/Vivian_Guo.jpeg",
+      "email": "",
+      "eboard": "false"
+    },
+
+    {
+      "name": "Rhea Agrawal",
+      "team": "Web Dev",
+      "position": "Web Dev Lead",
+      "year": "28",
+      "img": "web/Rhea_Agrawal.jpeg",
+      "email": "ra677",
+      "eboard": "false"
+    },
+    {
+      "name": "Aditya Singh",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "29",
+      "img": "web/Aditya_Singh.jpeg",
+      "email": "aks296",
+      "eboard": "false"
+    },
+    {
+      "name": "Nicole Luo",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "web/Nicole_Luo.jpeg",
+      "email": "nl545",
+      "eboard": "false"
+    },
+    {
+      "name": "Rohan Mahajan",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "27",
+      "img": "web/Rohan_Mahajan.jpeg",
+      "email": "rm939",
+      "eboard": "false"
+    },
+    {
+      "name": "Sophie Cheng",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "web/Sophie_Cheng.jpeg",
+      "email": "ssc284",
+      "eboard": "false"
+    },
+    {
+      "name": "Chelsea She",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "28",
+      "img": "web/Chelsea_She.jpeg",
+      "email": "cms556",
+      "eboard": "false"
+    },
+    {
+      "name": "Ruby Penafiel-Gutierrez",
+      "team": "Web Dev",
+      "position": "Web Dev Officer",
+      "year": "27",
+      "img": "web/Ruby_Penafiel-Gutierrez.jpeg",
+      "email": "rsp227",
+      "eboard": "false"
+    }
+  ]
+}

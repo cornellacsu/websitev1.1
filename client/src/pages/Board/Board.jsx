@@ -10,7 +10,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions, ListItemButton } from "@mui/material";
 import { Fade } from "react-awesome-reveal";
-import officerJson from "../../data/officers2425.json";
+import officerJson from "../../data/officers2526.json";
 
 // TODO: Add in officer pictures that are missing
 function Board() {
@@ -48,9 +48,7 @@ function Board() {
 
   const loadOfficerData = (json, teamName) => {
     const officers = json.officers.filter((person) => {
-      return person
-        ? person.team === teamName || (teamName === "Eboard" && person.eboard)
-        : null;
+      return person ? person.team === teamName : null;
     });
     return officers;
   };
@@ -59,18 +57,18 @@ function Board() {
     const images = {};
     officers.forEach((person) => {
       images[person.img] =
-        `${process.env.PUBLIC_URL}/img/team/2024-2025/${person.img}`;
+        `${process.env.PUBLIC_URL}/img/team/2025-2026/${person.img}`;
     });
     return images;
   };
 
   const officerCard = (person) => {
     return (
-      <Card sx={{ width: 250 }} key={person.name}>
+      <Card sx={{ width: 300 }} key={person.name}>
         <CardActionArea href={person.link}>
           <CardMedia
             component="img"
-            height="200"
+            height="250"
             image={allImages[person.img]}
             alt={person.img}
             className="Board-card-img"
