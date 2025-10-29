@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Board.css";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import Card from "@mui/material/Card";
@@ -109,19 +110,29 @@ function Board() {
   return (
     <div>
       <h1 className="Board-text-center">{pageName}</h1>
-      <div className="Board">
-        <List
-          sx={{ maxWidth: 160 }}
-          className="pl-2"
-          anchor="left"
-          variant="permanent"
-        >
-          {sidebarElts.map((elt) => (
-            <ListItemButton key={elt.name} onClick={() => setName(elt.name)}>
-              <ListItemText className="" primary={elt.name} />
-            </ListItemButton>
-          ))}
-        </List>
+      <Box sx={{ display: "flex" }} className="Board">
+        <Box sx={{ overflow: "auto", paddingLeft: 2, paddingTop: 2 }}>
+          <List
+            disablePadding
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 1,
+              width: "100%",
+            }}
+          >
+            {sidebarElts.map((elt) => (
+              <ListItemButton
+                key={elt.name}
+                onClick={() => setName(elt.name)}
+                sx={{ px: 2 }} // optional padding
+              >
+                <ListItemText sx={{ px: 2 }} primary={elt.name} />
+              </ListItemButton>
+            ))}
+          </List>
+        </Box>
+
         <Box sx={{ flexGrow: 1 }} className="Board-box">
           <Grid
             container
@@ -147,7 +158,7 @@ function Board() {
             ))}
           </Grid>
         </Box>
-      </div>
+      </Box>
     </div>
   );
 }
