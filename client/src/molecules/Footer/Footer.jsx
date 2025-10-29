@@ -8,7 +8,7 @@ import { Flex, Box } from "reflexbox";
 
 function Footer() {
   return (
-    <footer className="footer-section" justifyContent="center">
+    <footer className="footer-section justify-center">
       <div className="sm-handles">
         <Flex flexWrap="wrap" mx={50}>
           <Box width={[1 / 2]} p={1}>
@@ -37,7 +37,10 @@ function Footer() {
       <div className="copyright">
         <img src={copyright} alt={"copyright"}></img>
         <p>
-          <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment" style={{ color: "black", textDecoration: "underline" }}>
+          <a
+            href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+            style={{ color: "black", textDecoration: "underline" }}
+          >
             Equal Education and Employment
           </a>{" "}
           | This organization is a registered student organization of Cornell
