@@ -111,14 +111,14 @@ function Board() {
       <h1 className="Board-text-center">{pageName}</h1>
       <div className="Board">
         <List
-          sx={{ maxWidth: 140 }}
-          className="Box-sidebar"
+          sx={{ maxWidth: 160 }}
+          className="pl-2"
           anchor="left"
           variant="permanent"
         >
           {sidebarElts.map((elt) => (
             <ListItemButton key={elt.name} onClick={() => setName(elt.name)}>
-              <ListItemText className="Board-text-center" primary={elt.name} />
+              <ListItemText className="" primary={elt.name} />
             </ListItemButton>
           ))}
         </List>

@@ -375,6 +375,15 @@
       "img": "web/Ruby_Penafiel-Gutierrez.jpeg",
       "email": "rsp227",
       "eboard": "false"
+    },
+    {
+      "name": "Professor Clarkson",
+      "team": "Faculty",
+      "position": "Faculty Advisor",
+      "year": "",
+      "img": "Clarkson.jpeg",
+      "email": "mrc26",
+      "eboard": "false"
     }
   ]
 }
