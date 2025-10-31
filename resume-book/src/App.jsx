@@ -2,20 +2,26 @@ import React, { useState, useEffect } from "react";
 import FilterBar from "./components/FilterBar";
 import ResumeCard from "./components/ResumeCard";
 
-// Backend URL serving JSON from Google Sheets
-const SHEET_URL = "http://localhost:3001/resumes";
-
+const SHEET_URL = "/api/resumes";
 export default function App() {
   const [resumes, setResumes] = useState([]);
   const [yearFilter, setYearFilter] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    fetch(SHEET_URL)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Raw data from backend:", data);
+    const loadResumes = async () => {
+      try {
+        const res = await fetch(SHEET_URL);
 
-        // Only keep rows with a Public Resume Link
+        if (!res.ok) {
+          const errorBody = await res.text();
+          throw new Error(
+            `Request to resume backend failed with ${res.status}: ${errorBody}`,
+          );
+        }
+
+        const data = await res.json();
+
         const formatted = data
           .filter(
             (row) =>
@@ -29,13 +35,19 @@ export default function App() {
           }));
 
         setResumes(formatted);
-      })
-      .catch((err) =>
-        console.error("Failed to fetch sheet data:", err)
-      );
+        setErrorMessage("");
+      } catch (err) {
+        console.error("Failed to fetch sheet data:", err);
+        setErrorMessage(
+          "We couldn't retrieve the resume list right now. Please try again later.",
+        );
+        setResumes([]);
+      }
+    };
+
+    loadResumes();
   }, []);
 
-  // Filter by graduation year
   const filteredResumes = yearFilter
     ? resumes.filter(
         (r) => r.graduationYear === parseInt(yearFilter)
@@ -55,8 +67,12 @@ export default function App() {
 
       <div className="flex flex-col gap-4 mt-6">
         {filteredResumes.length === 0 ? (
-          <p className="text-center text-gray-500">
-            No resumes found.
+          <p
+            className={`text-center ${
+              errorMessage ? "text-red-600" : "text-gray-500"
+            }`}
+          >
+            {errorMessage || "No resumes found."}
           </p>
         ) : (
           filteredResumes.map((resume, idx) => (
