@@ -11,10 +11,9 @@ export default function ResumeCard({ resume }) {
   return (
     <div
       className="bg-white shadow-md rounded-lg p-4 cursor-pointer hover:shadow-xl transition"
-    //   onClick={handleClick}
     onClick={() => window.open(resume.resumeUrl, "_blank")}
     >
-      <h2 className="font-semibold text-lg">📄 {resume.name}</h2>
+      <h2 className="font-semibold text-lg">{resume.name}</h2>
     </div>
   );
 }
