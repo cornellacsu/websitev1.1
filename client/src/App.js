@@ -5,7 +5,6 @@ import { Footer, Navigation } from "./molecules";
 import ProgressBar from "react-scroll-progress-bar";
 import Calendar from "./atoms/CalendarSlots/Calendar";
 import CalendarEmbed from "./atoms/CalendarSlots/CalendarEmbed";
-
 function App() {
   return (
     <div className="App">
@@ -19,7 +18,6 @@ function App() {
           <Route path="/resources" exact component={() => <Resources />} />
           {/* <Route path="/calendar" exact component={() => <Calendar />} /> */}
           <Route path="/calendar" exact component={() => <CalendarEmbed />} />
-          <Route path="/resume-book" exact component={() => <ResumeBook />} />
         </Switch>
         <Footer />
       </Router>

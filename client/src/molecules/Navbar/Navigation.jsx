@@ -61,21 +61,16 @@ function Navigation(props) {
           <MyNavLink className="nav-button" to="/resources">
             Resources
           </MyNavLink>
-        </Fade>
-        <Fade direction="up" triggerOnce delay={3 * interval}>
-          <MyNavLink className="nav-button" to="/resume-book">
-            Resume Book
-          </MyNavLink>
-        </Fade>
         <Fade direction="up" triggerOnce delay={3 * interval}>
           <MyNavLink className="nav-button" to="/calendar">
             Calendar
           </MyNavLink>
+        </Fade>  
         </Fade>
         <Fade direction="up" triggerOnce delay={3 * interval}>
           <MyNavLink
             className="nav-button"
-            onClick={() => openInNewTab("https://bit.ly/acsuspring25")}
+            onClick={() => openInNewTab("https://bit.ly/acsufall25")}
           >
             Officer Applications
           </MyNavLink>
@@ -83,7 +78,7 @@ function Navigation(props) {
         <Fade direction="up" triggerOnce delay={4 * interval}>
         <MyNavLink
             className="nav-button"
-            onClick={() => openInNewTab("https://forms.gle/BaLGkC9Ub2M4yqZq8")}
+            onClick={() => openInNewTab("https://forms.gle/AyRTriREGNp2xj927")}
           >
             Join Us!
           </MyNavLink>

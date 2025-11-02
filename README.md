@@ -11,7 +11,7 @@ Change directory into the _client_ folder. From there:
 
 ### Spring 2024
 
-- **Daisy Chang** - Web Dev Co-Lead
+- **Rhea Agrawal** - Web Dev Lead
 - **Kenneth Chiem** - Web Dev Co-Lead
 - **Nathan Chu** - Web Developer
 - **Corey Wang** - Web Developer
