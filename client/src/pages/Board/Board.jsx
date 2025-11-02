@@ -55,6 +55,23 @@ function Board() {
     return officers;
   };
 
+  // Helper function to get image paths - Webpack can't resolve dynamic requires,
+  // so we need to use a function that maps paths at runtime
+  const getImagePath = (imgPath) => {
+    try {
+      // Construct the full path and use require with a template literal
+      const fullPath = `../../img/team/2024-2025/${imgPath}`;
+      return require(fullPath).default;
+    } catch (error) {
+      // Fallback to unknown image if path doesn't exist
+      try {
+        return require("../../img/team/2024-2025/unknown.jpg").default;
+      } catch (fallbackError) {
+        return null;
+      }
+    }
+  };
+
   const renderOfficers = (officers) => {
     const officerElts = [];
     officers.forEach((elt) => {
@@ -64,9 +81,7 @@ function Board() {
             <CardMedia
               component="img"
               height="200"
-              image={
-                require("../../img/team/2024-2025/".concat(elt.img)).default
-              }
+              image={getImagePath(elt.img)}
               alt={elt.img}
               className="Board-card-img"
             />

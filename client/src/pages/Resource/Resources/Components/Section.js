@@ -37,7 +37,7 @@ class Section extends Component {
                 break;
         }
         return (
-            <div class="Section">
+            <div className="Section">
                 <div>{section}</div>
             </div>
         );

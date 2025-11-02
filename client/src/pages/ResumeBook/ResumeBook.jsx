@@ -1,5 +1,5 @@
 import React from "react";
-import FlipBook from "./FlipBook";
+import FlipBook from "./FlipBook.jsx";
 
 const ResumeBook = () => {
   return (

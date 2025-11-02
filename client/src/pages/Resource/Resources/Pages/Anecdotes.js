@@ -4,10 +4,12 @@ import Accordion from "../Components/Accordion";
 const Anecdotes = () => {
     return(
         <section className="Anecdotes">
-            <section className="Intro">
+            <section className="Anecdotes-Intro">
                 <p>Although the purpose of this README document is to provide an objective, unbiased introduction and overview of the major, we also thought it would be beneficial for students, especially underclassmen, to get personal insights from current CS majors of different grades. Note that these perspectives were provided by volunteers who wanted to contribute to the README so the contributors consisted of self-selected individuals, and therefore these testimonials may not be fully representative of the CS population at Cornell. Also note that these testimonials were collected from underclassmen (freshmen & sophomores) due to our target audience. However, we hope that these shared experiences can help shed light on what being a CS major could potentially be like in the Cornell community.</p>
             </section>
-            <section className="Content">
+            <section className="Anecdotes-Content">
+                <div className="Anecdotes-Year-Group">
+                    <h2 className="Anecdotes-Year-Header">Freshman</h2>
                 <Accordion
                     title="Freshman A"
                     content="I was drawn to computer science in high school when I learned Java by watching online videos and C by solving problems in a programming book. So I entered college knowing clearly that I would pursue a major in CS.
@@ -48,6 +50,9 @@ const Anecdotes = () => {
                     <br></br>
                     My last advice is to make a lot of friends. Opportunities to make new friends dwindle as years go by, and you will regret it if you don't have friends. After all, CS is no fun if you don't have friends to complain about classes with."
                 />
+                </div>
+                <div className="Anecdotes-Year-Group">
+                    <h2 className="Anecdotes-Year-Header">Sophomore</h2>
                  <Accordion
                     title="Sophomore A"
                     content="I decided to become a CS major my second semester freshman year, after I had taken 1110 and 2110 and loved it. Thus as a sophomore, I affiliated with the CS major. I handed in my affiliation form just before the summer, and was notified of acceptance at the start of my first semester sophomore year. Although it is not required that you affiliate with your major until the second semester of sophomore year, I felt it was convenient to affiliate early, as you will be able to get a CS advisor early on, and are allowed to pre-enroll in 4000 level classes that are open to CIS students only during pre-enroll.
@@ -90,6 +95,9 @@ const Anecdotes = () => {
                     title = "Sophomore F"
                     content = "Transitioning into sophomore year as a computer science major is perhaps one of the greatest “power spikes” you will have in your four years at Cornell. As a sophomore who had completed his intro courses freshman year, I was able to begin diving into the upper level classes and figuring out for myself where my interests lie. It is also the perfect time to actually see what is ahead of you, in terms of classes to take in order to graduate and internship opportunities that arise because of your new standing and experience. Overall I believe that sophomore year is the time for you to experiment with the opportunities that Cornell gives you. I ended up TA’ing my first class sophomore year which showed me how much more there is to learning the material presented in class and it opened my eyes as to how it is like being on the other side of the table and how much our professors care about us as students. I also ended up taking a dance class which I would place outside of my comfort zone.  Therefore I recommend you take this time and really shaping your life beyond academics and the mentality you built freshman year. "
                 />
+                </div>
+                <div className="Anecdotes-Year-Group">
+                    <h2 className="Anecdotes-Year-Header">Junior</h2>
                 <Accordion
                     title="Junior A"
                     content="My junior year was a sharp contrast from my underclassmen years. Having completed a good chunk of the requirements for the College of Engineering and the Computer Science core, this was the first year when I started taking 4000-level CS courses that interested me. I found this to be true for a lot of my friends too. Some dedicated their whole semester to their external specializations and other requirements that they didn’t even take a single CS course for a semester. I also found myself much busier than previous years, mostly due to interviews. Unlike freshmen and sophomore years, I found that I got a lot more attention from companies due to my status as a junior. Thankfully, I had a light-enough coursework for me to interview with as many places as I could afford to. Outside of classes, it was also interesting being an upperclassmen rather than an underclassmen. I also found myself taking leadership roles in clubs and getting involved in other activities on-campus as the leader rather than the follower I was in my underclassmen years.
@@ -119,6 +127,9 @@ const Anecdotes = () => {
                     <br></br>
                     Junior year is also an appropriate time to figure out what you want do after your undergraduate education. It is a good idea to remind yourself of how close you are to fulfilling your graduation requirements, and whether you qualify for early graduation or a higher-education program. Don’t get stuck or caught up in being satisfied with a single goal. Understand you are nearing the end, but remember to be reasonably flexible with your plan."
                 />
+                </div>
+                <div className="Anecdotes-Year-Group">
+                    <h2 className="Anecdotes-Year-Header">Senior</h2>
                 <Accordion
                     title="Senior A"
                     content="By your senior year, one of your main worries will be what kind of career you want to pursue after graduation. What I’ve come to find out is that questions like these can never be answered in a short amount of time. Throughout your sophomore and junior year, you should always let this question sit in the back of your mind. Often times, it’s easy to get swept up with questions like “which company do smart people work for?” or “which route pays the most?” but in the end, a person’s career is his/her own personal journey. It will bring you happiness and satisfaction to decide to do you want to do based on your preferences alone.
@@ -145,6 +156,7 @@ const Anecdotes = () => {
                     <br></br>
                     My advice? Meet people inside AND outside your major/college, appreciate what they bring to the table, [study efficiently,] and enjoy the Cornell experience."
                 />
+                </div>
             </section>
         </section>
     )
