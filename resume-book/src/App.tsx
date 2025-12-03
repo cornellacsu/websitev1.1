@@ -11,10 +11,10 @@ import {
   Stack,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import FilterBar from "./components/FilterBar";
-import ResumeCard from "./components/ResumeCard";
+import FilterBar from "./components/FilterBar.js";
+import ResumeCard from "./components/ResumeCard.js";
 
-const SHEET_URL = "http://localhost:3001/resumes";
+const SHEET_URL = import.meta.env.VITE_RESUME_API_URL;
 
 interface ResumeData {
   id: number;
@@ -100,7 +100,7 @@ export default function App() {
       sx={{
         minHeight: "100vh",
         background:
-          "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%)",
+          "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #0f0f0f 50%, #1a1a1a 75%, #0a0a0a 100%)",
         py: 8,
       }}
     >
@@ -130,7 +130,8 @@ export default function App() {
               mx: "auto",
             }}
           >
-            Discover talented students and their professional profiles
+            Discover talented Cornellians and support their future professional
+            careers
           </Typography>
         </Box>
 

@@ -1,20 +1,23 @@
-"use client"
-import { Box, Button, Stack } from "@mui/material"
+"use client";
+import { Box, Button, Stack } from "@mui/material";
 
 const YEAR_OPTIONS = [
   { label: "All Years", value: "" },
-  { label: "2024", value: "2024" },
-  { label: "2023", value: "2023" },
-  { label: "2022", value: "2022" },
-  { label: "2021", value: "2021" },
-]
+  { label: "2029", value: "2029" },
+  { label: "2028", value: "2028" },
+  { label: "2027", value: "2027" },
+  { label: "2026", value: "2026" },
+];
 
 interface FilterBarProps {
-  yearFilter: string
-  setYearFilter: (value: string) => void
+  yearFilter: string;
+  setYearFilter: (value: string) => void;
 }
 
-export default function FilterBar({ yearFilter, setYearFilter }: FilterBarProps) {
+export default function FilterBar({
+  yearFilter,
+  setYearFilter,
+}: FilterBarProps) {
   return (
     <Box>
       <Stack
@@ -40,7 +43,8 @@ export default function FilterBar({ yearFilter, setYearFilter }: FilterBarProps)
               transition: "all 0.2s",
               ...(yearFilter === option.value
                 ? {
-                    background: "linear-gradient(135deg, #b81c34 0%, #d91c46 100%)",
+                    background:
+                      "linear-gradient(135deg, #b81c34 0%, #d91c46 100%)",
                     color: "#FFFFFF",
                     border: "none",
                     boxShadow: "0 8px 24px rgba(184, 28, 52, 0.3)",
@@ -61,5 +65,5 @@ export default function FilterBar({ yearFilter, setYearFilter }: FilterBarProps)
         ))}
       </Stack>
     </Box>
-  )
+  );
 }

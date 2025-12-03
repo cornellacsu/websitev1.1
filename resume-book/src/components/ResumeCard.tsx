@@ -5,6 +5,7 @@ import {
   Box,
   Button,
   Avatar,
+  Chip,
 } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import EmailIcon from "@mui/icons-material/Email";
@@ -26,6 +27,10 @@ interface ResumeCardProps {
 }
 
 export default function ResumeCard({ resume }: ResumeCardProps) {
+  const interests = resume.careerInterests
+    .split(",")
+    .map((interest) => interest.trim())
+    .filter((interest) => interest.length > 0);
   return (
     <Card
       sx={{
@@ -33,6 +38,7 @@ export default function ResumeCard({ resume }: ResumeCardProps) {
         border: "1px solid rgba(255, 255, 255, 0.1)",
         borderRadius: "16px",
         height: "100%",
+        width: "350px",
         display: "flex",
         flexDirection: "column",
         transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -134,16 +140,27 @@ export default function ResumeCard({ resume }: ResumeCardProps) {
               Career Interests
             </Typography>
           </Box>
-          <Typography
-            variant="body2"
-            sx={{
-              color: "#B5BAC1",
-              fontSize: "0.9rem",
-              lineHeight: 1.4,
-            }}
-          >
-            {resume.careerInterests}
-          </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75 }}>
+            {interests.map((interest, idx) => (
+              <Chip
+                key={idx}
+                label={interest}
+                size="small"
+                sx={{
+                  background:
+                    "linear-gradient(135deg, rgba(184, 28, 52, 0.2) 0%, rgba(217, 28, 70, 0.2) 100%)",
+                  border: "1px solid rgba(184, 28, 52, 0.4)",
+                  color: "#b81c34",
+                  fontWeight: 600,
+                  fontSize: "0.75rem",
+                  height: "24px",
+                  "& .MuiChip-label": {
+                    padding: "0 8px",
+                  },
+                }}
+              />
+            ))}
+          </Box>
         </Box>
 
         <Box>
@@ -181,7 +198,8 @@ export default function ResumeCard({ resume }: ResumeCardProps) {
           variant="contained"
           endIcon={<ArrowForwardIcon />}
           sx={{
-            background: "linear-gradient(135deg, #b81c34 0%, #d91c46 100%)",
+            background:
+              "linear-gradient(90deg, #0a0a0a 0%, #6d0f1f 40%, #b01c33 55%, #6d0f1f 70%, #0a0a0a 100%);",
             color: "#FFFFFF",
             fontWeight: 700,
             textTransform: "uppercase",
@@ -192,7 +210,7 @@ export default function ResumeCard({ resume }: ResumeCardProps) {
             transition: "all 0.2s",
             mt: "auto",
             "&:hover": {
-              boxShadow: "0 8px 24px rgba(184, 28, 52, 0.3)",
+              // boxShadow: "0 8px 24px rgba(184, 28, 52, 0.3)",
               transform: "translateY(-2px)",
             },
           }}
