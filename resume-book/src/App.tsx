@@ -27,7 +27,7 @@ interface ResumeData {
 }
 
 export default function App() {
-  const [yearFilter, setYearFilter] = useState("");
+  const [yearsFilter, setYearsFilter] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [resumes, setResumes] = useState<ResumeData[]>([]);
   const [errorMessage, setErrorMessage] = useState("");
@@ -82,8 +82,9 @@ export default function App() {
   }, []);
 
   const filteredResumes = resumes.filter((resume) => {
-    const matchesYear =
-      yearFilter === "" || resume.graduationYear.toString() === yearFilter;
+    const matchesYears =
+      yearsFilter.length === 0 ||
+      yearsFilter.includes(resume.graduationYear.toString());
     const matchesSearch =
       searchQuery === "" ||
       resume.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -92,7 +93,7 @@ export default function App() {
         .toLowerCase()
         .includes(searchQuery.toLowerCase()) ||
       resume.email.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesYear && matchesSearch;
+    return matchesYears && matchesSearch;
   });
 
   return (
@@ -111,7 +112,8 @@ export default function App() {
             variant="h2"
             sx={{
               fontWeight: 800,
-              background: "linear-gradient(135deg, #b81c34 0%, #d91c46 100%)",
+              background:
+                "linear-gradient(135deg, #510b16ff, #b81c34, #510b16ff);",
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -178,7 +180,10 @@ export default function App() {
             />
 
             {/* Year Filter */}
-            <FilterBar yearFilter={yearFilter} setYearFilter={setYearFilter} />
+            <FilterBar
+              yearsFilter={yearsFilter}
+              setYearsFilter={setYearsFilter}
+            />
           </Stack>
         </Box>
 

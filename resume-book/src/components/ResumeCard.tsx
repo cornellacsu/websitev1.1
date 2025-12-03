@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -11,6 +13,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import EmailIcon from "@mui/icons-material/Email";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import IconButton from "@mui/material/IconButton";
+import CheckIcon from "@mui/icons-material/Check";
 
 interface Resume {
   id: number;
@@ -26,11 +31,44 @@ interface ResumeCardProps {
   resume: Resume;
 }
 
+function CopyEmailButton({ email }: { email: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1000);
+  };
+
+  return (
+    <IconButton
+      onClick={handleCopy}
+      sx={{ p: 0, minWidth: 0, minHeight: 0, cursor: "pointer" }}
+    >
+      {copied ? (
+        <CheckIcon sx={{ fontSize: "1rem", color: "#b81c34" }} />
+      ) : (
+        <ContentCopyIcon sx={{ fontSize: "1rem", color: "#949BA4" }} />
+      )}
+    </IconButton>
+  );
+}
+
 export default function ResumeCard({ resume }: ResumeCardProps) {
   const interests = resume.careerInterests
     .split(",")
     .map((interest) => interest.trim())
     .filter((interest) => interest.length > 0);
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log("Copied!");
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
   return (
     <Card
       sx={{
@@ -177,6 +215,7 @@ export default function ResumeCard({ resume }: ResumeCardProps) {
             >
               Contact
             </Typography>
+            <CopyEmailButton email={resume.email} />
           </Box>
           <Typography
             variant="body2"
@@ -199,7 +238,7 @@ export default function ResumeCard({ resume }: ResumeCardProps) {
           endIcon={<ArrowForwardIcon />}
           sx={{
             background:
-              "linear-gradient(90deg, #0a0a0a 0%, #6d0f1f 40%, #b01c33 55%, #6d0f1f 70%, #0a0a0a 100%);",
+              "linear-gradient(90deg, #0a0a0a 0%, #6d0f1f 40%, #6d0f1f 70%, #0a0a0a 100%);",
             color: "#FFFFFF",
             fontWeight: 700,
             textTransform: "uppercase",
