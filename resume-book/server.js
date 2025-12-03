@@ -1,8 +1,15 @@
 import express from "express";
 import fetch from "node-fetch";
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT ?? 3001;
+
+app.use(
+  cors({
+    origin: "http://localhost:5173", // frontend origin in dev
+  })
+);
 
 const GOOGLE_SCRIPT_URL =
   process.env.GOOGLE_SCRIPT_URL ??
@@ -17,11 +24,7 @@ app.get("/resumes", async (req, res) => {
 
     if (!response.ok) {
       const errorBody = await response.text();
-      console.error(
-        "Google Script responded with",
-        response.status,
-        errorBody
-      );
+      console.error("Google Script responded with", response.status, errorBody);
 
       return res.status(502).json({
         error: "Upstream service unavailable",
@@ -31,7 +34,7 @@ app.get("/resumes", async (req, res) => {
 
     const data = await response.json();
 
-    res.json(data); 
+    res.json(data);
   } catch (error) {
     console.error("Error fetching from Google Script:", error);
 
