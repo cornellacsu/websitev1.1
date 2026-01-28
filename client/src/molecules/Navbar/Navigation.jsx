@@ -70,7 +70,7 @@ function Navigation(props) {
         <Fade direction="up" triggerOnce delay={3 * interval}>
           <MyNavLink
             className="nav-button"
-            onClick={() => openInNewTab("https://bit.ly/acsufall25")}
+            onClick={() => openInNewTab("https://forms.gle/4ajutRoJWZYZgceVA")}
           >
             Officer Applications
           </MyNavLink>
