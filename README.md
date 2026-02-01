@@ -2,10 +2,19 @@
 
 ## Getting Started
 
-Change directory into the _client_ folder. From there:
+To run main website: Change directory into the _client_ folder. From there:
 
 - Run `yarn install` to install relevant dependencies
 - Run `yarn start` to run the website locally
+
+To run resume book: Change directory into the _resume-book_ folder. From there:
+
+- Run `yarn install` to install relevant dependencies
+- Run `yarn dev` to run the website locally
+
+Add another terminal to run the backend
+
+- Run `node server.js` (or `yarn start`)
 
 ## Contributers
 
