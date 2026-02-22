@@ -3,6 +3,7 @@ import SponsorCard from "./SponsorCard";
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import json from "../../data/sponsors2026.json";
+import gatesImage from "./gates.png";
 
 const SPONSOR_RESUME_BOOK_URL = "https://example.com";
 const STUDENT_RESUME_SUBMISSION_URL = "https://example.com";
@@ -111,6 +112,12 @@ function Sponsors() {
             </article>
           </section>
         </div>
+        <img
+          className="sponsors-gates-decoration"
+          src={gatesImage}
+          alt=""
+          aria-hidden="true"
+        />
       </div>
     </Fade>
   );

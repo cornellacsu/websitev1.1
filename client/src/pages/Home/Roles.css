@@ -1,31 +1,50 @@
 .card {
     width: 100%;
     height: 100%;
+    min-height: 130px;
     border: none;
+    background-color: transparent;
+    border-radius: 0;
     pointer-events: none;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
 }
 .card-media-container {
     text-align: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
-    top: 0;
-    height: 45%;
+    height: 64px;
     width: 100%;
 }
 
 .card-divider {
-    height: 100%;
+    height: 8px;
 }
 .card-media {
-    height: 100%;
+    height: auto;
     width: auto;
-    max-width: 5rem;
-    max-height: 5rem;
+    max-width: 4rem;
+    max-height: 4rem;
     margin-left: auto;
     margin-right: auto;
 }
 .card-description {
     text-align: center;
-    font-size: 1.1rem;
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+.main .card-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f0f0f0;
 }
