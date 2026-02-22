@@ -12,6 +12,7 @@
   display: inline-flex;
   flex-shrink: 0;
   padding: 0.25rem 0;
+  text-decoration: none;
   z-index: 2;
 }
 
@@ -72,25 +73,49 @@
 
 .hamburger-button {
   align-items: center;
-  background: transparent;
-  border: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(176, 28, 51, 0.14) 55%,
+    rgba(0, 0, 0, 0.3)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   cursor: pointer;
   display: none;
   flex-direction: column;
   gap: 5px;
   justify-content: center;
   margin-left: auto;
-  padding: 0.5rem;
+  min-height: 42px;
+  min-width: 42px;
+  padding: 0.55rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   z-index: 2;
 }
 
 .hamburger-button span {
-  background-color: #ffffff;
+  background: linear-gradient(90deg, #ffffff, #ffd7de);
   border-radius: 2px;
   display: block;
   height: 2px;
   transition: transform 0.2s ease, opacity 0.2s ease;
   width: 22px;
+}
+
+.hamburger-button:hover,
+.hamburger-button:focus-visible {
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.34), 0 0 0 2px rgba(176, 28, 51, 0.24);
+  transform: translateY(-1px);
+}
+
+.hamburger-button:focus-visible {
+  outline: none;
 }
 
 .hamburger-button.is-open span:nth-child(1) {
@@ -115,9 +140,17 @@
   }
 
   .nav-links {
-    background: rgba(10, 10, 10, 0.95);
+    background: linear-gradient(
+      165deg,
+      rgba(255, 255, 255, 0.14),
+      rgba(176, 28, 51, 0.14) 45%,
+      rgba(10, 10, 10, 0.88)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0 0 12px 12px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     flex-direction: column;
     gap: 0.75rem;
     left: 0;
