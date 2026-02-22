@@ -5,11 +5,10 @@ import logo from "./icons/logo.png";
 import { Fade } from "react-awesome-reveal";
 
 const NAV_ITEMS = [
-  { label: "Board", to: "/board" },
+  { label: "Team", to: "/board" },
   { label: "Sponsors", to: "/sponsors" },
   { label: "Resources", to: "/resources" },
   { label: "Calendar", to: "/calendar" },
-  { label: "Events", to: "/events" },
 ];
 
 const openInNewTab = (url) => {
@@ -19,7 +18,6 @@ const openInNewTab = (url) => {
 
 function Navigation(props) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const interval = 100;
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -57,23 +55,14 @@ function Navigation(props) {
         id="navbar-links"
         className={`nav-links ${isMobileMenuOpen ? "is-open" : ""}`}
       >
-        {NAV_ITEMS.map((item, index) => (
-          <Fade
-            key={item.to}
-            direction="up"
-            triggerOnce
-            delay={(index + 1) * interval}
-          >
+        {NAV_ITEMS.map((item) => (
+          <div key={item.to}>
             <Link className="nav-link" to={item.to} onClick={closeMobileMenu}>
               {item.label}
             </Link>
-          </Fade>
+          </div>
         ))}
-        <Fade
-          direction="up"
-          triggerOnce
-          delay={(NAV_ITEMS.length + 1) * interval}
-        >
+        <div>
           <button
             type="button"
             className="nav-link nav-link-button"
@@ -81,7 +70,7 @@ function Navigation(props) {
           >
             Join Us!
           </button>
-        </Fade>
+        </div>
       </div>
     </nav>
   );
