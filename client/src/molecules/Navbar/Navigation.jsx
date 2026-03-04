@@ -39,6 +39,24 @@ function Navigation(props) {
           <img src={logo} alt="ACSU logo" className="acsu-logo-img"></img>
         </Fade>
       </Link>
+      <div className="nav-links desktop-nav-links">
+        {NAV_ITEMS.map((item) => (
+          <div key={item.to}>
+            <Link className="nav-link" to={item.to} onClick={closeMobileMenu}>
+              {item.label}
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="navbar-cta">
+        <button
+          type="button"
+          className="join-us-button"
+          onClick={handleJoinUsClick}
+        >
+          Join Us
+        </button>
+      </div>
       <button
         type="button"
         className={`hamburger-button ${isMobileMenuOpen ? "is-open" : ""}`}
@@ -53,7 +71,7 @@ function Navigation(props) {
       </button>
       <div
         id="navbar-links"
-        className={`nav-links ${isMobileMenuOpen ? "is-open" : ""}`}
+        className={`nav-links mobile-nav-links ${isMobileMenuOpen ? "is-open" : ""}`}
       >
         {NAV_ITEMS.map((item) => (
           <div key={item.to}>
@@ -65,10 +83,10 @@ function Navigation(props) {
         <div>
           <button
             type="button"
-            className="nav-link nav-link-button"
+            className="join-us-button mobile-join-us-button"
             onClick={handleJoinUsClick}
           >
-            Join Us!
+            Join Us
           </button>
         </div>
       </div>
