@@ -34,7 +34,7 @@ function Board() {
       name: "Corporate",
     },
     {
-      name: "Graphic Design",
+      name: "ProdOps",
     },
     {
       name: "Social",

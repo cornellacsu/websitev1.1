@@ -18,9 +18,10 @@ Add another terminal to run the backend
 
 ## Contributers
 
-### Spring 2024
+### Spring 2026
 
 - **Rhea Agrawal** - Web Dev Lead
-- **Kenneth Chiem** - Web Dev Co-Lead
-- **Nathan Chu** - Web Developer
-- **Corey Wang** - Web Developer
+- **Chelsea She** - Web Developer
+- **Rohan Mahajan** - Web Developer
+- **Sophie Cheng** - Web Developer
+- **Ruby Penafiel-Gutierrez** - Web Developer

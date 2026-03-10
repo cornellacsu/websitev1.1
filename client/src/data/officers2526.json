@@ -1,5 +1,5 @@
 {
-  "year": "2024-2025",
+  "year": "2025-2026",
   "date": "10/26/2025",
   "officers": [
     {
@@ -12,27 +12,36 @@
       "eboard": "true"
     },
     {
-      "name": "Omisha Sharma",
+      "name": "Nikhill Andrew",
       "team": "Eboard",
       "position": "President",
-      "year": "",
-      "img": "board_2025_2026/Omisha_Sharma.jpeg",
-      "email": "os226",
+      "year": "28",
+      "img": "social/Nikhill_Andrew.jpeg",
+      "email": "nsa68",
       "eboard": "true"
     },
     {
-      "name": "Evan Zhu",
+     "name": "Maia Schlesiger",
       "team": "Eboard",
       "position": "Vice-President",
-      "year": "26",
-      "img": "board_2025_2026/Evan_Zhu.jpeg",
-      "email": "ejz26",
+      "year": "28",
+      "img": "prodops/Maia_Schlesiger.jpeg",
+      "email": "ms3784",
+      "eboard": "true"
+    },
+    {
+      "name": "Amber Shen",
+      "team": "Eboard",
+      "position": "Treasurer",
+      "year": "28",
+      "img": "corporate/Amber_Shen.jpeg",
+      "email": "as4288",
       "eboard": "true"
     },
     {
       "name": "Susan Xu",
       "team": "Eboard",
-      "position": "Treasurer",
+      "position": "PR & Marketing Chair",
       "year": "27",
       "img": "board_2025_2026/Susan_Xu.jpeg",
       "email": "zx323",
@@ -41,19 +50,10 @@
     {
       "name": "Olina Zheng",
       "team": "Eboard",
-      "position": "PR & Marketing Chair",
+      "position": "Secretary",
       "year": "27",
       "img": "board_2025_2026/Olina_Zheng.jpeg",
       "email": "oz36",
-      "eboard": "true"
-    },
-    {
-      "name": "Claire Yu",
-      "team": "Eboard",
-      "position": "PR & Marketing Chair",
-      "year": "28",
-      "img": "board_2025_2026/Claire_Yu.jpeg",
-      "email": "cmy42",
       "eboard": "true"
     },
 
@@ -73,15 +73,6 @@
       "year": "28",
       "img": "corporate/Ajay_Parthibha.jpeg",
       "email": "ap2453",
-      "eboard": "false"
-    },
-    {
-      "name": "Amber Shen",
-      "team": "Corporate",
-      "position": "Corporate Officer",
-      "year": "28",
-      "img": "corporate/Amber_Shen.jpeg",
-      "email": "as4288",
       "eboard": "false"
     },
     {
@@ -213,12 +204,12 @@
     },
 
     {
-      "name": "Nikhill Andrew",
+      "name": "Viraj Kadakia",
       "team": "Social",
       "position": "Social Lead",
-      "year": "28",
-      "img": "social/Nikhill_Andrew.jpeg",
-      "email": "nsa68",
+      "year": "29",
+      "img": "social/Viraj_Kadakia.jpeg",
+      "email": "vhk8",
       "eboard": "false"
     },
     {
@@ -267,15 +258,6 @@
       "eboard": "false"
     },
     {
-      "name": "Viraj Kadakia",
-      "team": "Social",
-      "position": "Social Officer",
-      "year": "29",
-      "img": "social/Viraj_Kadakia.jpeg",
-      "email": "vhk8",
-      "eboard": "false"
-    },
-    {
       "name": "Alex Strugacz",
       "team": "Social",
       "position": "Social Officer",
@@ -287,29 +269,101 @@
 
     {
       "name": "Maia Schlesiger",
-      "team": "Graphic Design",
-      "position": "Graphic Lead",
+      "team": "ProdOps",
+      "position": "ProdOps Lead",
       "year": "",
-      "img": "graphic/Maia_Schlesiger.jpeg",
-      "email": "",
-      "eboard": "false"
-    },
-    {
-      "name": "Yawen Liao",
-      "team": "Graphic Design",
-      "position": "Graphic Designer",
-      "year": "",
-      "img": "graphic/Yawen_Liao.jpeg",
+      "img": "prodops/Maia_Schlesiger.jpeg",
       "email": "",
       "eboard": "false"
     },
     {
       "name": "Vivian Guo",
-      "team": "Graphic Design",
-      "position": "Graphic Designer",
+      "team": "ProdOps",
+      "position": "ProdOps Lead",
       "year": "",
-      "img": "graphic/Vivian_Guo.jpeg",
+      "img": "prodops/Vivian_Guo.jpeg",
       "email": "",
+      "eboard": "false"
+    },
+    {
+      "name": "Yawen Liao",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "",
+      "img": "prodops/Yawen_Liao.jpeg",
+      "email": "",
+      "eboard": "false"
+    },
+    {
+      "name": "Trishia Khandelwal",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "29",
+      "img": "unknown.jpeg",
+      "email": "tk735",
+      "eboard": "false"
+    },
+    {
+      "name": "Sophie Cheng",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "28",
+      "img": "web/Sophie_Cheng.jpeg",
+      "email": "ssc284",
+      "eboard": "false"
+    },
+     {
+      "name": "Laerdon Kim",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "28",
+      "img": "academic/Laerdon_Kim.jpeg",
+      "email": "lyk25",
+      "eboard": "false"
+    },
+    {
+      "name": "Michelle Yang",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "28",
+      "img": "unknown.jpeg",
+      "email": "",
+      "eboard": "false"
+    },
+    {
+      "name": "Christina Bai",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "28",
+      "img": "unknown.jpeg",
+      "email": "cb985",
+      "eboard": "false"
+    },
+    {
+      "name": "Anik Dey",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "28",
+      "img": "prodops/Anik_Dey.JPG",
+      "email": "ad2429",
+      "eboard": "false"
+    },
+    {
+      "name": "Stephanie Lin",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "",
+      "img": "prodops/Stephanie_Lin.JPG",
+      "email": "sl2893",
+      "eboard": "false"
+    },
+    {
+      "name": "William Wang",
+      "team": "ProdOps",
+      "position": "ProdOps Officer",
+      "year": "",
+      "img": "unknown.jpeg",
+      "email": "wow7",
       "eboard": "false"
     },
 
@@ -320,24 +374,6 @@
       "year": "28",
       "img": "web/Rhea_Agrawal.jpeg",
       "email": "ra677",
-      "eboard": "false"
-    },
-    {
-      "name": "Aditya Singh",
-      "team": "Web Dev",
-      "position": "Web Dev Officer",
-      "year": "29",
-      "img": "web/Aditya_Singh.jpeg",
-      "email": "aks296",
-      "eboard": "false"
-    },
-    {
-      "name": "Nicole Luo",
-      "team": "Web Dev",
-      "position": "Web Dev Officer",
-      "year": "28",
-      "img": "web/Nicole_Luo.jpeg",
-      "email": "nl545",
       "eboard": "false"
     },
     {
