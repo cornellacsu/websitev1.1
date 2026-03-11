@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import type { FormEvent } from "react";
 import {
   Box,
+  Button,
   Container,
   Typography,
   TextField,
@@ -14,7 +16,13 @@ import SearchIcon from "@mui/icons-material/Search";
 import FilterBar from "./components/FilterBar.js";
 import ResumeCard from "./components/ResumeCard.js";
 
-const SHEET_URL = import.meta.env.VITE_RESUME_API_URL;
+const SHEET_URL = import.meta.env.VITE_RESUME_API_URL || "";
+const DERIVED_LOGIN_URL =
+  SHEET_URL && /\/resumes\/?$/.test(SHEET_URL)
+    ? SHEET_URL.replace(/\/resumes\/?$/, "/login")
+    : "";
+const LOGIN_URL = import.meta.env.VITE_RESUME_LOGIN_URL || DERIVED_LOGIN_URL;
+const TOKEN_STORAGE_KEY = "resume_book_token";
 
 interface ResumeData {
   id: number;
@@ -31,12 +39,43 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [resumes, setResumes] = useState<ResumeData[]>([]);
   const [errorMessage, setErrorMessage] = useState("");
+  const [password, setPassword] = useState("");
+  const [loginError, setLoginError] = useState("");
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+  const [token, setToken] = useState(() => {
+    if (typeof window === "undefined") {
+      return "";
+    }
+
+    return window.localStorage.getItem(TOKEN_STORAGE_KEY) ?? "";
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!token) {
+      setResumes([]);
+      setErrorMessage("");
+      setLoading(false);
+      return;
+    }
+
     const loadResumes = async () => {
+      setLoading(true);
       try {
-        const res = await fetch(SHEET_URL!);
+        const res = await fetch(SHEET_URL, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (res.status === 401) {
+          window.localStorage.removeItem(TOKEN_STORAGE_KEY);
+          setToken("");
+          setLoginError("Session expired. Please sign in again.");
+          setErrorMessage("Please sign in to view the resume list.");
+          setResumes([]);
+          return;
+        }
 
         if (!res.ok) {
           const errorBody = await res.text();
@@ -76,10 +115,55 @@ export default function App() {
       }
     };
 
-    if (SHEET_URL) {
-      loadResumes();
+    loadResumes();
+  }, [token]);
+
+  const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsLoggingIn(true);
+    setLoginError("");
+
+    try {
+      const res = await fetch(LOGIN_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ password }),
+      });
+
+      if (!res.ok) {
+        const errorBody = await res.json().catch(() => ({}));
+        const message = errorBody.error || "Login failed. Please try again.";
+        throw new Error(message);
+      }
+
+      const data = await res.json();
+      if (!data?.token) {
+        throw new Error("Login response missing token.");
+      }
+
+      window.localStorage.setItem(TOKEN_STORAGE_KEY, data.token);
+      setToken(data.token);
+      setPassword("");
+      setErrorMessage("");
+    } catch (err) {
+      console.error("Login failed:", err);
+      setLoginError(
+        err instanceof Error ? err.message : "Login failed. Please try again."
+      );
+    } finally {
+      setIsLoggingIn(false);
     }
-  }, []);
+  };
+
+  const handleLogout = () => {
+    window.localStorage.removeItem(TOKEN_STORAGE_KEY);
+    setToken("");
+    setPassword("");
+    setLoginError("");
+    setErrorMessage("");
+  };
 
   const filteredResumes = resumes.filter((resume) => {
     const matchesYears =
@@ -96,6 +180,117 @@ export default function App() {
     return matchesYears && matchesSearch;
   });
 
+  const loginMessage = loginError || errorMessage;
+
+  if (!token) {
+    return (
+      <Box
+        sx={{
+          minHeight: "100vh",
+          background:
+            "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #0f0f0f 50%, #1a1a1a 75%, #0a0a0a 100%)",
+          py: 8,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Container maxWidth="sm">
+          <Box
+            component="form"
+            onSubmit={handleLogin}
+            sx={{
+              backgroundColor: "rgba(255, 255, 255, 0.04)",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
+              borderRadius: "16px",
+              p: 4,
+              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.35)",
+            }}
+          >
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: 800,
+                textAlign: "center",
+                background:
+                  "linear-gradient(135deg, #510b16ff, #b81c34, #510b16ff);",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                mb: 1,
+              }}
+            >
+              ACSU Resume Book
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "#B5BAC1", textAlign: "center", mb: 3 }}
+            >
+              Enter the password to continue.
+            </Typography>
+            <TextField
+              fullWidth
+              type="password"
+              autoComplete="current-password"
+              label="Password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  backgroundColor: "rgba(255, 255, 255, 0.05)",
+                  borderRadius: "12px",
+                  border: "1px solid rgba(255, 255, 255, 0.1)",
+                  transition: "all 0.2s",
+                  "&:hover": {
+                    backgroundColor: "rgba(255, 255, 255, 0.08)",
+                    borderColor: "rgba(255, 255, 255, 0.15)",
+                  },
+                  "&.Mui-focused": {
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    borderColor: "#b81c34",
+                    boxShadow: "0 0 0 3px rgba(184, 28, 52, 0.1)",
+                  },
+                },
+                "& .MuiOutlinedInput-input": {
+                  color: "#FFFFFF",
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#B5BAC1",
+                },
+              }}
+            />
+            {loginMessage ? (
+              <Typography
+                variant="body2"
+                sx={{ color: "#d91c46", mt: 2 }}
+              >
+                {loginMessage}
+              </Typography>
+            ) : null}
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              disabled={isLoggingIn || password.trim() === ""}
+              sx={{
+                mt: 3,
+                background:
+                  "linear-gradient(135deg, #b81c34 0%, #d91c46 100%)",
+                fontWeight: 700,
+                textTransform: "none",
+                "&:hover": {
+                  background:
+                    "linear-gradient(135deg, #a5162c 0%, #c0183f 100%)",
+                },
+              }}
+            >
+              {isLoggingIn ? "Signing in..." : "Sign in"}
+            </Button>
+          </Box>
+        </Container>
+      </Box>
+    );
+  }
+
   return (
     <Box
       sx={{
@@ -106,6 +301,22 @@ export default function App() {
       }}
     >
       <Container maxWidth="lg">
+        <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
+          <Button
+            variant="text"
+            onClick={handleLogout}
+            sx={{
+              color: "#B5BAC1",
+              textTransform: "none",
+              fontWeight: 600,
+              "&:hover": {
+                color: "#FFFFFF",
+              },
+            }}
+          >
+            Sign out
+          </Button>
+        </Box>
         {/* Header Section */}
         <Box sx={{ mb: 8, textAlign: "center" }}>
           <Typography
