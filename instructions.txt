@@ -1,0 +1,472 @@
+I need you to recreate a Sponsors page in this Next.js project based on code from an old React project. Please do the following:
+
+=============================================================
+STEP 1: Create the data file
+=============================================================
+
+Create a file at `data/sponsors2026.json` with this exact content:
+
+{
+  "sponsors": [
+    { "class": "gold", "link": "https://www2.deloitte.com/us/en.html", "img": "deloitte.png", "imgName": "Deloitte logo" },
+    { "class": "gold", "link": "https://www.janestreet.com/", "img": "janestreet.png", "imgName": "Jane Street logo" },
+    { "class": "gold", "link": "https://www.linkedin.com/", "img": "linkedin.png", "imgName": "LinkedIn logo" },
+    { "class": "silver", "link": "https://www.uber.com/", "img": "uber.png", "imgName": "Uber logo" },
+    { "class": "bronze", "link": "https://www.bloomberg.com/", "img": "bloomberg.png", "imgName": "Bloomberg logo" },
+    { "class": "bronze", "link": "https://www.ghs.com/", "img": "greenHillsSoftware.png", "imgName": "Green Hills Software logo" },
+    { "class": "bronze", "link": "https://us.pg.com/", "img": "p&g.png", "imgName": "P&G logo" },
+    { "class": "bronze", "link": "https://sambanova.ai/", "img": "samba.png", "imgName": "SambaNova logo" },
+    { "class": "bronze", "link": "https://www.capitalone.com/", "img": "capitalone.png", "imgName": "Capital One logo" },
+    { "class": "bronze", "link": "https://www.roblox.com/", "img": "roblox.png", "imgName": "Roblox logo" },
+    { "class": "bronze", "link": "https://www.palantir.com/", "img": "palantir.png", "imgName": "Palantir logo" }
+  ]
+}
+
+=============================================================
+STEP 2: Create the icons folder
+=============================================================
+
+Create a folder at `public/icons/`. I will manually drop in these image files:
+- deloitte.png
+- janestreet.png
+- linkedin.png
+- uber.png
+- bloomberg.png
+- greenHillsSoftware.png
+- p&g.png
+- samba.png
+- capitalone.png
+- roblox.png
+- palantir.png
+
+Also place the decorative image at `public/gates.png` — I will add the real file manually.
+
+=============================================================
+STEP 3: Create the SponsorCard component
+=============================================================
+
+Create `src/components/Sponsors/SponsorCard.jsx`:
+
+```jsx
+import React from "react";
+
+function SponsorCard({ link, img, imgName }) {
+  return (
+    <div className="color-container-sponsors">
+      <div className="white-container-sponsors">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img
+            src={`/icons/${img}`}
+            alt={imgName}
+            className="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default SponsorCard;
+```
+
+=============================================================
+STEP 4: Create the Sponsors page
+=============================================================
+
+Create the sponsors page at the `/sponsors` route. Mark it as a client component with "use client" at the top because it uses useState.
+
+```jsx
+"use client";
+
+import "./Sponsors.css";
+import SponsorCard from "@/components/Sponsors/SponsorCard";
+import React, { useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import json from "@/data/sponsors2026.json";
+
+const SPONSOR_RESUME_BOOK_URL = "https://example.com";
+const STUDENT_RESUME_SUBMISSION_URL = "https://example.com";
+
+function Sponsors() {
+  const getGold = json.sponsors.filter((sponsor) => sponsor.class === "gold");
+  const getSilver = json.sponsors.filter((sponsor) => sponsor.class === "silver");
+  const getBronze = json.sponsors.filter((sponsor) => sponsor.class === "bronze");
+
+  const [gold] = useState(getGold);
+  const [silver] = useState(getSilver);
+  const [bronze] = useState(getBronze);
+  const currYear = new Date().getFullYear();
+
+  return (
+    <Fade delay={500}>
+      <div className="sponsors">
+        <div className="sponsors-content">
+          <h1 className="font-orbitron sponsors-hero-title">
+            <span className="sponsors-line">Thank You To Our</span>
+            <span className="sponsors-word">Sponsors</span>
+          </h1>
+          <h5 className="sponsors-thankyou">
+            Thank you to all our {currYear} sponsors! Your partnership helps
+            ACSU build community and create meaningful educational and
+            professional opportunities for Cornell CS undergraduates.
+          </h5>
+          <p className="sponsors-hero-heart">♡</p>
+
+          <p className="sponsorship-form">
+            If you would like to sponsor us, fill out the form{" "}
+            <a href="https://forms.gle/iHAGSgSijE4RxFZo8">here!</a>
+          </p>
+
+          <section className="sponsors-cta" aria-label="Resume resources">
+            <div className="sponsors-cta-item">
+              <h3 className="sponsors-cta-label">For Sponsors</h3>
+              <a
+                className="sponsors-cta-btn"
+                href={SPONSOR_RESUME_BOOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Access Resume Book
+              </a>
+            </div>
+            <div className="sponsors-cta-item">
+              <h3 className="sponsors-cta-label">For Students</h3>
+              <a
+                className="sponsors-cta-btn"
+                href={STUDENT_RESUME_SUBMISSION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Submit Resume
+              </a>
+            </div>
+          </section>
+
+          <section className="sponsor-rows" aria-label="Sponsor tiers">
+            <article className="sponsor-row sponsor-row-gold">
+              <h2 className="sponsor-row-title">Gold</h2>
+              <div className="sponsor-row-list">
+                {gold.map((sponsor) => (
+                  <SponsorCard
+                    key={sponsor.imgName}
+                    itemId={sponsor.imgName}
+                    link={sponsor.link}
+                    img={sponsor.img}
+                    imgName={sponsor.imgName}
+                  />
+                ))}
+              </div>
+            </article>
+
+            <article className="sponsor-row sponsor-row-silver">
+              <h2 className="sponsor-row-title">Silver</h2>
+              <div className="sponsor-row-list">
+                {silver.map((sponsor) => (
+                  <SponsorCard
+                    key={sponsor.imgName}
+                    itemId={sponsor.imgName}
+                    link={sponsor.link}
+                    img={sponsor.img}
+                    imgName={sponsor.imgName}
+                  />
+                ))}
+              </div>
+            </article>
+
+            <article className="sponsor-row sponsor-row-bronze">
+              <h2 className="sponsor-row-title">Bronze</h2>
+              <div className="sponsor-row-list">
+                {bronze.map((sponsor) => (
+                  <SponsorCard
+                    key={sponsor.imgName}
+                    itemId={sponsor.imgName}
+                    link={sponsor.link}
+                    img={sponsor.img}
+                    imgName={sponsor.imgName}
+                  />
+                ))}
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <img
+          className="sponsors-gates-decoration"
+          src="/gates.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+    </Fade>
+  );
+}
+
+export default Sponsors;
+```
+
+=============================================================
+STEP 5: Create the CSS file
+=============================================================
+
+Create `src/app/sponsors/Sponsors.css` with this exact content:
+
+@import url("https://fonts.googleapis.com/css2?family=Orbit:wght@400;500;700&family=Orbitron:wght@700&display=swap");
+
+.sponsors {
+  --content-boundary: 980px;
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.2rem;
+  --space-lg: 1.8rem;
+  font-family: "Orbit", sans-serif;
+  margin: 0 auto;
+  max-width: none;
+  overflow: hidden;
+  padding: 0 1rem 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.sponsors * { font-family: "Orbit", sans-serif; }
+
+.sponsors-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin: 0 auto;
+  padding: 0;
+  width: min(100%, var(--content-boundary));
+  z-index: 1;
+}
+
+.sponsors-gates-decoration {
+  bottom: 0;
+  filter: saturate(0.9);
+  left: 0.4rem;
+  max-width: clamp(210px, 25vw, 420px);
+  opacity: 0.22;
+  pointer-events: none;
+  position: absolute;
+  user-select: none;
+  z-index: 0;
+}
+
+.sponsors-hero-title {
+  font-family: "Orbitron", sans-serif !important;
+  font-weight: 700;
+  background: linear-gradient(90deg, #b01c33 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  font-size: clamp(1.82rem, 6.45vw, 4.8rem);
+  letter-spacing: clamp(0.02em, 0.5vw, 0.06em);
+  line-height: 1.15;
+  margin: 0;
+  max-width: none;
+  padding: 0 0.2rem;
+  text-wrap: balance;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sponsors-hero-title * { font-family: "Orbitron", sans-serif !important; }
+.sponsors-word { display: block; }
+.sponsors-line { display: block; white-space: nowrap; }
+
+.sponsors-hero-heart {
+  color: #ffffff;
+  font-size: clamp(1.35rem, 4.5vw, 2rem);
+  line-height: 1;
+  margin: 0.9rem 0 1.5rem;
+  text-align: center;
+}
+
+.sponsors-thankyou {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Orbit", sans-serif;
+  font-size: clamp(0.9rem, 1.7vw, 1.1rem);
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+}
+
+.sponsorship-form {
+  color: #f1f1f1;
+  font-family: "Orbit", sans-serif;
+  font-size: clamp(0.84rem, 1.6vw, 1rem);
+  line-height: 1.45;
+  margin: 0 auto;
+  padding: 0 0.3rem;
+  text-align: center;
+  font-weight: bold;
+  max-width: none;
+  width: 100%;
+}
+
+.sponsorship-form a { color: #d63f57; font-family: "Orbit", sans-serif; font-weight: bolder; }
+
+.sponsors-cta {
+  display: grid;
+  column-gap: 0.45rem;
+  row-gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(220px, 280px));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: none;
+  text-align: left;
+  width: 100%;
+}
+
+.sponsors-cta-item { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.sponsors-cta-label {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: clamp(0.6rem, 1vw, 0.72rem);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sponsors-cta-btn {
+  background: linear-gradient(145deg, rgba(176, 28, 51, 0.92), rgba(114, 12, 30, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  display: inline-flex;
+  font-size: clamp(0.78rem, 1.2vw, 0.9rem);
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.01em;
+  min-height: 38px;
+  cursor: pointer;
+  padding: 0.52rem 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.sponsors-cta-btn:hover {
+  background: linear-gradient(145deg, rgba(148, 21, 43, 0.98), rgba(92, 8, 23, 0.98));
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sponsor-rows { display: flex; flex-direction: column; gap: var(--space-sm); margin: 0; width: 100%; }
+
+.sponsor-row {
+  --logo-card-width: 220px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: var(--space-xs) 0 var(--space-sm);
+  text-align: center;
+}
+
+.sponsor-row-title {
+  display: inline-block;
+  font-size: clamp(0.68rem, 1.2vw, 0.84rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 var(--space-sm);
+  padding: 0.28rem 0.72rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.sponsor-row-gold { --logo-card-width: 290px; }
+.sponsor-row-silver { --logo-card-width: 230px; }
+.sponsor-row-bronze { --logo-card-width: 180px; }
+.sponsor-row-gold .sponsor-row-title { background: rgba(255, 215, 0, 0.14); color: #ffd700; }
+.sponsor-row-silver .sponsor-row-title { background: rgba(192, 192, 192, 0.12); color: #c0c0c0; }
+.sponsor-row-bronze .sponsor-row-title { background: rgba(205, 127, 50, 0.14); color: #cd7f32; }
+
+.sponsor-row-list { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; width: 100%; }
+
+.color-container-sponsors {
+  background-color: transparent;
+  flex: 0 1 calc((100% - 1.2rem) / 3);
+  border-radius: 12px;
+  padding: 0;
+  width: calc((100% - 1.2rem) / 3);
+}
+
+.color-container-sponsors .white-container-sponsors {
+  background: #000000;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  padding: 0.72rem;
+}
+
+.sponsor-row-gold .white-container-sponsors { box-shadow: 0 0 12px rgba(255, 215, 0, 0.2); }
+.sponsor-row-silver .white-container-sponsors { box-shadow: 0 0 12px rgba(192, 192, 192, 0.18); }
+.sponsor-row-bronze .white-container-sponsors { box-shadow: 0 0 12px rgba(205, 127, 50, 0.2); }
+
+.color-container-sponsors .white-container-sponsors a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 72px;
+  width: 100%;
+}
+
+.color-container-sponsors img { max-height: 62px; object-fit: contain; width: 100%; }
+
+@media (hover: hover) {
+  .color-container-sponsors .white-container-sponsors:hover,
+  .color-container-sponsors .white-container-sponsors:focus-within { background: #000000; border-color: rgba(255, 255, 255, 0.34); }
+  .sponsor-row-gold .white-container-sponsors:hover,
+  .sponsor-row-gold .white-container-sponsors:focus-within { box-shadow: 0 0 16px rgba(255, 215, 0, 0.26); }
+  .sponsor-row-silver .white-container-sponsors:hover,
+  .sponsor-row-silver .white-container-sponsors:focus-within { box-shadow: 0 0 16px rgba(192, 192, 192, 0.24); }
+  .sponsor-row-bronze .white-container-sponsors:hover,
+  .sponsor-row-bronze .white-container-sponsors:focus-within { box-shadow: 0 0 16px rgba(205, 127, 50, 0.26); }
+}
+
+@media (max-width: 768px) {
+  .sponsors { padding: 0 0.85rem 0; --content-boundary: 100%; }
+  .sponsor-row-list { justify-content: center; }
+  .color-container-sponsors { flex-basis: calc((100% - 0.6rem) / 2); width: calc((100% - 0.6rem) / 2); }
+  .sponsors-gates-decoration { max-width: clamp(130px, 28vw, 220px); opacity: 0.18; }
+}
+
+@media (max-width: 520px) {
+  .sponsors { padding: 0 0.65rem 0; --space-md: 1rem; --space-lg: 1.5rem; }
+  .sponsors-hero-title { font-size: clamp(1.28rem, 7.2vw, 2.7rem); letter-spacing: clamp(0.01em, 0.35vw, 0.03em); margin-top: 0.8rem; }
+  .sponsors-cta { grid-template-columns: 1fr; }
+  .color-container-sponsors { flex-basis: 100%; width: 100%; }
+  .sponsors-gates-decoration { display: none; }
+}
+
+@media (max-width: 380px) {
+  .sponsors-hero-title { font-size: clamp(1.12rem, 6.9vw, 2.2rem); }
+  .sponsors { padding: 0 0.55rem 0; }
+  .sponsor-row { padding: 0.25rem 0 var(--space-sm); }
+  .color-container-sponsors .white-container-sponsors { padding: 0.42rem; }
+  .color-container-sponsors .white-container-sponsors a { min-height: 62px; }
+}
+
+=============================================================
+STEP 6: Install dependency
+=============================================================
+
+Run: npm install react-awesome-reveal
+
+=============================================================
+NOTES
+=============================================================
+
+- gates.png (decorative background image) goes in public/gates.png
+- All sponsor logo images go in public/icons/
+- The page uses "use client" because of useState — required for Next.js App Router
+- Adjust import paths if your project structure differs

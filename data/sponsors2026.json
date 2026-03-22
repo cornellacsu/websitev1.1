@@ -1,0 +1,15 @@
+{
+  "sponsors": [
+    { "class": "gold", "link": "https://www2.deloitte.com/us/en.html", "img": "deloitte.png", "imgName": "Deloitte logo" },
+    { "class": "gold", "link": "https://www.janestreet.com/", "img": "janestreet.png", "imgName": "Jane Street logo" },
+    { "class": "gold", "link": "https://www.linkedin.com/", "img": "linkedin.png", "imgName": "LinkedIn logo" },
+    { "class": "silver", "link": "https://www.uber.com/", "img": "uber.png", "imgName": "Uber logo" },
+    { "class": "bronze", "link": "https://www.bloomberg.com/", "img": "bloomberg.png", "imgName": "Bloomberg logo" },
+    { "class": "bronze", "link": "https://www.ghs.com/", "img": "greenHillsSoftware.png", "imgName": "Green Hills Software logo" },
+    { "class": "bronze", "link": "https://us.pg.com/", "img": "p&g.png", "imgName": "P&G logo" },
+    { "class": "bronze", "link": "https://sambanova.ai/", "img": "samba.png", "imgName": "SambaNova logo" },
+    { "class": "bronze", "link": "https://www.capitalone.com/", "img": "capitalone.png", "imgName": "Capital One logo" },
+    { "class": "bronze", "link": "https://www.roblox.com/", "img": "roblox.png", "imgName": "Roblox logo" },
+    { "class": "bronze", "link": "https://www.palantir.com/", "img": "palantir.png", "imgName": "Palantir logo" }
+  ]
+}

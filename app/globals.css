@@ -24,3 +24,60 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.sponsor-shine-onload::before {
+  content: "";
+  position: absolute;
+  inset: -180%;
+  background: linear-gradient(
+    120deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.08) 45%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.08) 55%,
+    transparent 65%
+  );
+  transform: translate(-60%, -60%) rotate(12deg);
+  animation: sponsor-card-shine 1.05s ease-out 0.35s 1 both;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sponsor-shine-onload::after {
+  content: "";
+  position: absolute;
+  inset: -170%;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.14) 49%,
+    rgba(255, 255, 255, 0.38) 52%,
+    rgba(255, 255, 255, 0.1) 56%,
+    transparent 66%
+  );
+  transform: translate(-62%, -62%) rotate(12deg);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sponsor-shine-onload:hover::after,
+.sponsor-shine-onload:focus-visible::after {
+  opacity: 1;
+  animation: sponsor-card-glimmer 0.8s ease-out 1;
+}
+
+@keyframes sponsor-card-shine {
+  to {
+    transform: translate(60%, 60%) rotate(12deg);
+  }
+}
+
+@keyframes sponsor-card-glimmer {
+  from {
+    transform: translate(-62%, -62%) rotate(12deg);
+  }
+  to {
+    transform: translate(62%, 62%) rotate(12deg);
+  }
+}
