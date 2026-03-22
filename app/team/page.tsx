@@ -1,48 +1,39 @@
 import TeamCard from "@/components/Team/TeamCard";
 import { team } from "../utils";
+import "./Team.css";
 
 export default function Home() {
 
-    const getTeamName = (subteam: TeamMember[]) => {
-    switch (name) {
-      case "gold":
-        return {
-          color: "text-yellow-500",
-          medalColor: "text-yellow-500",
-        };
-      case "silver":
-        return {
-          color: "text-gray-400",
-          medalColor: "text-gray-400",
-        };
-      case "bronze":
-        return {
-          color: "text-orange-600",
-          medalColor: "text-orange-600",
-        };
-      default:
-        return {
-          color: "text-gray-500",
-          medalColor: "text-gray-500",
-        };
-    }
-  };
+//     const getPosition = (position: string, team: string) => {
+//     switch (position) {
+//       case "president":
+//         return "President"
+//       case "vice-president":
+//         return "Vice President";
+//       case "treasurer":
+//         return "Treasurer";
+//       case "secretary":
+//         return "secretary";
+//       case "lead":
+//         return "Lead";
+//       default:
+//         return "Officer";
+//     }
+//   };
 
 return (
     
-    <div>
-        {team.map((subteam) => (
-            <div>
-            <h1>getTeamName(subteam)</h1>
+    <div className="team-content relative mx-auto flex max-w-7xl flex-col gap-7 px-4 py-20 sm:px-6 lg:px-8">
+        {team.map((teammate) => (
             <TeamCard 
             key={teammate.name+teammate.team}
             name={teammate.name} 
-            link={teammate.email} 
+            mail={teammate.email} 
             img={"public/acsu-logo.png"} 
             pos={teammate.position} 
             major={teammate.major} 
-            year={teammate.year}/>
-            </div>
+            year={teammate.year}
+            team={teammate.team}/>
             ))
             }
             
