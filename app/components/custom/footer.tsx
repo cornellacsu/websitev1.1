@@ -46,13 +46,15 @@ export function Footer() {
                 className="h-10 w-10 object-contain"
               />
               <div>
-                <p className="text-base font-semibold tracking-tight">Association of Computer Science Undergraduates</p>
+                <p className="text-base font-semibold tracking-tight">
+                  Association of Computer Science Undergraduates
+                </p>
                 <p className="text-sm text-gray-400">Cornell University</p>
               </div>
             </div>
 
             <Link
-              href="/join"
+              href="/sponsors"
               className="inline-flex items-center rounded-md border border-red-500/50 bg-red-950/25 px-3.5 py-1.5 text-sm font-medium text-red-200 transition hover:border-red-400 hover:bg-red-900/35 hover:text-white"
             >
               Donate / Support ACSU
@@ -65,7 +67,7 @@ export function Footer() {
                 Quick Links
               </h4>
               <div className="grid grid-cols-2 gap-x-5 gap-y-2 text-sm">
-                {quickLinks.map((link) => (
+                {quickLinks.map((link) =>
                   link.external ? (
                     <a
                       key={link.label}
@@ -84,8 +86,8 @@ export function Footer() {
                     >
                       {link.label}
                     </Link>
-                  )
-                ))}
+                  ),
+                )}
               </div>
             </section>
 
@@ -124,7 +126,9 @@ export function Footer() {
               >
                 acsu@cornell.edu
               </a>
-              <p className="mt-3 text-sm text-gray-400">© {year} ACSU at Cornell</p>
+              <p className="mt-3 text-sm text-gray-400">
+                © {year} ACSU at Cornell
+              </p>
             </section>
           </div>
 
@@ -137,7 +141,11 @@ export function Footer() {
             >
               Equal Education and Employment
             </a>
-            <span> | This organization is a registered student organization of Cornell University</span>
+            <span>
+              {" "}
+              | This organization is a registered student organization of
+              Cornell University
+            </span>
           </div>
         </div>
       </div>
