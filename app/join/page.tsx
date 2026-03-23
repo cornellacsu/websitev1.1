@@ -45,7 +45,11 @@ export default function JoinPage() {
           <div className="max-w-2xl mx-auto">
             <div className="mb-8">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-red-600/20 rounded-full mb-6">
-                <CheckCircle className="text-red-500" size={40} />
+                <img
+                  src="/acsu-logo.png"
+                  alt="ACSU Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h2 className="text-3xl font-bold text-white mb-4">
                 Ready to Join?
