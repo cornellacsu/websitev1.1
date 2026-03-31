@@ -36,19 +36,25 @@ class Resources extends Component {
 
     render() {
         return (
-            <div class="Body">
-                <div class="Header">
-                    <Header current={this.state.current} />
+            <div className="Resources-Page">
+                <div className="Resources-Page-Header">
+                    <h1 className="font-weight-bold">Resources</h1>
+                    <h5>Information and guides for CS majors at Cornell</h5>
                 </div>
-                <div class="SideBarC Column">
-                    <SideBar
-                        current={this.state.current}
-                        changeSection={this.changeSection}
-                        checkSection={this.checkSection}
-                    />
-                </div>
-                <div class="SectionC Column">
-                    <Section current={this.state.current} />
+                <div className="Body">
+                    <div className="Header">
+                        <Header current={this.state.current} />
+                    </div>
+                    <div className="SideBarC Column">
+                        <SideBar
+                            current={this.state.current}
+                            changeSection={this.changeSection}
+                            checkSection={this.checkSection}
+                        />
+                    </div>
+                    <div className="SectionC Column">
+                        <Section current={this.state.current} />
+                    </div>
                 </div>
             </div>
         );

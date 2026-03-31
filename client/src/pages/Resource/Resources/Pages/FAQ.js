@@ -4,7 +4,7 @@ import Accordion from "../Components/Accordion";
 const FAQ = () => {
   return (
     <section className="FAQ">
-      <section class="General Content">
+      <section className="General Content">
         <h2>General</h2>
         <Accordion
           title="Are there any benefits of majoring in Computer Science through the College of Arts and Sciences instead of the College of Engineering, and vice versa?"
@@ -55,7 +55,7 @@ const FAQ = () => {
           For students with Computer Science major in College of Arts and Sciences, you can choose to count courses in a second major or minor as electives."
         />
       </section>
-      <section class="Classes Content">
+      <section className="Classes Content">
         <h2>Classes</h2>
         <Accordion
           title="Should I take CS 1110 or CS 1112?"
@@ -133,7 +133,7 @@ const FAQ = () => {
           content="There are classes that fulfill both Historical and Geographical Breadth requirements that you can take if you can’t manage to fit two separate classes into your schedule. Departments that usually offer these are the Near Eastern Studies department. The same applies for A&S liberal arts requirements. Overlap is commonly found in Latin American Studies and Philosophy."
         />
       </section>
-      <section class="Internships Content">
+      <section className="Internships Content">
         <h2>Internships & Jobs</h2>
         <Accordion
           title="Why and how do people apply for internships?"

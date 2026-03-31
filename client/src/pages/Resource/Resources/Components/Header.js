@@ -30,7 +30,7 @@ class Header extends Component {
                 break;
         }
         return (
-            <div class="Header">
+            <div className="Header">
                 <h1>{heading}</h1>
             </div>
         );
