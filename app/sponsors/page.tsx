@@ -66,7 +66,7 @@ export default function SponsorsPage() {
 
           <div className="flex flex-col gap-3 pt-2 sm:flex-row">
             <a
-              href="https://forms.gle/iHAGSgSijE4RxFZo8"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfFnARc-3RkUUpLM7KTCDvldQ-6o1xYEB8Zc40UWLLt7H9WHw/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-3 font-semibold text-white transition hover:bg-red-700"

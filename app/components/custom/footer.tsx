@@ -1,34 +1,17 @@
 import Link from "next/link";
 
 const quickLinks = [
-  { label: "Home", href: "/" },
+  { label: "Mission", href: "/" },
   { label: "Team", href: "/team" },
   { label: "Resources", href: "/resources" },
   { label: "Sponsorship", href: "/sponsors" },
   { label: "Events", href: "/events" },
-  {
-    label: "Join Us",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLScK27uMvjakGJhxYXnQFS58GTVz4_fhKHDYHbV2E5Sbfokr8Q/viewform",
-    external: true,
-  },
 ];
 
 const communityLinks = [
-  {
-    label: "GroupMe Community",
-    href: "https://groupme.com/",
-    icon: "/groupme.png",
-  },
-  {
-    label: "Ed Discussion",
-    href: "https://edstem.org/",
-    icon: "/ed.png",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/cornellacsu/",
-    icon: "/ig.png",
-  },
+  { label: "Campus Groups", href: "/" },
+  { label: "Ed Discussion", href: "https://edstem.org/" },
+  { label: "IG: @cornellacsu", href: "https://www.instagram.com/cornellacsu/" },
 ];
 
 export function Footer() {
@@ -64,30 +47,18 @@ export function Footer() {
           <div className="grid grid-cols-1 gap-8 border-t border-gray-800 pt-8 md:grid-cols-3">
             <section>
               <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-gray-400">
-                Quick Links
+                Organization
               </h4>
-              <div className="grid grid-cols-2 gap-x-5 gap-y-2 text-sm">
-                {quickLinks.map((link) =>
-                  link.external ? (
-                    <a
-                      key={link.label}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-300 transition hover:text-white"
-                    >
-                      {link.label}
-                    </a>
-                  ) : (
-                    <Link
-                      key={link.label}
-                      href={link.href}
-                      className="text-gray-300 transition hover:text-white"
-                    >
-                      {link.label}
-                    </Link>
-                  ),
-                )}
+              <div className="grid grid-cols-1 gap-y-2 text-sm">
+                {quickLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-gray-300 transition hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
               </div>
             </section>
 
@@ -102,14 +73,8 @@ export function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-gray-300 transition hover:text-white"
+                    className="text-gray-300 transition hover:text-white"
                   >
-                    <img
-                      src={link.icon}
-                      alt=""
-                      aria-hidden="true"
-                      className="h-4 w-4 object-contain"
-                    />
                     {link.label}
                   </a>
                 ))}
