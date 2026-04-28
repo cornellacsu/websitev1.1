@@ -39,6 +39,7 @@ export function parseEmailTextForCard(text: unknown): ParsedEmailCard {
   const withBoldMarkers = normalizeBoldMarkers(normalizedText);
   const lines = withBoldMarkers
     .split("\n")
+    .flatMap(splitInlineNumberedItems)
     .map((line) => line.trim())
     .filter(Boolean);
 
@@ -221,7 +222,7 @@ function dedupeLinks(links: EmailLink[]) {
 }
 
 function isNumberedItem(line: string) {
-  return /^\d+[\).]\s+/.test(line);
+  return /^(?:\*\*)?\d+[\).]\s+/.test(line);
 }
 
 function isBulletItem(line: string) {
@@ -233,7 +234,7 @@ function normalizeBulletLine(line: string) {
 }
 
 function stripNumberPrefix(text: string) {
-  return text.replace(/^\d+[\).]\s*/, "").trim();
+  return text.replace(/^(?:\*\*)?\d+[\).]\s*/, "").trim();
 }
 
 function matchSectionHeading(line: string) {
@@ -346,6 +347,23 @@ function normalizeBracketLink(value: string) {
   }
 
   return null;
+}
+
+function splitInlineNumberedItems(line: string) {
+  const normalizedLine = line.trim();
+
+  if (!normalizedLine) {
+    return [];
+  }
+
+  const splitPattern =
+    /(?<=[.!?])\s+(?=(?:\*\*)?\d+[\).]\s+[A-Z])|(?<=\*)\s+(?=(?:\*\*)?\d+[\).]\s+[A-Z])/g;
+  const pieces = normalizedLine
+    .split(splitPattern)
+    .map((piece) => piece.trim())
+    .filter(Boolean);
+
+  return pieces.length ? pieces : [normalizedLine];
 }
 
 function shouldMergeWithPreviousLine(previousLine: string, line: string) {

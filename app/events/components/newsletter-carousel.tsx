@@ -119,7 +119,6 @@ export function NewsletterCarousel({ emails }: { emails: EmailDoc[] }) {
     return segments.map((segment, index) => {
       const linkMatch = segment.match(/^\[\[LINK:(.+)\|(.+)\]\]$/);
       if (linkMatch) {
-        const label = linkMatch[1]?.trim() || "Link";
         return (
           <a
             key={index}
@@ -177,6 +176,9 @@ export function NewsletterCarousel({ emails }: { emails: EmailDoc[] }) {
 
       {/* Newsletters Grid - Medium Style */}
       <div className="space-y-6">
+        <h2 className="text-3xl font-bold text-white mb-8">
+          Weekly Newsletters
+        </h2>
         <div className="flex flex-wrap justify-between transition-all duration-300">
           {displayedNewsletters.slice(0, 3).map((newsletter, idx) => (
             <button

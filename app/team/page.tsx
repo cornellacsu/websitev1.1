@@ -91,6 +91,10 @@ export default function TeamPage() {
             Dedicated students working to build community, opportunity, and
             support for Cornell CS undergraduates.
           </p>
+          <img
+            src="events-images/team.jpg"
+            className="w-[80%] ml-[10%] mt-10"
+          ></img>
         </div>
       </section>
 
