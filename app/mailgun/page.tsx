@@ -72,11 +72,11 @@ function splitBodyContent(body: string) {
 
 function renderFormattedText(text: string) {
   const segments = text
-    .split(/(\[\[LINK:[^[\]]+\|https?:\/\/[^[\]]+\]\]|\*\*.*?\*\*)/g)
+    .split(/(\[\[LINK:[^[\]]+\|[^[\]]+\]\]|\*\*.*?\*\*)/g)
     .filter(Boolean);
 
   return segments.map((segment, index) => {
-    const linkMatch = segment.match(/^\[\[LINK:(.+)\|(https?:\/\/.+)\]\]$/);
+    const linkMatch = segment.match(/^\[\[LINK:(.+)\|(.+)\]\]$/);
     if (linkMatch) {
       segment.replace(linkMatch[1], "");
       return (

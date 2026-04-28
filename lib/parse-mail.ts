@@ -186,19 +186,24 @@ function normalizeBoldMarkers(text: string) {
 }
 
 function extractLinksFromText(text: string): EmailLink[] {
-  const matches = [
-    ...text.matchAll(/([^\n<]+?)\s*<((?:https?:\/\/)[^>\s]+)>/g),
-  ];
+  const matches = [...text.matchAll(/([^\n<]+?)\s*<([^>\n]+)>/g)];
 
-  return matches.map((match) => {
-    const label = cleanInlineText(match[1] ?? "");
-    const href = (match[2] ?? "").trim();
+  return matches
+    .map((match) => {
+      const label = cleanInlineText(match[1] ?? "");
+      const rawHref = cleanInlineText(match[2] ?? "");
+      const href = normalizeBracketLink(rawHref);
 
-    return {
-      text: label || href,
-      href,
-    };
-  });
+      if (!href) {
+        return null;
+      }
+
+      return {
+        text: label || rawHref,
+        href,
+      };
+    })
+    .filter((link): link is EmailLink => Boolean(link));
 }
 
 function dedupeLinks(links: EmailLink[]) {
@@ -263,22 +268,44 @@ function cleanInlineText(text: string) {
 }
 
 function cleanBodyText(text: string) {
-  return text
+  const normalizedLines = text
     .split("\n")
     .map((line) => replaceAngleLinksWithMarkers(cleanInlineText(line)))
-    .filter(Boolean)
-    .join("\n");
+    .filter(Boolean);
+
+  const mergedLines: string[] = [];
+
+  for (const line of normalizedLines) {
+    const previousLine = mergedLines.at(-1);
+
+    if (previousLine && shouldMergeWithPreviousLine(previousLine, line)) {
+      mergedLines[mergedLines.length - 1] = `${previousLine} ${line}`.replace(
+        /\s+/g,
+        " ",
+      );
+      continue;
+    }
+
+    mergedLines.push(line);
+  }
+
+  return mergedLines.join("\n");
 }
 
 function replaceAngleLinksWithMarkers(text: string) {
-  const urlRegex = /<((?:https?:\/\/)[^>\s]+)>/g;
+  const urlRegex = /<([^>\n]+)>/g;
   let result = "";
   let lastIndex = 0;
 
   for (const match of text.matchAll(urlRegex)) {
     const matchIndex = match.index ?? 0;
-    const href = (match[1] ?? "").trim();
+    const rawHref = cleanInlineText(match[1] ?? "");
+    const href = normalizeBracketLink(rawHref);
     const prefix = text.slice(lastIndex, matchIndex);
+
+    if (!href) {
+      continue;
+    }
 
     const markerBoundary = prefix.lastIndexOf("]]");
     const preservedPrefix =
@@ -290,13 +317,59 @@ function replaceAngleLinksWithMarkers(text: string) {
     result += preservedPrefix;
     result += label
       ? `[[LINK:${label}|${href}]]`
-      : `[[LINK:${cleanInlineText(href)}|${href}]]`;
+      : `[[LINK:${rawHref}|${href}]]`;
 
     lastIndex = matchIndex + match[0].length;
   }
 
   result += text.slice(lastIndex);
   return result;
+}
+
+function normalizeBracketLink(value: string) {
+  const cleaned = cleanInlineText(value);
+
+  if (!cleaned) {
+    return null;
+  }
+
+  if (/^[a-z][a-z0-9+.-]*:/i.test(cleaned)) {
+    return cleaned;
+  }
+
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleaned)) {
+    return `mailto:${cleaned}`;
+  }
+
+  if (!/\s/.test(cleaned)) {
+    return `https://${cleaned.replace(/^\/+/, "")}`;
+  }
+
+  return null;
+}
+
+function shouldMergeWithPreviousLine(previousLine: string, line: string) {
+  if (!previousLine || !line) {
+    return false;
+  }
+
+  if (line.startsWith("- ")) {
+    return false;
+  }
+
+  if (/^\[\[LINK:/.test(line)) {
+    return true;
+  }
+
+  if (/^[a-z(]/.test(line)) {
+    return true;
+  }
+
+  if (/[,:;/-]$/.test(previousLine)) {
+    return true;
+  }
+
+  return !/[.!?]$/.test(previousLine);
 }
 
 function isNoiseLine(line: string) {
