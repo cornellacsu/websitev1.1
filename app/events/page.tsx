@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { adminDb } from "@/lib/firebase-admin";
 import { NewsletterCarousel } from "./components/newsletter-carousel";
+import { NewsletterSubscribe } from "./components/newsletter-subscribe-dialog";
 import { SubteamCategorySection } from "./components/subteam-section";
 
 export interface EventInfo {
@@ -206,26 +207,7 @@ export default async function EventsPage() {
           />
 
           {/* Subscribe CTA */}
-          <div className="w-[500px] h-[400px] flex flex-col items-center bg-gradient-to-br from-red-600/10 to-red-800/10 border border-red-600/30 rounded-2xl p-12 text-center">
-            <Calendar className="w-16 h-16 text-red-500 mx-auto mb-4" />
-            <h2 className="text-xl font-bold text-white mb-4">
-              Never Miss an Update
-            </h2>
-            <p className="text-gray-400 mb-6 max-w-lg mx-auto">
-              Subscribe to our weekly newsletter and add ACSU events to your
-              calendar
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-600/80 hover:bg-red-800 text-sm text-white px-8 py-3 rounded-lg transition-colors font-semibold">
-                Subscribe to Newsletter
-              </button>
-              <a href="https://calendar.google.com/calendar/u/0/r?cid=c_57a6507b1e9c36a6bfd510214b38c5358a1ab6f0ab59651d9d40a84254fb57e3@group.calendar.google.com">
-                <button className="bg-gray-800/80 hover:bg-gray-700/60 text-sm text-white px-8 py-3 rounded-lg transition-colors font-semibold">
-                  Add ACSU Calendar
-                </button>
-              </a>
-            </div>
-          </div>
+          <NewsletterSubscribe />
         </div>
       </div>
     </div>
